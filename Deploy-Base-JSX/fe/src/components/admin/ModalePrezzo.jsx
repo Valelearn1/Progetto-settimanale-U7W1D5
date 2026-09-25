@@ -37,7 +37,7 @@ export default function ModalePrezzo({ auto, onChiudi, onSalva }) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="titolo-prezzo"
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-on-surface/60 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-scrim/60 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onChiudi()}
     >
       <form onSubmit={salva} className="w-full max-w-sm space-y-space-md rounded-xl bg-surface-container-lowest p-space-lg shadow-2xl">

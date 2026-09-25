@@ -1,0 +1,11 @@
+# macOS: file creati dal Finder in ogni cartella
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.iml
+
+# Segreti locali (password Gmail, JWT_SECRET...): mai nella repo
+.env
+.env.local

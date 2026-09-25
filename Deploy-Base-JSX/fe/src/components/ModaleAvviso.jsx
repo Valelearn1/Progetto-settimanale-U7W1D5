@@ -53,7 +53,7 @@ export default function ModaleAvviso({ auto, avviso, preferito, onChiudi, onSalv
       role="dialog"
       aria-modal="true"
       aria-labelledby="titolo-modale-avviso"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-on-surface/60 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-scrim/60 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onChiudi()}
     >
       <div className="w-full max-w-lg overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl">

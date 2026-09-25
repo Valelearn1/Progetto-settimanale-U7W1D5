@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '@/auth/AuthContext'
-import logo from '@/assets/logo-veloce.svg'
+import Logo from '@/components/Logo'
+import ToggleTema from '@/components/ToggleTema'
 import manager from '@/assets/manager.jpg'
 
 const classeVoce = ({ isActive }) =>
@@ -23,7 +24,7 @@ export default function AdminLayout() {
     <div className="flex h-full flex-col justify-between py-space-md">
       <div className="flex flex-col">
         <Link to="/admin" className="flex items-center gap-space-sm px-space-md pb-space-lg">
-          <img src={logo} alt="Veloce Motors" className="h-8 w-auto" />
+          <Logo className="h-8 w-auto" />
         </Link>
         <span className="mb-space-sm px-space-md text-label-sm uppercase tracking-wider text-outline">Gestione Showroom</span>
         <nav className="space-y-1 px-space-sm" aria-label="Menu amministrazione">
@@ -80,13 +81,16 @@ export default function AdminLayout() {
           <span className="icona text-2xl">menu</span>
         </button>
         <span className="font-display text-title-md text-on-surface">Pannello Amministrazione Showroom</span>
-        <span className="hidden items-center gap-space-xs rounded-lg bg-surface-container-low px-space-sm py-1 text-label-sm text-on-surface-variant sm:flex">
-          <span className="icona text-sm text-outline">storefront</span> Sede Torino
-        </span>
+        <div className="flex items-center gap-space-sm">
+          <span className="hidden items-center gap-space-xs rounded-lg bg-surface-container-low px-space-sm py-1 text-label-sm text-on-surface-variant sm:flex">
+            <span className="icona text-sm text-outline">storefront</span> Sede Torino
+          </span>
+          <ToggleTema />
+        </div>
       </header>
       {menuAperto && (
         <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Menu amministrazione">
-          <div className="absolute inset-0 bg-on-surface/50" onClick={() => setMenuAperto(false)} />
+          <div className="absolute inset-0 bg-scrim/50" onClick={() => setMenuAperto(false)} />
           <aside className="absolute top-0 left-0 h-full w-72 max-w-[85vw] bg-surface-container-low shadow-xl">
             <button
               type="button"

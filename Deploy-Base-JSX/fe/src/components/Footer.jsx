@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '@/assets/logo-veloce.svg'
+import Logo from '@/components/Logo'
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-space-xl sm:px-margin">
         <div className="mb-space-xl grid grid-cols-1 gap-space-lg md:grid-cols-4">
           <div className="space-y-space-sm">
-            <img src={logo} alt="Veloce Motors" className="h-8 w-auto" />
+            <Logo className="h-8 w-auto" />
             <p className="text-body-sm text-on-surface-variant">
               Concessionaria di veicoli nuovi, km 0 e usato garantito, con controlli certificati su ogni vettura.
             </p>

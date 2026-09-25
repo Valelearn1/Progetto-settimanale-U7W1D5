@@ -298,7 +298,7 @@ export default function GestioneAnnunci() {
             <thead>
               <tr className="bg-primary-container text-on-secondary">
                 {['Anteprima & Auto', 'Condizione', 'Chilometri', 'Prezzo & Avvisi', 'Stato Portale', 'Ultima Modifica', 'Azioni'].map((t, i) => (
-                  <th key={t} scope="col" className={`px-space-md py-3.5 text-label-md uppercase tracking-wider text-[#bec6e0] ${i === 6 ? 'text-right' : ''} ${i === 5 ? 'hidden 2xl:table-cell' : ''}`}>
+                  <th key={t} scope="col" className={`px-space-md py-3.5 text-label-md uppercase tracking-wider text-inverse-primary ${i === 6 ? 'text-right' : ''} ${i === 5 ? 'hidden 2xl:table-cell' : ''}`}>
                     {t}
                   </th>
                 ))}

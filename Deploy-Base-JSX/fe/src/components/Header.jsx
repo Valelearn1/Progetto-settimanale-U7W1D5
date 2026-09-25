@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '@/auth/AuthContext'
-import logo from '@/assets/logo-veloce.svg'
+import Logo from '@/components/Logo'
+import ToggleTema from '@/components/ToggleTema'
 import manager from '@/assets/manager.jpg'
 
 const classeVoce = ({ isActive }) =>
@@ -71,7 +72,7 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-space-md px-4 sm:px-margin">
         <div className="flex items-center gap-space-lg">
           <Link to="/" className="flex shrink-0 items-center gap-space-sm">
-            <img src={logo} alt="Veloce Motors" className="h-8 w-auto sm:h-9" />
+            <Logo className="h-8 w-auto sm:h-9" />
           </Link>
           {campoRicerca('hidden xl:flex')}
         </div>
@@ -92,7 +93,8 @@ export default function Header() {
           )}
         </nav>
 
-        <div className="flex items-center gap-space-sm">
+        <div className="flex items-center gap-space-xs sm:gap-space-sm">
+          <ToggleTema />
           {collegato ? (
             <>
               <Link to="/profilo" className="flex items-center gap-space-sm rounded-lg p-1 hover:bg-surface-container">

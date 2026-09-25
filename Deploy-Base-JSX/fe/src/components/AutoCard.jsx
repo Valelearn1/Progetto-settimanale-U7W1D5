@@ -39,7 +39,7 @@ export default function AutoCard({ auto, immagini, preferito, avviso, onPreferit
           >
             {CONDIZIONI[auto.condizione]}
           </span>
-          {avviso && (
+          {avviso?.attivo && (
             <span
               title={`Avviso attivo sotto ${euro(avviso.soglia)}`}
               className="flex items-center gap-1 rounded-full bg-surface-container-lowest/90 px-2 py-0.5 text-label-sm font-semibold text-secondary backdrop-blur-sm"
