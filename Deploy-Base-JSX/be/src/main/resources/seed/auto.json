@@ -1,75 +1,68 @@
 [
   {
     "titolo": "Fiat Grande Panda 1.2 Hybrid La Prima",
-    "descrizione": "Fiat Grande Panda 1.2 Hybrid La Prima, allestimento La Prima. Auto a km 0 immatricolata dal concessionario, solo 49 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, keyless entry, climatizzatore automatico, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Fiat Grande Panda 1.2 Hybrid La Prima, allestimento La Prima. Auto a km 0 immatricolata dal concessionario, solo 49 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, keyless entry, climatizzatore automatico, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 49,
     "carburante": "IBRIDA",
     "prezzo": 20200,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Fiat_Grande_Panda_Hybrid_2025_Rear_1_%28cropped%29.jpg/1280px-Fiat_Grande_Panda_Hybrid_2025_Rear_1_%28cropped%29.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Fiat_Grande_Panda_Hybrid_2025_Front_1_%28cropped%29.jpg/1280px-Fiat_Grande_Panda_Hybrid_2025_Front_1_%28cropped%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/2026-05_Fiat_Grande_Panda_Hybrid_in_Italy-Lake_Como_rear.jpg/1280px-2026-05_Fiat_Grande_Panda_Hybrid_in_Italy-Lake_Como_rear.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Fiat_Grande_Panda_Hybrid_2025_Rear_1_%28cropped%29.jpg/1280px-Fiat_Grande_Panda_Hybrid_2025_Rear_1_%28cropped%29.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:Fiat Grande Panda Hybrid 2025 Rear 1 (cropped).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Mihnea Lazăr"
-      },
       {
         "file": "File:Fiat Grande Panda Hybrid 2025 Front 1 (cropped).jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Mihnea Lazăr"
       },
       {
-        "file": "File:2026-05 Fiat Grande Panda Hybrid in Italy-Lake Como rear.jpg",
+        "file": "File:Fiat Grande Panda Hybrid 2025 Rear 1 (cropped).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Wikisympathisant"
+        "autore": "Mihnea Lazăr"
       }
     ]
   },
   {
     "titolo": "Fiat 500e La Prima 42 kWh",
-    "descrizione": "Fiat 500e La Prima 42 kWh, allestimento La Prima. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: fari full LED, frenata automatica d'emergenza, climatizzatore automatico, mantenimento di corsia, retrocamera.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Fiat 500e La Prima 42 kWh, allestimento La Prima. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: fari full LED, frenata automatica d'emergenza, climatizzatore automatico, mantenimento di corsia, retrocamera.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "ELETTRICA",
     "prezzo": 33500,
     "condizione": "NUOVO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Fiat_500e_%282020%29_Auto_Zuerich_2021_IMG_0604.jpg/1280px-Fiat_500e_%282020%29_Auto_Zuerich_2021_IMG_0604.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Fiat_500e_Cabrio_%282020%29_IMG_0011.jpg/1280px-Fiat_500e_Cabrio_%282020%29_IMG_0011.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Fiat_500e_CRI_07_2021_9837.jpg/1280px-Fiat_500e_CRI_07_2021_9837.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Fiat_500e_%282020%29_3%2B1_IMG_4150.jpg/1280px-Fiat_500e_%282020%29_3%2B1_IMG_4150.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Fiat_500e_%282020%29_3%2B1_IMG_4151.jpg/1280px-Fiat_500e_%282020%29_3%2B1_IMG_4151.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Fiat_500e_%282020%29_3%2B1_IMG_4152.jpg/1280px-Fiat_500e_%282020%29_3%2B1_IMG_4152.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Fiat 500e (2020) Auto Zuerich 2021 IMG 0604.jpg",
+        "file": "File:Fiat 500e (2020) 3+1 IMG 4150.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:Fiat 500e Cabrio (2020) IMG 0011.jpg",
+        "file": "File:Fiat 500e (2020) 3+1 IMG 4151.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:Fiat 500e CRI 07 2021 9837.jpg",
+        "file": "File:Fiat 500e (2020) 3+1 IMG 4152.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Mariordo (Mario Roberto Durán Ortiz)"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "Fiat 500X 1.5 Hybrid Sport",
-    "descrizione": "Fiat 500X 1.5 Hybrid Sport, allestimento Sport. Usato garantito con 16.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, navigatore con Apple CarPlay e Android Auto, retrocamera, keyless entry, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Fiat 500X 1.5 Hybrid Sport, allestimento Sport. Usato garantito con 16.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, navigatore con Apple CarPlay e Android Auto, retrocamera, keyless entry, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 16500,
     "carburante": "IBRIDA",
     "prezzo": 23700,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Fiat_500X_Leonberg_2019_IMG_0031.jpg/1280px-Fiat_500X_Leonberg_2019_IMG_0031.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Fiat_500X_Leonberg_2019_IMG_0032.jpg/1280px-Fiat_500X_Leonberg_2019_IMG_0032.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Fiat_500X_1.4T_Pop_2019.jpg/1280px-Fiat_500X_1.4T_Pop_2019.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Fiat_500X_Leonberg_2019_IMG_0032.jpg/1280px-Fiat_500X_Leonberg_2019_IMG_0032.jpg"
     ],
     "crediti": [
       {
@@ -81,25 +74,19 @@
         "file": "File:Fiat 500X Leonberg 2019 IMG 0032.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Fiat 500X 1.4T Pop 2019.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "RL GNZLZ"
       }
     ]
   },
   {
     "titolo": "Fiat Tipo 1.6 Multijet Cross",
-    "descrizione": "Fiat Tipo 1.6 Multijet Cross, allestimento Cross. Usato garantito con 19.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, frenata automatica d'emergenza, climatizzatore automatico, cerchi in lega.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Fiat Tipo 1.6 Multijet Cross, allestimento Cross. Usato garantito con 19.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, frenata automatica d'emergenza, climatizzatore automatico, cerchi in lega.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 19500,
     "carburante": "DIESEL",
     "prezzo": 17400,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/2021_FIAT_Tipo_Easy_1.0_%28Front%29.jpg/1280px-2021_FIAT_Tipo_Easy_1.0_%28Front%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2021_FIAT_Tipo_Easy_1.0_%28Rear%29.jpg/1280px-2021_FIAT_Tipo_Easy_1.0_%28Rear%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Fiat_Tipo_MY2021_Exterior.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2021_FIAT_Tipo_Easy_1.0_%28Rear%29.jpg/1280px-2021_FIAT_Tipo_Easy_1.0_%28Rear%29.jpg"
     ],
     "crediti": [
       {
@@ -111,129 +98,112 @@
         "file": "File:2021 FIAT Tipo Easy 1.0 (Rear).jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "DieselFordMondeo"
-      },
-      {
-        "file": "File:Fiat Tipo MY2021 Exterior.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Kay195"
       }
     ]
   },
   {
     "titolo": "Alfa Romeo Giulia 2.2 Veloce Q4",
-    "descrizione": "Alfa Romeo Giulia 2.2 Veloce Q4, allestimento Veloce. Usato garantito con 18.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: climatizzatore automatico, mantenimento di corsia, sensori di parcheggio anteriori e posteriori, cruise control adattivo, cerchi in lega.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Alfa Romeo Giulia 2.2 Veloce Q4, allestimento Veloce. Usato garantito con 18.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: climatizzatore automatico, mantenimento di corsia, sensori di parcheggio anteriori e posteriori, cruise control adattivo, cerchi in lega.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 18000,
     "carburante": "DIESEL",
     "prezzo": 37300,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2021_Alfa_Romeo_Giulia_GTAm_Autobau.jpg/1280px-2021_Alfa_Romeo_Giulia_GTAm_Autobau.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2022_Alfa_Romeo_Giulia_GTAm.jpg/1280px-2022_Alfa_Romeo_Giulia_GTAm.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2020_Alfa_Romeo_Giulia_-_2018_Alfa_Romeo_Giulia_-_2018_Alfa_Romeo_Stelvio.jpg/1280px-2020_Alfa_Romeo_Giulia_-_2018_Alfa_Romeo_Giulia_-_2018_Alfa_Romeo_Stelvio.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2020_ALFA_ROMEO_GIULIA_FRONT_VIEW_IN_BRUNEI.jpg/1280px-2020_ALFA_ROMEO_GIULIA_FRONT_VIEW_IN_BRUNEI.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/2020_ALFA_ROMEO_GIULIA_REAR_VIEW_IN_BRUNEI.jpg/1280px-2020_ALFA_ROMEO_GIULIA_REAR_VIEW_IN_BRUNEI.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/2020_ALFA_ROMEO_GIULIA_INTERIOR_IN_BRUNEI.jpg/1280px-2020_ALFA_ROMEO_GIULIA_INTERIOR_IN_BRUNEI.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2021 Alfa Romeo Giulia GTAm Autobau.jpg",
+        "file": "File:2020 ALFA ROMEO GIULIA FRONT VIEW IN BRUNEI.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "MrWalkr"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:2022 Alfa Romeo Giulia GTAm.jpg",
+        "file": "File:2020 ALFA ROMEO GIULIA REAR VIEW IN BRUNEI.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "MrWalkr"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:2020 Alfa Romeo Giulia - 2018 Alfa Romeo Giulia - 2018 Alfa Romeo Stelvio.jpg",
+        "file": "File:2020 ALFA ROMEO GIULIA INTERIOR IN BRUNEI.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Ssu"
+        "autore": "AIMHO'S REBELLION 8490s"
       }
     ]
   },
   {
     "titolo": "Alfa Romeo Stelvio 2.2 Ti Q4",
-    "descrizione": "Alfa Romeo Stelvio 2.2 Ti Q4, allestimento Ti. Usato garantito con 30.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: frenata automatica d'emergenza, cruise control adattivo, mantenimento di corsia, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Alfa Romeo Stelvio 2.2 Ti Q4, allestimento Ti. Usato garantito con 30.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: frenata automatica d'emergenza, cruise control adattivo, mantenimento di corsia, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 30000,
     "carburante": "DIESEL",
     "prezzo": 44300,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Alfa_Romeo_Stelvio_Wien_25_July_2020_JM_%286%29.jpg/1280px-Alfa_Romeo_Stelvio_Wien_25_July_2020_JM_%286%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Alfa_Romeo_Stelvio_Wien_26_July_2020_JM.jpg/1280px-Alfa_Romeo_Stelvio_Wien_26_July_2020_JM.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Alfa_Romeo_Stelvio_Wien_25_July_2020_JM_%282%29.jpg/1280px-Alfa_Romeo_Stelvio_Wien_25_July_2020_JM_%282%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/2021_Alfa_Romeo_Stelvio_2.0_Black_front_view_in_Brunei.jpg/1280px-2021_Alfa_Romeo_Stelvio_2.0_Black_front_view_in_Brunei.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2021_Alfa_Romeo_Stelvio_2.0_Black_rear_view_in_Brunei.jpg/1280px-2021_Alfa_Romeo_Stelvio_2.0_Black_rear_view_in_Brunei.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/2021_Alfa_Romeo_Stelvio_2.0_Black_interior_view_in_Brunei.jpg/1280px-2021_Alfa_Romeo_Stelvio_2.0_Black_interior_view_in_Brunei.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Alfa Romeo Stelvio Wien 25 July 2020 JM (6).jpg",
+        "file": "File:2021 Alfa Romeo Stelvio 2.0 Black front view in Brunei.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Johannes Maximilian"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:Alfa Romeo Stelvio Wien 26 July 2020 JM.jpg",
+        "file": "File:2021 Alfa Romeo Stelvio 2.0 Black rear view in Brunei.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Johannes Maximilian"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:Alfa Romeo Stelvio Wien 25 July 2020 JM (2).jpg",
+        "file": "File:2021 Alfa Romeo Stelvio 2.0 Black interior view in Brunei.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Johannes Maximilian"
+        "autore": "AIMHO'S REBELLION 8490s"
       }
     ]
   },
   {
     "titolo": "Alfa Romeo Tonale 1.5 Hybrid Speciale",
-    "descrizione": "Alfa Romeo Tonale 1.5 Hybrid Speciale, allestimento Speciale. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, cockpit digitale, retrocamera, fari full LED, navigatore con Apple CarPlay e Android Auto.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Alfa Romeo Tonale 1.5 Hybrid Speciale, allestimento Speciale. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, cockpit digitale, retrocamera, fari full LED, navigatore con Apple CarPlay e Android Auto.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "IBRIDA",
     "prezzo": 41000,
     "condizione": "NUOVO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Alfa_Romeo_Tonale%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1331%29.jpg/1280px-Alfa_Romeo_Tonale%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1331%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Alfa_Romeo_Tonale_2026_Front_1_%28cropped%29.jpg/1280px-Alfa_Romeo_Tonale_2026_Front_1_%28cropped%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/2022_Alfa_Romeo_Tonale_Hybrid.jpg/1280px-2022_Alfa_Romeo_Tonale_Hybrid.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Alfa_Romeo_Tonale_at_Parco_Valentino_2019.jpg/1280px-Alfa_Romeo_Tonale_at_Parco_Valentino_2019.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Alfa_Romeo_Tonale_interior_at_Parco_Valentino_2019.jpg/960px-Alfa_Romeo_Tonale_interior_at_Parco_Valentino_2019.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Alfa Romeo Tonale, GIMS 2019, Le Grand-Saconnex (GIMS1331).jpg",
+        "file": "File:Alfa Romeo Tonale at Parco Valentino 2019.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Matti Blume"
+        "autore": "GinaCostanza76"
       },
       {
-        "file": "File:Alfa Romeo Tonale 2026 Front 1 (cropped).jpg",
+        "file": "File:Alfa Romeo Tonale interior at Parco Valentino 2019.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Mihnea Lazăr"
-      },
-      {
-        "file": "File:2022 Alfa Romeo Tonale Hybrid.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "GinaCostanza76"
       }
     ]
   },
   {
     "titolo": "Lancia Ypsilon 1.0 Hybrid Gold",
-    "descrizione": "Lancia Ypsilon 1.0 Hybrid Gold, allestimento Gold. Auto a km 0 immatricolata dal concessionario, solo 78 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, climatizzatore automatico, cockpit digitale, retrocamera, sedili riscaldabili.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Lancia Ypsilon 1.0 Hybrid Gold, allestimento Gold. Auto a km 0 immatricolata dal concessionario, solo 78 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, climatizzatore automatico, cockpit digitale, retrocamera, sedili riscaldabili.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 78,
     "carburante": "IBRIDA",
     "prezzo": 16200,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Lancia_Ypsilon_MY%2721.jpg/1280px-Lancia_Ypsilon_MY%2721.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Lancia_Ypsilon_facelift.jpg/1280px-Lancia_Ypsilon_facelift.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Lancia_Ypsilon_S_MomoDesign_rear.jpg/1280px-Lancia_Ypsilon_S_MomoDesign_rear.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Lancia_Ypsilon_S_MomoDesign_rear.jpg/1280px-Lancia_Ypsilon_S_MomoDesign_rear.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Lancia_Ypsilon_S_MomoDesign_front.jpg/1280px-Lancia_Ypsilon_S_MomoDesign_front.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Lancia Ypsilon MY'21.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Andrea Ciolli"
-      },
-      {
-        "file": "File:Lancia Ypsilon facelift.jpg",
-        "licenza": "CC BY 2.0",
-        "autore": "Rutger van der Maar"
-      },
-      {
         "file": "File:Lancia Ypsilon S MomoDesign rear.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Corvettec6r"
+      },
+      {
+        "file": "File:Lancia Ypsilon S MomoDesign front.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Corvettec6r"
       }
@@ -241,52 +211,40 @@
   },
   {
     "titolo": "Jeep Renegade 1.3 4xe Limited",
-    "descrizione": "Jeep Renegade 1.3 4xe Limited, allestimento Limited. Usato garantito con 99.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: fari full LED, sedili riscaldabili, frenata automatica d'emergenza, keyless entry, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Jeep Renegade 1.3 4xe Limited, allestimento Limited. Usato garantito con 99.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: fari full LED, sedili riscaldabili, frenata automatica d'emergenza, keyless entry, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 99000,
     "carburante": "IBRIDA",
     "prezzo": 20600,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Red_Jeep_Renegade_Parked_in_Shadow_of_Building.jpg/1280px-Red_Jeep_Renegade_Parked_in_Shadow_of_Building.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Green_Jeep_Renegade_parked_on_S_Burnham_Ave.jpg/1280px-Green_Jeep_Renegade_parked_on_S_Burnham_Ave.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/White_Jeep_Renegade_at_N_MLK_%26_W_Alexander.jpg/1280px-White_Jeep_Renegade_at_N_MLK_%26_W_Alexander.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Jeep_Renegade_FL_IMG_3321.jpg/1280px-Jeep_Renegade_FL_IMG_3321.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Jeep_Renegade_FL_IMG_3325.jpg/1280px-Jeep_Renegade_FL_IMG_3325.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Red Jeep Renegade Parked in Shadow of Building.jpg",
+        "file": "File:Jeep Renegade FL IMG 3321.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Noah Wulf"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:Green Jeep Renegade parked on S Burnham Ave.jpg",
-        "licenza": "CC BY-SA 3.0",
-        "autore": "Noah Wulf"
-      },
-      {
-        "file": "File:White Jeep Renegade at N MLK & W Alexander.jpg",
+        "file": "File:Jeep Renegade FL IMG 3325.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Noah Wulf"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "Jeep Compass 1.6 Multijet Longitude",
-    "descrizione": "Jeep Compass 1.6 Multijet Longitude, allestimento Longitude. Usato garantito con 50.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, retrocamera, navigatore con Apple CarPlay e Android Auto, cruise control adattivo, sedili riscaldabili.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Jeep Compass 1.6 Multijet Longitude, allestimento Longitude. Usato garantito con 50.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, retrocamera, navigatore con Apple CarPlay e Android Auto, cruise control adattivo, sedili riscaldabili.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 50000,
     "carburante": "DIESEL",
     "prezzo": 25500,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/2021_Jeep_Compass_Nighteagle_Multiair_4x2.jpg/1280px-2021_Jeep_Compass_Nighteagle_Multiair_4x2.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_front_left.jpg/1280px-2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_front_left.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_rear_left.jpg/1280px-2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_rear_left.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:2021 Jeep Compass Nighteagle Multiair 4x2.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
-      },
       {
         "file": "File:2021 Jeep Compass Limited 4WD in Billet Silver Metallic, front left.jpg",
         "licenza": "CC BY-SA 3.0",
@@ -301,7 +259,7 @@
   },
   {
     "titolo": "Volkswagen Golf 1.5 eTSI Life",
-    "descrizione": "Volkswagen Golf 1.5 eTSI Life, allestimento Life. Usato garantito con 124.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sedili riscaldabili, cruise control adattivo, frenata automatica d'emergenza, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Volkswagen Golf 1.5 eTSI Life, allestimento Life. Usato garantito con 124.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sedili riscaldabili, cruise control adattivo, frenata automatica d'emergenza, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 124000,
     "carburante": "BENZINA",
     "prezzo": 15800,
@@ -331,59 +289,53 @@
   },
   {
     "titolo": "Volkswagen T-Roc 2.0 TDI Style",
-    "descrizione": "Volkswagen T-Roc 2.0 TDI Style, allestimento Style. Auto a km 0 immatricolata dal concessionario, solo 73 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: fari full LED, sensori di parcheggio anteriori e posteriori, sedili riscaldabili, cerchi in lega, climatizzatore automatico.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Volkswagen T-Roc 2.0 TDI Style, allestimento Style. Auto a km 0 immatricolata dal concessionario, solo 73 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: fari full LED, sensori di parcheggio anteriori e posteriori, sedili riscaldabili, cerchi in lega, climatizzatore automatico.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 73,
     "carburante": "DIESEL",
     "prezzo": 30700,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Volkswagen_T-Roc_%282021%29_1X7A0330.jpg/1280px-Volkswagen_T-Roc_%282021%29_1X7A0330.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Volkswagen_T-Roc_%282021%29_1X7A0333.jpg/1280px-Volkswagen_T-Roc_%282021%29_1X7A0333.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Volkswagen_T-Roc_Cabriolet_%282021%29_1X7A0344.jpg/1280px-Volkswagen_T-Roc_Cabriolet_%282021%29_1X7A0344.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/2022_Volkswagen_T-Roc_110TSI_Style_front.jpg/1280px-2022_Volkswagen_T-Roc_110TSI_Style_front.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/2022_Volkswagen_T-Roc_110TSI_Style_rear.jpg/1280px-2022_Volkswagen_T-Roc_110TSI_Style_rear.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Volkswagen T-Roc (2021) 1X7A0330.jpg",
+        "file": "File:2022 Volkswagen T-Roc 110TSI Style front.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "LuvsMG481"
       },
       {
-        "file": "File:Volkswagen T-Roc (2021) 1X7A0333.jpg",
+        "file": "File:2022 Volkswagen T-Roc 110TSI Style rear.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Volkswagen T-Roc Cabriolet (2021) 1X7A0344.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "LuvsMG481"
       }
     ]
   },
   {
     "titolo": "Volkswagen Polo 1.0 TSI R-Line",
-    "descrizione": "Volkswagen Polo 1.0 TSI R-Line, allestimento R-Line. Usato garantito con 97.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, frenata automatica d'emergenza, fari full LED, keyless entry, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Volkswagen Polo 1.0 TSI R-Line, allestimento R-Line. Usato garantito con 97.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, frenata automatica d'emergenza, fari full LED, keyless entry, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 97500,
     "carburante": "BENZINA",
     "prezzo": 14800,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Volkswagen_Polo_VI_%282021%29_IMG_5322.jpg/1280px-Volkswagen_Polo_VI_%282021%29_IMG_5322.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Volkswagen_Polo_VI_GTI_%282021%29_1X7A0343.jpg/1280px-Volkswagen_Polo_VI_GTI_%282021%29_1X7A0343.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg/1280px-Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Volkswagen_Polo_VI_%282021%29_IMG_5319.jpg/1280px-Volkswagen_Polo_VI_%282021%29_IMG_5319.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Volkswagen_Polo_VI_%282021%29_IMG_5320.jpg/1280px-Volkswagen_Polo_VI_%282021%29_IMG_5320.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Volkswagen_Polo_VI_%282021%29_IMG_5322.jpg/1280px-Volkswagen_Polo_VI_%282021%29_IMG_5322.jpg"
     ],
     "crediti": [
       {
+        "file": "File:Volkswagen Polo VI (2021) IMG 5319.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
+      },
+      {
+        "file": "File:Volkswagen Polo VI (2021) IMG 5320.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
+      },
+      {
         "file": "File:Volkswagen Polo VI (2021) IMG 5322.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Volkswagen Polo VI GTI (2021) 1X7A0343.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Volkswagen Polo VI GTI (2021) 1X7A0344.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       }
@@ -391,29 +343,23 @@
   },
   {
     "titolo": "Volkswagen ID.3 Pro Performance",
-    "descrizione": "Volkswagen ID.3 Pro Performance, allestimento Pro Performance. Usato garantito con 88.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, keyless entry, cruise control adattivo, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Volkswagen ID.3 Pro Performance, allestimento Pro Performance. Usato garantito con 88.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, keyless entry, cruise control adattivo, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 88000,
     "carburante": "ELETTRICA",
     "prezzo": 24200,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Volkswagen_ID.3_%282023%29_IMG_7973.jpg/1280px-Volkswagen_ID.3_%282023%29_IMG_7973.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/2020_Volkswagen_ID.3_1st_Front.jpg/1280px-2020_Volkswagen_ID.3_1st_Front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Volkswagen_ID.3_%282023%29_Automesse_Ludwigsburg_2023_1X7A0002.jpg/1280px-Volkswagen_ID.3_%282023%29_Automesse_Ludwigsburg_2023_1X7A0002.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Volkswagen_ID.3_%282023%29_IMG_7972.jpg/1280px-Volkswagen_ID.3_%282023%29_IMG_7972.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Volkswagen_ID.3_%282023%29_IMG_7973.jpg/1280px-Volkswagen_ID.3_%282023%29_IMG_7973.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Volkswagen ID.3 (2023) IMG 7973.jpg",
+        "file": "File:Volkswagen ID.3 (2023) IMG 7972.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander-93"
       },
       {
-        "file": "File:2020 Volkswagen ID.3 1st Front.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
-      },
-      {
-        "file": "File:Volkswagen ID.3 (2023) Automesse Ludwigsburg 2023 1X7A0002.jpg",
+        "file": "File:Volkswagen ID.3 (2023) IMG 7973.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander-93"
       }
@@ -421,59 +367,59 @@
   },
   {
     "titolo": "Audi A3 Sportback 35 TFSI S line",
-    "descrizione": "Audi A3 Sportback 35 TFSI S line, allestimento S line. Usato garantito con 101.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: climatizzatore automatico, cruise control adattivo, frenata automatica d'emergenza, sedili riscaldabili, keyless entry.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Audi A3 Sportback 35 TFSI S line, allestimento S line. Usato garantito con 101.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: climatizzatore automatico, cruise control adattivo, frenata automatica d'emergenza, sedili riscaldabili, keyless entry.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 101000,
     "carburante": "BENZINA",
     "prezzo": 19700,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Audi_A3_Sportback_35_TFSI_%282023%29_%2853548084931%29.jpg/1280px-Audi_A3_Sportback_35_TFSI_%282023%29_%2853548084931%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2019_Audi_A3_Sportback.jpg/1280px-2019_Audi_A3_Sportback.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Audi_A3_Sportback_35_TFSI_%282020%29_%2854832849494%29.jpg/1280px-Audi_A3_Sportback_35_TFSI_%282020%29_%2854832849494%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%283%29.jpg/1280px-Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%283%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%285%29.jpg/1280px-Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%285%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%284%29.jpg/1280px-Audi_A3_Sportback_35_TFSI_S_Line_8Y_Manhattan_Grey_Metallic_%284%29.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Audi A3 Sportback 35 TFSI (2023) (53548084931).jpg",
-        "licenza": "CC BY 2.0",
-        "autore": "Charles from Port Chester, New York"
-      },
-      {
-        "file": "File:2019 Audi A3 Sportback.jpg",
+        "file": "File:Audi A3 Sportback 35 TFSI S Line 8Y Manhattan Grey Metallic (3).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "Damian B Oh"
       },
       {
-        "file": "File:Audi A3 Sportback 35 TFSI (2020) (54832849494).jpg",
-        "licenza": "CC0",
-        "autore": "Charles from Port Chester, New York"
+        "file": "File:Audi A3 Sportback 35 TFSI S Line 8Y Manhattan Grey Metallic (5).jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Damian B Oh"
+      },
+      {
+        "file": "File:Audi A3 Sportback 35 TFSI S Line 8Y Manhattan Grey Metallic (4).jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Damian B Oh"
       }
     ]
   },
   {
     "titolo": "Audi Q3 35 TDI S tronic Business",
-    "descrizione": "Audi Q3 35 TDI S tronic Business, allestimento Business. Usato garantito con 103.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: keyless entry, fari full LED, climatizzatore automatico, sedili riscaldabili, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Audi Q3 35 TDI S tronic Business, allestimento Business. Usato garantito con 103.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: keyless entry, fari full LED, climatizzatore automatico, sedili riscaldabili, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 103500,
     "carburante": "DIESEL",
     "prezzo": 24300,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Audi_Q3_Sportback_at_IAA_2019_IMG_0287.jpg/1280px-Audi_Q3_Sportback_at_IAA_2019_IMG_0287.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Audi_Q3_registered_March_2019_1498cc.jpg/1280px-Audi_Q3_registered_March_2019_1498cc.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Audi_Q3_F3_01_China_2019-03-27.jpg/1280px-Audi_Q3_F3_01_China_2019-03-27.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Audi_Q3_F3_01_China_2019-03-27.jpg/1280px-Audi_Q3_F3_01_China_2019-03-27.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Audi_Q3_F3_04_China_2019-03-27.jpg/1280px-Audi_Q3_F3_04_China_2019-03-27.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Audi_Q3_F3_02_China_2019-03-27.jpg/1280px-Audi_Q3_F3_02_China_2019-03-27.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Audi Q3 Sportback at IAA 2019 IMG 0287.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Audi Q3 registered March 2019 1498cc.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Charles01"
-      },
-      {
         "file": "File:Audi Q3 F3 01 China 2019-03-27.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Navigator84"
+      },
+      {
+        "file": "File:Audi Q3 F3 04 China 2019-03-27.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Navigator84"
+      },
+      {
+        "file": "File:Audi Q3 F3 02 China 2019-03-27.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Navigator84"
       }
@@ -481,15 +427,15 @@
   },
   {
     "titolo": "Audi A4 Avant 40 TDI quattro",
-    "descrizione": "Audi A4 Avant 40 TDI quattro, allestimento S line. Usato garantito con 33.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sedili riscaldabili, climatizzatore automatico, retrocamera, cruise control adattivo, sensori di parcheggio anteriori e posteriori.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Audi A4 Avant 40 TDI quattro, allestimento S line. Usato garantito con 33.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sedili riscaldabili, climatizzatore automatico, retrocamera, cruise control adattivo, sensori di parcheggio anteriori e posteriori.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 33500,
     "carburante": "DIESEL",
     "prezzo": 36100,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2023_Audi_A4_B9_Avant_Allroad_-_left_side_view.jpg/1280px-2023_Audi_A4_B9_Avant_Allroad_-_left_side_view.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2023_Audi_A4_B9_Avant_Allroad_-_driver%27s_door_control_panel.jpg/1280px-2023_Audi_A4_B9_Avant_Allroad_-_driver%27s_door_control_panel.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2023_Audi_A4_B9_Avant_Allroad_-_infotainment_screen_%28MMI_display%29.jpg/1280px-2023_Audi_A4_B9_Avant_Allroad_-_infotainment_screen_%28MMI_display%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2023_Audi_A4_B9_Avant_Allroad_-_right_front_exterior_view.jpg/1280px-2023_Audi_A4_B9_Avant_Allroad_-_right_front_exterior_view.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2023_Audi_A4_B9_Avant_Allroad_-_back_view.jpg/1280px-2023_Audi_A4_B9_Avant_Allroad_-_back_view.jpg"
     ],
     "crediti": [
       {
@@ -498,88 +444,81 @@
         "autore": "Acgskup"
       },
       {
-        "file": "File:2023 Audi A4 B9 Avant Allroad - driver's door control panel.jpg",
+        "file": "File:2023 Audi A4 B9 Avant Allroad - right front exterior view.jpg",
         "licenza": "CC BY 4.0",
         "autore": "Acgskup"
       },
       {
-        "file": "File:2023 Audi A4 B9 Avant Allroad - infotainment screen (MMI display).jpg",
+        "file": "File:2023 Audi A4 B9 Avant Allroad - back view.jpg",
         "licenza": "CC BY 4.0",
         "autore": "Acgskup"
       }
     ]
   },
   {
-    "titolo": "BMW 118i Sport",
-    "descrizione": "BMW 118i Sport, allestimento Sport. Usato garantito con 106.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: cerchi in lega, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, sensori di parcheggio anteriori e posteriori, keyless entry.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "titolo": "BMW 120d Sport",
+    "descrizione": "BMW 120d Sport, allestimento Sport. Usato garantito con 106.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: cerchi in lega, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, sensori di parcheggio anteriori e posteriori, keyless entry.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 106500,
-    "carburante": "BENZINA",
+    "carburante": "DIESEL",
     "prezzo": 18700,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/2020_BMW_1_Series_M_Sport.jpg/1280px-2020_BMW_1_Series_M_Sport.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/BMW_1_Series_Leonberg_2024_IMG_1119.jpg/1280px-BMW_1_Series_Leonberg_2024_IMG_1119.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/BMW_1_Series_Leonberg_2024_IMG_1119-resized.jpg/1280px-BMW_1_Series_Leonberg_2024_IMG_1119-resized.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/BMW_F40_Leonberg_2019_IMG_0019.jpg/1280px-BMW_F40_Leonberg_2019_IMG_0019.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/BMW_F40_Leonberg_2019_IMG_0016.jpg/1280px-BMW_F40_Leonberg_2019_IMG_0016.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/BMW_F40_Leonberg_2019_IMG_0028.jpg/1280px-BMW_F40_Leonberg_2019_IMG_0028.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2020 BMW 1 Series M Sport.jpg",
+        "file": "File:BMW F40 Leonberg 2019 IMG 0019.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:BMW 1 Series Leonberg 2024 IMG 1119.jpg",
+        "file": "File:BMW F40 Leonberg 2019 IMG 0016.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:BMW 1 Series Leonberg 2024 IMG 1119-resized.jpg",
+        "file": "File:BMW F40 Leonberg 2019 IMG 0028.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "BMW 320d Touring M Sport",
-    "descrizione": "BMW 320d Touring M Sport, allestimento M Sport. Usato garantito con 63.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, cerchi in lega, mantenimento di corsia, cruise control adattivo, keyless entry.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "BMW 320d Touring M Sport, allestimento M Sport. Usato garantito con 63.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, cerchi in lega, mantenimento di corsia, cruise control adattivo, keyless entry.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 63000,
     "carburante": "DIESEL",
     "prezzo": 32800,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/BMW_3_SERIES_TOURING_%28G21%29_HONG_KONG.jpg/1280px-BMW_3_SERIES_TOURING_%28G21%29_HONG_KONG.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/BMW_3_SERIES_TOURING_%28G21%29_HONG_KONG_%282%29.jpg/1280px-BMW_3_SERIES_TOURING_%28G21%29_HONG_KONG_%282%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/BMW_3_SERIES_LWB_SEDAN_%28G28%29_China_%283%29.jpg/1280px-BMW_3_SERIES_LWB_SEDAN_%28G28%29_China_%283%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/BMW_3-Series_Touring_%28G21%29_330i_%282022%29_%2853327402690%29.jpg/1280px-BMW_3-Series_Touring_%28G21%29_330i_%282022%29_%2853327402690%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/BMW_3-Series_Touring_%28G21%29_330i_%282022%29_%2853326073787%29.jpg/1280px-BMW_3-Series_Touring_%28G21%29_330i_%282022%29_%2853326073787%29.jpg"
     ],
     "crediti": [
       {
-        "file": "File:BMW 3 SERIES TOURING (G21) HONG KONG.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Dinkun Chen"
+        "file": "File:BMW 3-Series Touring (G21) 330i (2022) (53327402690).jpg",
+        "licenza": "CC BY 2.0",
+        "autore": "Charles from Port Chester, New York"
       },
       {
-        "file": "File:BMW 3 SERIES TOURING (G21) HONG KONG (2).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Dinkun Chen"
-      },
-      {
-        "file": "File:BMW 3 SERIES LWB SEDAN (G28) China (3).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Dinkun Chen"
+        "file": "File:BMW 3-Series Touring (G21) 330i (2022) (53326073787).jpg",
+        "licenza": "CC BY 2.0",
+        "autore": "Charles from Port Chester, New York"
       }
     ]
   },
   {
     "titolo": "BMW X1 sDrive18d xLine",
-    "descrizione": "BMW X1 sDrive18d xLine, allestimento xLine. Auto a km 0 immatricolata dal concessionario, solo 53 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: cerchi in lega, retrocamera, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto, frenata automatica d'emergenza.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "BMW X1 sDrive18d xLine, allestimento xLine. Auto a km 0 immatricolata dal concessionario, solo 53 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: cerchi in lega, retrocamera, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto, frenata automatica d'emergenza.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 53,
     "carburante": "DIESEL",
     "prezzo": 41100,
     "condizione": "KM_0",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2022_BMW_X1_sDrive18d_M_Sport_MHEV_Automatic_2.0.jpg/1280px-2022_BMW_X1_sDrive18d_M_Sport_MHEV_Automatic_2.0.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/BMW_X1_%282022-present%29.jpg/1280px-BMW_X1_%282022-present%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/2023_BMW_X1_U11_front_view_02.png/1280px-2023_BMW_X1_U11_front_view_02.png"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/2022_BMW_X1_sDrive18d_M_Sport_MHEV_Automatic_2.0_Rear.jpg/1280px-2022_BMW_X1_sDrive18d_M_Sport_MHEV_Automatic_2.0_Rear.jpg"
     ],
     "crediti": [
       {
@@ -588,28 +527,22 @@
         "autore": "Vauxford"
       },
       {
-        "file": "File:BMW X1 (2022-present).jpg",
+        "file": "File:2022 BMW X1 sDrive18d M Sport MHEV Automatic 2.0 Rear.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "ROCostiTheBunnyCZ"
-      },
-      {
-        "file": "File:2023 BMW X1 U11 front view 02.png",
-        "licenza": "CC BY 3.0",
-        "autore": "AutobildEs"
+        "autore": "Vauxford"
       }
     ]
   },
   {
     "titolo": "Mercedes-Benz A 180 d Sport",
-    "descrizione": "Mercedes-Benz A 180 d Sport, allestimento Sport. Usato garantito con 31.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: retrocamera, climatizzatore automatico, sedili riscaldabili, sensori di parcheggio anteriori e posteriori, cruise control adattivo.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Mercedes-Benz A 180 d Sport, allestimento Sport. Usato garantito con 31.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: retrocamera, climatizzatore automatico, sedili riscaldabili, sensori di parcheggio anteriori e posteriori, cruise control adattivo.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 31000,
     "carburante": "DIESEL",
     "prezzo": 26500,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/MERCEDES-BENZ_A-CLASS_%28W177%29_China.jpg/1280px-MERCEDES-BENZ_A-CLASS_%28W177%29_China.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg/1280px-MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg/1280px-2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg/1280px-MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg"
     ],
     "crediti": [
       {
@@ -621,182 +554,165 @@
         "file": "File:MERCEDES-BENZ A-CLASS (W177) China (2).jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Dinkun Chen"
-      },
-      {
-        "file": "File:2019 Mercedes Benz A-Class Hatchback A 200 (10).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Bindydad123"
       }
     ]
   },
   {
     "titolo": "Mercedes-Benz GLA 200 AMG Line",
-    "descrizione": "Mercedes-Benz GLA 200 AMG Line, allestimento AMG Line. Usato garantito con 48.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: cerchi in lega, mantenimento di corsia, fari full LED, frenata automatica d'emergenza, sensori di parcheggio anteriori e posteriori.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Mercedes-Benz GLA 200 AMG Line, allestimento AMG Line. Usato garantito con 48.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: cerchi in lega, mantenimento di corsia, fari full LED, frenata automatica d'emergenza, sensori di parcheggio anteriori e posteriori.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 48000,
     "carburante": "BENZINA",
     "prezzo": 33700,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mercedes-AMG_GLA_35_4MATIC_%28H247%29_Auto_Zuerich_2021_IMG_0269.jpg/1280px-Mercedes-AMG_GLA_35_4MATIC_%28H247%29_Auto_Zuerich_2021_IMG_0269.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2024_Mercedes-Benz_GLA_200_front.jpg/1280px-2024_Mercedes-Benz_GLA_200_front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Mercedes-AMG_GLA_45_S_4MATIC%2B_%28H247%29_1X7A5827.jpg/1280px-Mercedes-AMG_GLA_45_S_4MATIC%2B_%28H247%29_1X7A5827.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_front.jpg/1280px-Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_front.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_rear.jpg/1280px-Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_rear.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_interior.jpg/1280px-Mercedes-Benz_GLA_200d_4MATIC_%28H247%29_interior.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Mercedes-AMG GLA 35 4MATIC (H247) Auto Zuerich 2021 IMG 0269.jpg",
+        "file": "File:Mercedes-Benz GLA 200d 4MATIC (H247) front.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "Tokumeigakarinoaoshima"
       },
       {
-        "file": "File:2024 Mercedes-Benz GLA 200 front.jpg",
+        "file": "File:Mercedes-Benz GLA 200d 4MATIC (H247) rear.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "LuvsMG481"
+        "autore": "Tokumeigakarinoaoshima"
       },
       {
-        "file": "File:Mercedes-AMG GLA 45 S 4MATIC+ (H247) 1X7A5827.jpg",
+        "file": "File:Mercedes-Benz GLA 200d 4MATIC (H247) interior.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "Tokumeigakarinoaoshima"
       }
     ]
   },
   {
     "titolo": "Mercedes-Benz C 220 d Avantgarde",
-    "descrizione": "Mercedes-Benz C 220 d Avantgarde, allestimento Avantgarde. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: cockpit digitale, mantenimento di corsia, frenata automatica d'emergenza, climatizzatore automatico, sedili riscaldabili.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Mercedes-Benz C 220 d Avantgarde, allestimento Avantgarde. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: cockpit digitale, mantenimento di corsia, frenata automatica d'emergenza, climatizzatore automatico, sedili riscaldabili.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "DIESEL",
     "prezzo": 55000,
     "condizione": "NUOVO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2022_Mercedes-Benz_C-Class_C220d_Avantgarde.jpg/1280px-2022_Mercedes-Benz_C-Class_C220d_Avantgarde.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2023_Mercedes-Benz_C-Class_C220d_AMG_Line.jpg/1280px-2023_Mercedes-Benz_C-Class_C220d_AMG_Line.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/2022_Mercedes-Benz_C-Class_C350e_AMG_Dynamic.jpg/1280px-2022_Mercedes-Benz_C-Class_C350e_AMG_Dynamic.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2024_Mercedes-Benz_W206_C180_Avantgarde_in_Mojave_Silver%2C_front_right%2C_07-10-2024.jpg/1280px-2024_Mercedes-Benz_W206_C180_Avantgarde_in_Mojave_Silver%2C_front_right%2C_07-10-2024.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/2024_Mercedes-Benz_W206_C180_Avantgarde_in_Mojave_Silver%2C_rear_right%2C_07-10-2024.jpg/1280px-2024_Mercedes-Benz_W206_C180_Avantgarde_in_Mojave_Silver%2C_rear_right%2C_07-10-2024.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2022 Mercedes-Benz C-Class C220d Avantgarde.jpg",
+        "file": "File:2024 Mercedes-Benz W206 C180 Avantgarde in Mojave Silver, front right, 07-10-2024.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Chanokchon"
+        "autore": "Ethan Llamas"
       },
       {
-        "file": "File:2023 Mercedes-Benz C-Class C220d AMG Line.jpg",
+        "file": "File:2024 Mercedes-Benz W206 C180 Avantgarde in Mojave Silver, rear right, 07-10-2024.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Chanokchon"
-      },
-      {
-        "file": "File:2022 Mercedes-Benz C-Class C350e AMG Dynamic.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Chanokchon"
+        "autore": "Ethan Llamas"
       }
     ]
   },
   {
-    "titolo": "Toyota Yaris 1.5 Hybrid Trend",
-    "descrizione": "Toyota Yaris 1.5 Hybrid Trend, allestimento Trend. Auto a km 0 immatricolata dal concessionario, solo 79 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, cockpit digitale, navigatore con Apple CarPlay e Android Auto, sedili riscaldabili, keyless entry.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "titolo": "Toyota Yaris Cross 1.5 Hybrid Trend",
+    "descrizione": "Toyota Yaris Cross 1.5 Hybrid Trend, allestimento Trend. Auto a km 0 immatricolata dal concessionario, solo 79 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cerchi in lega, cockpit digitale, navigatore con Apple CarPlay e Android Auto, sedili riscaldabili, keyless entry.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 79,
     "carburante": "IBRIDA",
     "prezzo": 20400,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2020-2024_Toyota_Yaris_Hybrid.jpg/1280px-2020-2024_Toyota_Yaris_Hybrid.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/2020_Toyota_Yaris_Design_HEV_CVT_1.5_Front.jpg/1280px-2020_Toyota_Yaris_Design_HEV_CVT_1.5_Front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/2020_Toyota_Yaris_Hybrid_E-Four_%28Red%29.jpg/1280px-2020_Toyota_Yaris_Hybrid_E-Four_%28Red%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Toyota_Yaris_Cross_Hybrid_1X7A6352.jpg/1280px-Toyota_Yaris_Cross_Hybrid_1X7A6352.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Toyota_Yaris_Cross_Hybrid_1X7A6353.jpg/1280px-Toyota_Yaris_Cross_Hybrid_1X7A6353.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Toyota_Yaris_Cross_Hybrid_1X7A6354.jpg/1280px-Toyota_Yaris_Cross_Hybrid_1X7A6354.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2020-2024 Toyota Yaris Hybrid.jpg",
-        "licenza": "CC0",
-        "autore": "TTTNIS"
+        "file": "File:Toyota Yaris Cross Hybrid 1X7A6352.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:2020 Toyota Yaris Design HEV CVT 1.5 Front.jpg",
+        "file": "File:Toyota Yaris Cross Hybrid 1X7A6353.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:2020 Toyota Yaris Hybrid E-Four (Red).jpg",
+        "file": "File:Toyota Yaris Cross Hybrid 1X7A6354.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Comyu"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "Toyota C-HR 1.8 Hybrid Style",
-    "descrizione": "Toyota C-HR 1.8 Hybrid Style, allestimento Style. Usato garantito con 19.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: retrocamera, sedili riscaldabili, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto, fari full LED.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Toyota C-HR 1.8 Hybrid Style, allestimento Style. Usato garantito con 19.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: retrocamera, sedili riscaldabili, sensori di parcheggio anteriori e posteriori, navigatore con Apple CarPlay e Android Auto, fari full LED.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 19500,
     "carburante": "IBRIDA",
     "prezzo": 25400,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/2018_GAC_Toyota_C-HR_2020-02-25_P1.jpg/1280px-2018_GAC_Toyota_C-HR_2020-02-25_P1.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2018_GAC_Toyota_C-HR_2020-02-25_P2.jpg/1280px-2018_GAC_Toyota_C-HR_2020-02-25_P2.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/20200512_Toyota_C-HR_Hybrid.jpg/1280px-20200512_Toyota_C-HR_Hybrid.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_front_view_in_Brunei.jpg/1280px-2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_front_view_in_Brunei.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_rear_view_in_Brunei.jpg/1280px-2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_rear_view_in_Brunei.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_interior_view_in_Brunei.jpg/1280px-2021_Toyota_C-HR_1.8_Mid_Grade_blue_black_interior_view_in_Brunei.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2018 GAC Toyota C-HR 2020-02-25 P1.jpg",
+        "file": "File:2021 Toyota C-HR 1.8 Mid Grade blue black front view in Brunei.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "edo-biscuit"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:2018 GAC Toyota C-HR 2020-02-25 P2.jpg",
+        "file": "File:2021 Toyota C-HR 1.8 Mid Grade blue black rear view in Brunei.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "edo-biscuit"
+        "autore": "AIMHO'S REBELLION 8490s"
       },
       {
-        "file": "File:20200512 Toyota C-HR Hybrid.jpg",
-        "licenza": "CC0",
-        "autore": "Kahvilokki"
+        "file": "File:2021 Toyota C-HR 1.8 Mid Grade blue black interior view in Brunei.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "AIMHO'S REBELLION 8490s"
       }
     ]
   },
   {
     "titolo": "Toyota RAV4 2.5 Hybrid AWD Lounge",
-    "descrizione": "Toyota RAV4 2.5 Hybrid AWD Lounge, allestimento Lounge. Usato garantito con 88.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: climatizzatore automatico, frenata automatica d'emergenza, sensori di parcheggio anteriori e posteriori, mantenimento di corsia, navigatore con Apple CarPlay e Android Auto.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Toyota RAV4 2.5 Hybrid AWD Lounge, allestimento Lounge. Usato garantito con 88.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: climatizzatore automatico, frenata automatica d'emergenza, sensori di parcheggio anteriori e posteriori, mantenimento di corsia, navigatore con Apple CarPlay e Android Auto.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 88500,
     "carburante": "IBRIDA",
     "prezzo": 28800,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Toyota_RAV4_Hybrid%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0518%29.jpg/1280px-Toyota_RAV4_Hybrid%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0518%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/2019_Toyota_RAV4_Hybrid_03.jpg/1280px-2019_Toyota_RAV4_Hybrid_03.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2019_Toyota_RAV4_Hybrid_02.jpg/1280px-2019_Toyota_RAV4_Hybrid_02.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Toyota_RAV4_4x2_XLE_2019_%283%29.jpg/1280px-Toyota_RAV4_4x2_XLE_2019_%283%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Toyota_RAV4_4x2_XLE_2019_%284%29.jpg/1280px-Toyota_RAV4_4x2_XLE_2019_%284%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Toyota_RAV4_4x2_XLE_2019_%287%29.jpg/1280px-Toyota_RAV4_4x2_XLE_2019_%287%29.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Toyota RAV4 Hybrid, GIMS 2019, Le Grand-Saconnex (GIMS0518).jpg",
+        "file": "File:Toyota RAV4 4x2 XLE 2019 (3).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Matti Blume"
+        "autore": "Captainmorlypogi1959"
       },
       {
-        "file": "File:2019 Toyota RAV4 Hybrid 03.jpg",
+        "file": "File:Toyota RAV4 4x2 XLE 2019 (4).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "Captainmorlypogi1959"
       },
       {
-        "file": "File:2019 Toyota RAV4 Hybrid 02.jpg",
+        "file": "File:Toyota RAV4 4x2 XLE 2019 (7).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "autore": "Captainmorlypogi1959"
       }
     ]
   },
   {
     "titolo": "Renault Clio 1.0 TCe Intens",
-    "descrizione": "Renault Clio 1.0 TCe Intens, allestimento Intens. Usato garantito con 58.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, frenata automatica d'emergenza, cerchi in lega, sensori di parcheggio anteriori e posteriori.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Renault Clio 1.0 TCe Intens, allestimento Intens. Usato garantito con 58.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, frenata automatica d'emergenza, cerchi in lega, sensori di parcheggio anteriori e posteriori.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 58500,
     "carburante": "BENZINA",
     "prezzo": 12600,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Renault_Clio_V_Sindelfingen_2020_IMG_2304.jpg/1280px-Renault_Clio_V_Sindelfingen_2020_IMG_2304.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2020_Renault_Clio_Play_TCe_-_999cc_1.0_%28100PS%29_Petrol_-_Iron_Blue_-_05-2024%2C_Front.jpg/1280px-2020_Renault_Clio_Play_TCe_-_999cc_1.0_%28100PS%29_Petrol_-_Iron_Blue_-_05-2024%2C_Front.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/2020_Renault_Clio_Play_TCe_-_999cc_1.0_%28100PS%29_Petrol_-_Iron_Blue_-_05-2024%2C_Rear.jpg/1280px-2020_Renault_Clio_Play_TCe_-_999cc_1.0_%28100PS%29_Petrol_-_Iron_Blue_-_05-2024%2C_Rear.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:Renault Clio V Sindelfingen 2020 IMG 2304.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
       {
         "file": "File:2020 Renault Clio Play TCe - 999cc 1.0 (100PS) Petrol - Iron Blue - 05-2024, Front.jpg",
         "licenza": "CC BY 4.0",
@@ -811,7 +727,7 @@
   },
   {
     "titolo": "Renault Captur 1.6 E-Tech Hybrid",
-    "descrizione": "Renault Captur 1.6 E-Tech Hybrid, allestimento Techno. Auto a km 0 immatricolata dal concessionario, solo 89 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: fari full LED, frenata automatica d'emergenza, cockpit digitale, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Renault Captur 1.6 E-Tech Hybrid, allestimento Techno. Auto a km 0 immatricolata dal concessionario, solo 89 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: fari full LED, frenata automatica d'emergenza, cockpit digitale, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 89,
     "carburante": "IBRIDA",
     "prezzo": 25200,
@@ -841,15 +757,14 @@
   },
   {
     "titolo": "Dacia Sandero Stepway 1.0 ECO-G",
-    "descrizione": "Dacia Sandero Stepway 1.0 ECO-G, allestimento Expression. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nAlimentazione bifuel benzina/GPL di fabbrica per costi di esercizio minimi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, sedili riscaldabili, keyless entry, frenata automatica d'emergenza, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Dacia Sandero Stepway 1.0 ECO-G, allestimento Expression. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nAlimentazione bifuel benzina/GPL di fabbrica per costi di esercizio minimi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, sedili riscaldabili, keyless entry, frenata automatica d'emergenza, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "GPL",
     "prezzo": 18000,
     "condizione": "NUOVO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Front.jpg/1280px-2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear.jpg/1280px-2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear_%281%29.jpg/1280px-2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear_%281%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear.jpg/1280px-2021_Dacia_Sandero_Stepway_Prestige_TCE_1.0_Rear.jpg"
     ],
     "crediti": [
       {
@@ -861,99 +776,88 @@
         "file": "File:2021 Dacia Sandero Stepway Prestige TCE 1.0 Rear.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Vauxford"
-      },
-      {
-        "file": "File:2021 Dacia Sandero Stepway Prestige TCE 1.0 Rear (1).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
       }
     ]
   },
   {
     "titolo": "Dacia Duster 1.0 ECO-G Journey",
-    "descrizione": "Dacia Duster 1.0 ECO-G Journey, allestimento Journey. Auto a km 0 immatricolata dal concessionario, solo 47 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nAlimentazione bifuel benzina/GPL di fabbrica per costi di esercizio minimi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, fari full LED, cruise control adattivo, sedili riscaldabili, sensori di parcheggio anteriori e posteriori.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Dacia Duster 1.0 ECO-G Journey, allestimento Journey. Auto a km 0 immatricolata dal concessionario, solo 47 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nAlimentazione bifuel benzina/GPL di fabbrica per costi di esercizio minimi.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, fari full LED, cruise control adattivo, sedili riscaldabili, sensori di parcheggio anteriori e posteriori.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 47,
     "carburante": "GPL",
     "prezzo": 18200,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Dacia_Duster_II_Facelift_IAA_2021_1X7A0132.jpg/1280px-Dacia_Duster_II_Facelift_IAA_2021_1X7A0132.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2023_Dacia_Duster_1X7A6452.jpg/1280px-2023_Dacia_Duster_1X7A6452.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2023_Dacia_Duster_1X7A6302.jpg/1280px-2023_Dacia_Duster_1X7A6302.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2023_Dacia_Duster_front.png/1280px-2023_Dacia_Duster_front.png",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2023_Dacia_Duster_rear.png/1280px-2023_Dacia_Duster_rear.png",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/2023_Dacia_Duster_interior.png/1280px-2023_Dacia_Duster_interior.png"
     ],
     "crediti": [
       {
-        "file": "File:Dacia Duster II Facelift IAA 2021 1X7A0132.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "file": "File:2023 Dacia Duster front.png",
+        "licenza": "CC BY 3.0",
+        "autore": "Ubi-testet"
       },
       {
-        "file": "File:2023 Dacia Duster 1X7A6452.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "file": "File:2023 Dacia Duster rear.png",
+        "licenza": "CC BY 3.0",
+        "autore": "Ubi-testet"
       },
       {
-        "file": "File:2023 Dacia Duster 1X7A6302.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
+        "file": "File:2023 Dacia Duster interior.png",
+        "licenza": "CC BY 3.0",
+        "autore": "Ubi-testet"
       }
     ]
   },
   {
     "titolo": "Peugeot 208 1.2 PureTech Allure",
-    "descrizione": "Peugeot 208 1.2 PureTech Allure, allestimento Allure. Usato garantito con 78.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, fari full LED, sensori di parcheggio anteriori e posteriori, cockpit digitale, climatizzatore automatico.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Peugeot 208 1.2 PureTech Allure, allestimento Allure. Usato garantito con 78.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, fari full LED, sensori di parcheggio anteriori e posteriori, cockpit digitale, climatizzatore automatico.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 78000,
     "carburante": "BENZINA",
     "prezzo": 14100,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/2020_Peugeot_208_Allure.jpg/1280px-2020_Peugeot_208_Allure.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/2020_Peugeot_208_Active.jpg/1280px-2020_Peugeot_208_Active.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2020_Peugeot_e-208_GT.jpg/1280px-2020_Peugeot_e-208_GT.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/2020_Peugeot_208_B_-_20-06-03_-_02.jpg/1280px-2020_Peugeot_208_B_-_20-06-03_-_02.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2020_Peugeot_208_B_-_20-06-03_-_05.jpg/1280px-2020_Peugeot_208_B_-_20-06-03_-_05.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/2020_Peugeot_208_B_-_20-06-03_-_04.jpg/1280px-2020_Peugeot_208_B_-_20-06-03_-_04.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2020 Peugeot 208 Allure.jpg",
+        "file": "File:2020 Peugeot 208 B - 20-06-03 - 02.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "BarnCas"
       },
       {
-        "file": "File:2020 Peugeot 208 Active.jpg",
+        "file": "File:2020 Peugeot 208 B - 20-06-03 - 05.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "BarnCas"
       },
       {
-        "file": "File:2020 Peugeot e-208 GT.jpg",
+        "file": "File:2020 Peugeot 208 B - 20-06-03 - 04.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "BarnCas"
       }
     ]
   },
   {
     "titolo": "Peugeot 3008 1.5 BlueHDi GT",
-    "descrizione": "Peugeot 3008 1.5 BlueHDi GT, allestimento GT. Usato garantito con 109.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: keyless entry, navigatore con Apple CarPlay e Android Auto, cruise control adattivo, mantenimento di corsia, fari full LED.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Peugeot 3008 1.5 BlueHDi GT, allestimento GT. Usato garantito con 109.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore diesel ideale per chi percorre molti chilometri.\n\nDotazioni principali: keyless entry, navigatore con Apple CarPlay e Android Auto, cruise control adattivo, mantenimento di corsia, fari full LED.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 109000,
     "carburante": "DIESEL",
     "prezzo": 20200,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2021_Peugeot_3008_B_1X7A6965.jpg/1280px-2021_Peugeot_3008_B_1X7A6965.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2021_Peugeot_3008_B_1X7A0344.jpg/1280px-2021_Peugeot_3008_B_1X7A0344.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2021_Peugeot_3008_B_Hybrid4_1X7A5799.jpg/1280px-2021_Peugeot_3008_B_Hybrid4_1X7A5799.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/2021_Peugeot_3008_B_Hybrid4_1X7A0141.jpg/1280px-2021_Peugeot_3008_B_Hybrid4_1X7A0141.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/2021_Peugeot_3008_B_Hybrid4_1X7A0147.jpg/1280px-2021_Peugeot_3008_B_Hybrid4_1X7A0147.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2021 Peugeot 3008 B 1X7A6965.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
-      },
-      {
-        "file": "File:2021 Peugeot 3008 B 1X7A0344.jpg",
+        "file": "File:2021 Peugeot 3008 B Hybrid4 1X7A0141.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:2021 Peugeot 3008 B Hybrid4 1X7A5799.jpg",
+        "file": "File:2021 Peugeot 3008 B Hybrid4 1X7A0147.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       }
@@ -961,15 +865,14 @@
   },
   {
     "titolo": "Citroen C3 1.2 PureTech Shine",
-    "descrizione": "Citroen C3 1.2 PureTech Shine, allestimento Shine. Usato garantito con 33.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, mantenimento di corsia, keyless entry, frenata automatica d'emergenza, fari full LED.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Citroen C3 1.2 PureTech Shine, allestimento Shine. Usato garantito con 33.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, mantenimento di corsia, keyless entry, frenata automatica d'emergenza, fari full LED.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 33000,
     "carburante": "BENZINA",
     "prezzo": 13900,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2021_Citroen_C3_Live_BlueHDi.jpg/1280px-2021_Citroen_C3_Live_BlueHDi.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg"
     ],
     "crediti": [
       {
@@ -981,99 +884,88 @@
         "file": "File:2020 Citroën C3 (3rd generation) DSC 7377.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:2021 Citroen C3 Live BlueHDi.jpg",
-        "licenza": "CC BY-SA 2.0",
-        "autore": "RL GNZLZ"
       }
     ]
   },
   {
     "titolo": "Opel Corsa 1.2 GS Line",
-    "descrizione": "Opel Corsa 1.2 GS Line, allestimento GS Line. Auto a km 0 immatricolata dal concessionario, solo 89 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, cockpit digitale, cerchi in lega, keyless entry, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Opel Corsa 1.2 GS Line, allestimento GS Line. Auto a km 0 immatricolata dal concessionario, solo 89 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, cockpit digitale, cerchi in lega, keyless entry, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 89,
     "carburante": "BENZINA",
     "prezzo": 18400,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2023_Opel_Corsa_F_IMG_9924.jpg/1280px-2023_Opel_Corsa_F_IMG_9924.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/2023_Opel_Corsa_F_IMG_9928.jpg/1280px-2023_Opel_Corsa_F_IMG_9928.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/2023_Opel_Corsa_F_IMG_8477.jpg/1280px-2023_Opel_Corsa_F_IMG_8477.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Opel_Corsa_F.jpg/1280px-Opel_Corsa_F.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Opel_Corsa_F_Rear.jpg/1280px-Opel_Corsa_F_Rear.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2023 Opel Corsa F IMG 9924.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
+        "file": "File:Opel Corsa F.jpg",
+        "licenza": "CC0",
+        "autore": "ClearHam"
       },
       {
-        "file": "File:2023 Opel Corsa F IMG 9928.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
-      },
-      {
-        "file": "File:2023 Opel Corsa F IMG 8477.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
+        "file": "File:Opel Corsa F Rear.jpg",
+        "licenza": "CC0",
+        "autore": "ClearHam"
       }
     ]
   },
   {
     "titolo": "Ford Puma 1.0 EcoBoost Hybrid ST-Line",
-    "descrizione": "Ford Puma 1.0 EcoBoost Hybrid ST-Line, allestimento ST-Line. Usato garantito con 78.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cockpit digitale, climatizzatore automatico, keyless entry, cruise control adattivo, sedili riscaldabili.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Ford Puma 1.0 EcoBoost Hybrid ST-Line, allestimento ST-Line. Usato garantito con 78.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: cockpit digitale, climatizzatore automatico, keyless entry, cruise control adattivo, sedili riscaldabili.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 78000,
     "carburante": "IBRIDA",
     "prezzo": 16800,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/2020_Ford_Puma_Titanium_EcoBoost_Hybrid_1.0_Front.jpg/1280px-2020_Ford_Puma_Titanium_EcoBoost_Hybrid_1.0_Front.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/8b/Ford_Puma_%282020%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2020_Ford_Puma_ST-Line.jpg/1280px-2020_Ford_Puma_ST-Line.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2389.jpg/1280px-Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2389.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2383.jpg/1280px-Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2383.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2395.jpg/1280px-Ford_Puma_%282019%29_Sindelfingen_2020_IMG_2395.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2020 Ford Puma Titanium EcoBoost Hybrid 1.0 Front.jpg",
+        "file": "File:Ford Puma (2019) Sindelfingen 2020 IMG 2389.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:Ford Puma (2020).jpg",
+        "file": "File:Ford Puma (2019) Sindelfingen 2020 IMG 2383.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Matteo Darra vr"
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:2020 Ford Puma ST-Line.jpg",
+        "file": "File:Ford Puma (2019) Sindelfingen 2020 IMG 2395.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "Ford Kuga 2.5 Plug-in Hybrid ST-Line X",
-    "descrizione": "Ford Kuga 2.5 Plug-in Hybrid ST-Line X, allestimento ST-Line X. Usato garantito con 45.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, fari full LED, sedili riscaldabili, keyless entry, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Ford Kuga 2.5 Plug-in Hybrid ST-Line X, allestimento ST-Line X. Usato garantito con 45.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: frenata automatica d'emergenza, fari full LED, sedili riscaldabili, keyless entry, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 45000,
     "carburante": "IBRIDA",
     "prezzo": 30600,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/2020_Ford_Kuga_Titanium.jpg/1280px-2020_Ford_Kuga_Titanium.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Front.jpg/1280px-2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2020_Ford_Kuga_ST-Line_Plug-In_Hybrid_Rear.jpg/1280px-2020_Ford_Kuga_ST-Line_Plug-In_Hybrid_Rear.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Rear.jpg/1280px-2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Rear.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Boot.jpg/1280px-2020_Ford_Kuga_Titanium_Plug-In_Hybrid_Boot.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:2020 Ford Kuga Titanium.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
-      },
       {
         "file": "File:2020 Ford Kuga Titanium Plug-In Hybrid Front.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Vauxford"
       },
       {
-        "file": "File:2020 Ford Kuga ST-Line Plug-In Hybrid Rear.jpg",
+        "file": "File:2020 Ford Kuga Titanium Plug-In Hybrid Rear.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Vauxford"
+      },
+      {
+        "file": "File:2020 Ford Kuga Titanium Plug-In Hybrid Boot.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Vauxford"
       }
@@ -1081,22 +973,16 @@
   },
   {
     "titolo": "Hyundai Tucson 1.6 T-GDI HEV Xline",
-    "descrizione": "Hyundai Tucson 1.6 T-GDI HEV Xline, allestimento Xline. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, cockpit digitale, keyless entry, sedili riscaldabili.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Hyundai Tucson 1.6 T-GDI HEV Xline, allestimento Xline. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, retrocamera, cockpit digitale, keyless entry, sedili riscaldabili.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "IBRIDA",
     "prezzo": 39000,
     "condizione": "NUOVO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Hyundai_Tucson_Plug-in_N-Line_Auto_Zuerich_2021_IMG_0366.jpg/1280px-Hyundai_Tucson_Plug-in_N-Line_Auto_Zuerich_2021_IMG_0366.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2021_Hyundai_Tucson_Elite_N-Line_front.jpg/1280px-2021_Hyundai_Tucson_Elite_N-Line_front.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/2021_Hyundai_Tucson_Elite_N-Line_rear.jpg/1280px-2021_Hyundai_Tucson_Elite_N-Line_rear.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:Hyundai Tucson Plug-in N-Line Auto Zuerich 2021 IMG 0366.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
       {
         "file": "File:2021 Hyundai Tucson Elite N-Line front.jpg",
         "licenza": "CC BY-SA 4.0",
@@ -1111,19 +997,18 @@
   },
   {
     "titolo": "Hyundai i20 1.0 T-GDI Connectline",
-    "descrizione": "Hyundai i20 1.0 T-GDI Connectline, allestimento Connectline. Usato garantito con 37.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sedili riscaldabili, frenata automatica d'emergenza, keyless entry, climatizzatore automatico, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Hyundai i20 1.0 T-GDI Connectline, allestimento Connectline. Usato garantito con 37.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sedili riscaldabili, frenata automatica d'emergenza, keyless entry, climatizzatore automatico, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 37000,
     "carburante": "BENZINA",
     "prezzo": 14500,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Hyundai_i20_%28BC3%29_IMG_3917.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3917.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hyundai_i20_%28BC3%29_IMG_3916.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3916.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hyundai_i20_%28BC3%29_IMG_4165.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_4165.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Hyundai_i20_%28BC3%29_IMG_3911.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3911.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hyundai_i20_%28BC3%29_IMG_3916.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3916.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Hyundai i20 (BC3) IMG 3917.jpg",
+        "file": "File:Hyundai i20 (BC3) IMG 3911.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
@@ -1131,159 +1016,124 @@
         "file": "File:Hyundai i20 (BC3) IMG 3916.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
+      }
+    ]
+  },
+  {
+    "titolo": "Kia Sportage 1.6 T-GDI HEV GT-Line",
+    "descrizione": "Kia Sportage 1.6 T-GDI HEV GT-Line, allestimento GT-Line. Auto a km 0 immatricolata dal concessionario, solo 52 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, keyless entry, cockpit digitale, cerchi in lega, retrocamera.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "km": 52,
+    "carburante": "IBRIDA",
+    "prezzo": 35400,
+    "condizione": "KM_0",
+    "immagini": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Kia_Sportage_%28NQ5%29_1X7A0326.jpg/1280px-Kia_Sportage_%28NQ5%29_1X7A0326.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Kia_Sportage_%28NQ5%29_1X7A0328.jpg/1280px-Kia_Sportage_%28NQ5%29_1X7A0328.jpg"
+    ],
+    "crediti": [
+      {
+        "file": "File:Kia Sportage (NQ5) 1X7A0326.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:Hyundai i20 (BC3) IMG 4165.jpg",
+        "file": "File:Kia Sportage (NQ5) 1X7A0328.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       }
     ]
   },
   {
-    "titolo": "Kia Sportage 1.6 T-GDI HEV GT-Line",
-    "descrizione": "Kia Sportage 1.6 T-GDI HEV GT-Line, allestimento GT-Line. Auto a km 0 immatricolata dal concessionario, solo 52 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, keyless entry, cockpit digitale, cerchi in lega, retrocamera.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
-    "km": 52,
-    "carburante": "IBRIDA",
-    "prezzo": 35400,
-    "condizione": "KM_0",
-    "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Kia_Sportage_R_facelift_Shishi_02_2022-04-26.jpg/1280px-Kia_Sportage_R_facelift_Shishi_02_2022-04-26.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Kia_Sportage_R_facelift_Shishi_01_2022-04-26.jpg/1280px-Kia_Sportage_R_facelift_Shishi_01_2022-04-26.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2023_Kia_Sportage_Hybrid.jpg/1280px-2023_Kia_Sportage_Hybrid.jpg"
-    ],
-    "crediti": [
-      {
-        "file": "File:Kia Sportage R facelift Shishi 02 2022-04-26.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "JamesYoung8167"
-      },
-      {
-        "file": "File:Kia Sportage R facelift Shishi 01 2022-04-26.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "JamesYoung8167"
-      },
-      {
-        "file": "File:2023 Kia Sportage Hybrid.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "UltraTech66"
-      }
-    ]
-  },
-  {
     "titolo": "Kia Niro EV Evolution",
-    "descrizione": "Kia Niro EV Evolution, allestimento Evolution. Usato garantito con 73.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: cerchi in lega, keyless entry, fari full LED, navigatore con Apple CarPlay e Android Auto, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Kia Niro EV Evolution, allestimento Evolution. Usato garantito con 73.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: cerchi in lega, keyless entry, fari full LED, navigatore con Apple CarPlay e Android Auto, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 73000,
     "carburante": "ELETTRICA",
     "prezzo": 23800,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Kia_Niro_EV_%28SG2%29_Automesse_Ludwigsburg_2023_1X7A0082.jpg/1280px-Kia_Niro_EV_%28SG2%29_Automesse_Ludwigsburg_2023_1X7A0082.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Kia_Niro_EV_2021-2022.jpg/1280px-Kia_Niro_EV_2021-2022.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2019_Kia_Niro_EV_First_Edition.jpg/1280px-2019_Kia_Niro_EV_First_Edition.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Kia_e-Niro_%28DE%3B_2018%29_rear.jpg/1280px-Kia_e-Niro_%28DE%3B_2018%29_rear.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kia_e-Niro_%28DE%3B_2018%29.jpg/1280px-Kia_e-Niro_%28DE%3B_2018%29.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Kia Niro EV (SG2) Automesse Ludwigsburg 2023 1X7A0082.jpg",
+        "file": "File:Kia e-Niro (DE; 2018) rear.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander-93"
+        "autore": "Jakub CA"
       },
       {
-        "file": "File:Kia Niro EV 2021-2022.jpg",
+        "file": "File:Kia e-Niro (DE; 2018).jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Nord794ub"
+        "autore": "Jakub CA"
+      }
+    ]
+  },
+  {
+    "titolo": "Nissan Qashqai 1.3 Mild Hybrid N-Connecta",
+    "descrizione": "Nissan Qashqai 1.3 Mild Hybrid N-Connecta, allestimento N-Connecta. Usato garantito con 71.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, sensori di parcheggio anteriori e posteriori, keyless entry, frenata automatica d'emergenza, climatizzatore automatico.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "km": 71000,
+    "carburante": "IBRIDA",
+    "prezzo": 20900,
+    "condizione": "USATO",
+    "immagini": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Nissan_Qashqai_%28J12%29_IMG_4897.jpg/1280px-Nissan_Qashqai_%28J12%29_IMG_4897.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Nissan_Qashqai_%28J12%29_IMG_4900.jpg/1280px-Nissan_Qashqai_%28J12%29_IMG_4900.jpg"
+    ],
+    "crediti": [
+      {
+        "file": "File:Nissan Qashqai (J12) IMG 4897.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:2019 Kia Niro EV First Edition.jpg",
+        "file": "File:Nissan Qashqai (J12) IMG 4900.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
+      }
+    ]
+  },
+  {
+    "titolo": "Skoda Octavia Wagon 1.5 G-TEC Style",
+    "descrizione": "Skoda Octavia Wagon 1.5 G-TEC Style, allestimento Style. Usato garantito con 31.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nAlimentazione a metano di fabbrica, tra le più economiche per chilometro.\n\nDotazioni principali: sedili riscaldabili, keyless entry, sensori di parcheggio anteriori e posteriori, cockpit digitale, fari full LED.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "km": 31000,
+    "carburante": "METANO",
+    "prezzo": 22500,
+    "condizione": "USATO",
+    "immagini": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/2020_Skoda_Octavia_SE_L_First_Edition_TDi_Estate_2.0_Front.jpg/1280px-2020_Skoda_Octavia_SE_L_First_Edition_TDi_Estate_2.0_Front.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/2020_Skoda_Octavia_SE_L_First_Edition_TDi_Estate_2.0_Rear.jpg/1280px-2020_Skoda_Octavia_SE_L_First_Edition_TDi_Estate_2.0_Rear.jpg"
+    ],
+    "crediti": [
+      {
+        "file": "File:2020 Skoda Octavia SE L First Edition TDi Estate 2.0 Front.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Vauxford"
+      },
+      {
+        "file": "File:2020 Skoda Octavia SE L First Edition TDi Estate 2.0 Rear.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Vauxford"
       }
     ]
   },
   {
-    "titolo": "Nissan Qashqai 1.3 Mild Hybrid N-Connecta",
-    "descrizione": "Nissan Qashqai 1.3 Mild Hybrid N-Connecta, allestimento N-Connecta. Usato garantito con 71.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: navigatore con Apple CarPlay e Android Auto, sensori di parcheggio anteriori e posteriori, keyless entry, frenata automatica d'emergenza, climatizzatore automatico.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
-    "km": 71000,
-    "carburante": "IBRIDA",
-    "prezzo": 20900,
-    "condizione": "USATO",
-    "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg/1280px-Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0485_%28edited%29.jpg/1280px-Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0485_%28edited%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg/1280px-Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg"
-    ],
-    "crediti": [
-      {
-        "file": "File:Nissan Qashqai, 2021, in Nissan Global HQ Gallery, front.jpg",
-        "licenza": "CC0",
-        "autore": "Kazyakuruma"
-      },
-      {
-        "file": "File:Nissan Qashqai (J12) Auto Zuerich 2021 IMG 0485 (edited).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Oq10pass"
-      },
-      {
-        "file": "File:Nissan Qashqai (J12) Auto Zuerich 2021 IMG 0487 (edited).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Oq10pass"
-      }
-    ]
-  },
-  {
-    "titolo": "Skoda Octavia Wagon 1.5 G-TEC Style",
-    "descrizione": "Skoda Octavia Wagon 1.5 G-TEC Style, allestimento Style. Usato garantito con 31.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nAlimentazione a metano di fabbrica, tra le piu' economiche per chilometro.\n\nDotazioni principali: sedili riscaldabili, keyless entry, sensori di parcheggio anteriori e posteriori, cockpit digitale, fari full LED.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
-    "km": 31000,
-    "carburante": "METANO",
-    "prezzo": 22500,
-    "condizione": "USATO",
-    "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/20200509_Skoda_Octavia_vRS_Estate.jpg/1280px-20200509_Skoda_Octavia_vRS_Estate.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2020_Skoda_Octavia_vRS_Challenge_TSI_-_1984cc_2.0_%28245PS%29_Petrol_-_White_-_05-2024%2C_Side.jpg/1280px-2020_Skoda_Octavia_vRS_Challenge_TSI_-_1984cc_2.0_%28245PS%29_Petrol_-_White_-_05-2024%2C_Side.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/2020_Skoda_Octavia_vRS_Challenge_TSI_-_1984cc_2.0_%28245PS%29_Petrol_-_White_-_05-2024%2C_Front.jpg/1280px-2020_Skoda_Octavia_vRS_Challenge_TSI_-_1984cc_2.0_%28245PS%29_Petrol_-_White_-_05-2024%2C_Front.jpg"
-    ],
-    "crediti": [
-      {
-        "file": "File:20200509 Skoda Octavia vRS Estate.jpg",
-        "licenza": "CC0",
-        "autore": "Kahvilokki"
-      },
-      {
-        "file": "File:2020 Skoda Octavia vRS Challenge TSI - 1984cc 2.0 (245PS) Petrol - White - 05-2024, Side.jpg",
-        "licenza": "CC BY 4.0",
-        "autore": "Harvey Bold"
-      },
-      {
-        "file": "File:2020 Skoda Octavia vRS Challenge TSI - 1984cc 2.0 (245PS) Petrol - White - 05-2024, Front.jpg",
-        "licenza": "CC BY 4.0",
-        "autore": "Harvey Bold"
-      }
-    ]
-  },
-  {
     "titolo": "Seat Ibiza 1.0 TGI FR",
-    "descrizione": "Seat Ibiza 1.0 TGI FR, allestimento FR. Usato garantito con 31.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nAlimentazione a metano di fabbrica, tra le piu' economiche per chilometro.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, climatizzatore automatico, keyless entry, navigatore con Apple CarPlay e Android Auto, cockpit digitale.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Seat Ibiza 1.0 TGI FR, allestimento FR. Usato garantito con 31.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nAlimentazione a metano di fabbrica, tra le più economiche per chilometro.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, climatizzatore automatico, keyless entry, navigatore con Apple CarPlay e Android Auto, cockpit digitale.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 31500,
     "carburante": "METANO",
     "prezzo": 14900,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Seat_Ibiza_999cc_registered_March_2018.jpg/1280px-Seat_Ibiza_999cc_registered_March_2018.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Seat_Ibiza_FR-_TGI_Genf_2018.jpg/1280px-Seat_Ibiza_FR-_TGI_Genf_2018.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Seat_Ibiza_FR_2018_rear_view.jpg/1280px-Seat_Ibiza_FR_2018_rear_view.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Seat_Ibiza_FR_business_intense_%282018%29_front_view.jpg/1280px-Seat_Ibiza_FR_business_intense_%282018%29_front_view.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Seat_Ibiza_FR_Business_intense_%282018%29_interior.jpg/1280px-Seat_Ibiza_FR_Business_intense_%282018%29_interior.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Seat Ibiza 999cc registered March 2018.jpg",
+        "file": "File:Seat Ibiza FR business intense (2018) front view.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Charles01"
+        "autore": "GalacticCuriosity"
       },
       {
-        "file": "File:Seat Ibiza FR- TGI Genf 2018.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Seat Ibiza FR 2018 rear view.jpg",
+        "file": "File:Seat Ibiza FR Business intense (2018) interior.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "GalacticCuriosity"
       }
@@ -1291,135 +1141,122 @@
   },
   {
     "titolo": "Cupra Formentor 1.5 TSI DSG",
-    "descrizione": "Cupra Formentor 1.5 TSI DSG, allestimento Formentor. Auto a km 0 immatricolata dal concessionario, solo 63 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, cockpit digitale, climatizzatore automatico, cruise control adattivo, keyless entry.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Cupra Formentor 1.5 TSI DSG, allestimento Formentor. Auto a km 0 immatricolata dal concessionario, solo 63 km percorsi: vantaggi del nuovo a un prezzo ridotto.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: retrocamera, cockpit digitale, climatizzatore automatico, cruise control adattivo, keyless entry.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 63,
     "carburante": "BENZINA",
     "prezzo": 34200,
     "condizione": "KM_0",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/2022_Cupra_Formentor_V1_TSi_%2856008%29.jpg/1280px-2022_Cupra_Formentor_V1_TSi_%2856008%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/2024_Cupra_Formentor_VZ3_TSi_4Drive_ABT.jpg/1280px-2024_Cupra_Formentor_VZ3_TSi_4Drive_ABT.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/2022_Cupra_Formentor_1.jpg/1280px-2022_Cupra_Formentor_1.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Cupra_Formentor_Facelift_IMG_0415.jpg/1280px-Cupra_Formentor_Facelift_IMG_0415.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Cupra_Formentor_Facelift_IMG_0417.jpg/1280px-Cupra_Formentor_Facelift_IMG_0417.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Cupra_Formentor_Facelift_IMG_0423.jpg/1280px-Cupra_Formentor_Facelift_IMG_0423.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2022 Cupra Formentor V1 TSi (56008).jpg",
+        "file": "File:Cupra Formentor Facelift IMG 0415.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "Alexander-93"
       },
       {
-        "file": "File:2024 Cupra Formentor VZ3 TSi 4Drive ABT.jpg",
+        "file": "File:Cupra Formentor Facelift IMG 0417.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "Alexander-93"
       },
       {
-        "file": "File:2022 Cupra Formentor 1.jpg",
+        "file": "File:Cupra Formentor Facelift IMG 0423.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "Alexander-93"
       }
     ]
   },
   {
     "titolo": "Tesla Model 3 Long Range AWD",
-    "descrizione": "Tesla Model 3 Long Range AWD, allestimento Long Range. Usato garantito con 49.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: frenata automatica d'emergenza, fari full LED, cruise control adattivo, mantenimento di corsia, cerchi in lega.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Tesla Model 3 Long Range AWD, allestimento Long Range. Usato garantito con 49.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: frenata automatica d'emergenza, fari full LED, cruise control adattivo, mantenimento di corsia, cerchi in lega.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 49000,
     "carburante": "ELETTRICA",
     "prezzo": 33600,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Tesla_Model_3_2021_facelift.jpg/1280px-Tesla_Model_3_2021_facelift.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Tesla_Model_3_CRI_12_2021_2602.jpg/1280px-Tesla_Model_3_CRI_12_2021_2602.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/2021_Tesla_Model_3_Long_Range_AWD_%2865528%29.jpg/1280px-2021_Tesla_Model_3_Long_Range_AWD_%2865528%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2021_Tesla_Model_3%2C_front_11.10.21.jpg/1280px-2021_Tesla_Model_3%2C_front_11.10.21.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/2021_Tesla_Model_3%2C_rear_11.10.21.jpg/1280px-2021_Tesla_Model_3%2C_rear_11.10.21.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Tesla Model 3 2021 facelift.jpg",
+        "file": "File:2021 Tesla Model 3, front 11.10.21.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Jengtingchen"
+        "autore": "Kevauto"
       },
       {
-        "file": "File:Tesla Model 3 CRI 12 2021 2602.jpg",
+        "file": "File:2021 Tesla Model 3, rear 11.10.21.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Mariordo (Mario Roberto Durán Ortiz)"
-      },
-      {
-        "file": "File:2021 Tesla Model 3 Long Range AWD (65528).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Calreyn88"
+        "autore": "Kevauto"
       }
     ]
   },
   {
     "titolo": "Tesla Model Y Long Range AWD",
-    "descrizione": "Tesla Model Y Long Range AWD, allestimento Long Range. Usato garantito con 118.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: cockpit digitale, fari full LED, sedili riscaldabili, mantenimento di corsia, cerchi in lega.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Tesla Model Y Long Range AWD, allestimento Long Range. Usato garantito con 118.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nTrazione 100% elettrica, zero emissioni locali, ricarica rapida in corrente continua.\n\nDotazioni principali: cockpit digitale, fari full LED, sedili riscaldabili, mantenimento di corsia, cerchi in lega.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 118500,
     "carburante": "ELETTRICA",
     "prezzo": 30500,
     "condizione": "USATO",
     "immagini": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9564.jpg/1280px-Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9564.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9565.jpg/1280px-Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9565.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9570.jpg/1280px-Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9570.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Tesla_Model_Y_2025_at_Santana_Row_dllu_02.jpg/1280px-Tesla_Model_Y_2025_at_Santana_Row_dllu_02.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9568.jpg/1280px-Tesla_Model_Y_%282025%29_MYLE_Festival_2025_DSC_9568.jpg"
     ],
     "crediti": [
+      {
+        "file": "File:Tesla Model Y (2025) MYLE Festival 2025 DSC 9564.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
+      },
       {
         "file": "File:Tesla Model Y (2025) MYLE Festival 2025 DSC 9565.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:Tesla Model Y (2025) MYLE Festival 2025 DSC 9570.jpg",
+        "file": "File:Tesla Model Y (2025) MYLE Festival 2025 DSC 9568.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
-      },
-      {
-        "file": "File:Tesla Model Y 2025 at Santana Row dllu 02.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Dllu"
       }
     ]
   },
   {
     "titolo": "Volvo XC40 B4 Plus Dark",
-    "descrizione": "Volvo XC40 B4 Plus Dark, allestimento Plus Dark. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: mantenimento di corsia, sensori di parcheggio anteriori e posteriori, cockpit digitale, keyless entry, climatizzatore automatico.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Volvo XC40 B4 Plus Dark, allestimento Plus Dark. Vettura nuova di fabbrica, pronta consegna, con garanzia ufficiale del costruttore di 24 mesi.\n\nMotorizzazione ibrida con consumi ridotti e accesso alle ZTL dove consentito.\n\nDotazioni principali: mantenimento di corsia, sensori di parcheggio anteriori e posteriori, cockpit digitale, keyless entry, climatizzatore automatico.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 0,
     "carburante": "IBRIDA",
     "prezzo": 46000,
     "condizione": "NUOVO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Volvo_XC40_Recharge_Facelift_Leonberg_2022_1X7A0435.jpg/1280px-Volvo_XC40_Recharge_Facelift_Leonberg_2022_1X7A0435.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/2018_Volvo_XC40_First_Edition_T5_AWD_Automatic_2.0_Front.jpg/1280px-2018_Volvo_XC40_First_Edition_T5_AWD_Automatic_2.0_Front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/VOLVO_XC40_T5_AWD_R-DESIGN_20180420.png/1280px-VOLVO_XC40_T5_AWD_R-DESIGN_20180420.png"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Volvo_XC40_1X7A6311.jpg/1280px-Volvo_XC40_1X7A6311.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Volvo_XC40_1X7A6310.jpg/1280px-Volvo_XC40_1X7A6310.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Volvo XC40 Recharge Facelift Leonberg 2022 1X7A0435.jpg",
+        "file": "File:Volvo XC40 1X7A6311.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:2018 Volvo XC40 First Edition T5 AWD Automatic 2.0 Front.jpg",
+        "file": "File:Volvo XC40 1X7A6310.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Vauxford"
-      },
-      {
-        "file": "File:VOLVO XC40 T5 AWD R-DESIGN 20180420.png",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Project Kei"
+        "autore": "Alexander Migl"
       }
     ]
   },
   {
     "titolo": "Mazda CX-5 2.0 e-Skyactiv-G Exclusive",
-    "descrizione": "Mazda CX-5 2.0 e-Skyactiv-G Exclusive, allestimento Exclusive. Usato garantito con 123.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, frenata automatica d'emergenza, climatizzatore automatico, cockpit digitale, mantenimento di corsia.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Mazda CX-5 2.0 e-Skyactiv-G Exclusive, allestimento Exclusive. Usato garantito con 123.500 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: sensori di parcheggio anteriori e posteriori, frenata automatica d'emergenza, climatizzatore automatico, cockpit digitale, mantenimento di corsia.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 123500,
     "carburante": "BENZINA",
     "prezzo": 18800,
     "condizione": "USATO",
     "immagini": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2022_Mazda_CX-5_2.0_front.jpg/1280px-2022_Mazda_CX-5_2.0_front.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/2022_Mazda_CX-5_2.0_back.jpg/1280px-2022_Mazda_CX-5_2.0_back.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2022_Mazda_CX-5_Preferred_%28facelift%29%2C_rear_6.21.22.jpg/1280px-2022_Mazda_CX-5_Preferred_%28facelift%29%2C_rear_6.21.22.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/2022_Mazda_CX-5_2.0_back.jpg/1280px-2022_Mazda_CX-5_2.0_back.jpg"
     ],
     "crediti": [
       {
@@ -1431,62 +1268,45 @@
         "file": "File:2022 Mazda CX-5 2.0 back.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "ShangTW"
-      },
-      {
-        "file": "File:2022 Mazda CX-5 Preferred (facelift), rear 6.21.22.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Kevauto"
       }
     ]
   },
   {
     "titolo": "Porsche Macan 2.0 PDK",
-    "descrizione": "Porsche Macan 2.0 PDK, allestimento Macan. Usato garantito con 30.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: cockpit digitale, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia, climatizzatore automatico, fari full LED.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "Porsche Macan 2.0 PDK, allestimento Macan. Usato garantito con 30.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: cockpit digitale, navigatore con Apple CarPlay e Android Auto, mantenimento di corsia, climatizzatore automatico, fari full LED.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 30000,
     "carburante": "BENZINA",
     "prezzo": 50700,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Porsche_Macan_S%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS9985%29.jpg/1280px-Porsche_Macan_S%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS9985%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Porsche_Macan_2019_IAA_2019_JM_0555.jpg/1280px-Porsche_Macan_2019_IAA_2019_JM_0555.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/2019-2021_Porsche_Macan_in_Mamba_Green_Metallic.jpg/1280px-2019-2021_Porsche_Macan_in_Mamba_Green_Metallic.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2019_Porsche_Macan_S-A_facelift_2.0_Front.jpg/1280px-2019_Porsche_Macan_S-A_facelift_2.0_Front.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/2019_Porsche_Macan_S-A_facelift_2.0_Rear.jpg/1280px-2019_Porsche_Macan_S-A_facelift_2.0_Rear.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Porsche Macan S, GIMS 2019, Le Grand-Saconnex (GIMS9985).jpg",
+        "file": "File:2019 Porsche Macan S-A facelift 2.0 Front.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Matti Blume"
+        "autore": "Vauxford"
       },
       {
-        "file": "File:Porsche Macan 2019 IAA 2019 JM 0555.jpg",
+        "file": "File:2019 Porsche Macan S-A facelift 2.0 Rear.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Johannes Maximilian"
-      },
-      {
-        "file": "File:2019-2021 Porsche Macan in Mamba Green Metallic.jpg",
-        "licenza": "CC0",
-        "autore": "TheMemerDude"
+        "autore": "Vauxford"
       }
     ]
   },
   {
     "titolo": "MINI Cooper 1.5 Classic 5 porte",
-    "descrizione": "MINI Cooper 1.5 Classic 5 porte, allestimento Classic. Usato garantito con 99.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, cockpit digitale, climatizzatore automatico.\n\nPossibilita' di finanziamento personalizzato e valutazione dell'usato in permuta.",
+    "descrizione": "MINI Cooper 1.5 Classic 5 porte, allestimento Classic. Usato garantito con 99.000 km certificati, tagliandi regolari documentati e garanzia di 12 mesi.\n\nMotore benzina brillante e parco nei consumi.\n\nDotazioni principali: mantenimento di corsia, sedili riscaldabili, navigatore con Apple CarPlay e Android Auto, cockpit digitale, climatizzatore automatico.\n\nPossibilità di finanziamento personalizzato e valutazione dell'usato in permuta.",
     "km": 99000,
     "carburante": "BENZINA",
     "prezzo": 14700,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/2021_Mini_Hatch_%28F55%29_Cooper_S_IMG_5756.jpg/1280px-2021_Mini_Hatch_%28F55%29_Cooper_S_IMG_5756.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2021_Mini_Cooper_Classic_Automatic_1.5_Front.jpg/1280px-2021_Mini_Cooper_Classic_Automatic_1.5_Front.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2021_Mini_Cooper_Classic_Automatic_1.5_Rear.jpg/1280px-2021_Mini_Cooper_Classic_Automatic_1.5_Rear.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:2021 Mini Hatch (F55) Cooper S IMG 5756.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Alexander Migl"
-      },
       {
         "file": "File:2021 Mini Cooper Classic Automatic 1.5 Front.jpg",
         "licenza": "CC BY-SA 4.0",

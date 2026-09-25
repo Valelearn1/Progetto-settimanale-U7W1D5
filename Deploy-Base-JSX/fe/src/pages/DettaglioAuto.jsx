@@ -99,10 +99,13 @@ export default function DettaglioAuto() {
         <span className="truncate font-semibold text-on-surface">{auto.titolo}</span>
       </nav>
 
+      {/* Mobile: foto -> prezzo -> dettagli. Desktop: prezzo nella colonna destra, fisso. */}
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
-        <div className="flex flex-col gap-space-lg lg:col-span-8">
+        <div className="order-1 lg:order-none lg:col-span-8">
           <CarouselGrande immagini={auto.immagini} titolo={auto.titolo} />
+        </div>
 
+        <div className="order-3 flex flex-col gap-space-lg lg:order-none lg:col-span-8">
           <section className="grid grid-cols-2 gap-space-sm sm:grid-cols-4">
             {specifiche.map((s) => (
               <div key={s.etichetta} className="flex flex-col items-center gap-1 rounded-xl bg-surface-container-lowest p-space-md text-center shadow-sm">
@@ -120,7 +123,7 @@ export default function DettaglioAuto() {
           </section>
         </div>
 
-        <aside className="flex flex-col gap-space-md lg:sticky lg:top-32 lg:col-span-4">
+        <aside className="order-2 flex flex-col gap-space-md lg:order-none lg:sticky lg:top-32 lg:col-span-4 lg:col-start-9 lg:row-span-2 lg:row-start-1">
           <div className="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
             <span className="rounded-full bg-secondary px-2.5 py-1 text-label-sm font-bold uppercase text-on-secondary">
               {CONDIZIONI[auto.condizione]}

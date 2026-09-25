@@ -12,7 +12,13 @@ preferiti e avvisi di prezzo via email per utenti registrati, gestione annunci p
   con OAuth2 Resource Server (JWT HS256), Bean Validation, Spring Mail + Thymeleaf (solo template mail).
   Package `it.epicode.base`: `model`, `repository`, `dto`, `service`, `web`, `security`, `mail`, `errore`, `config`.
 - **fe**: React 19, Vite 8, JavaScript (JSX), Tailwind 4, react-router-dom. Alias `@` → `src`.
-  Chiamate HTTP solo da `src/lib/api.js`.
+  Chiamate HTTP solo da `src/lib/api.js`. Design da Stitch (progetto "Car Dealership Web App"): token
+  colori/font in `src/index.css` (`@theme`), icone Material Symbols con la classe `.icona`.
+  Rotte in `src/App.jsx`: sito pubblico dentro `Layout` (header/footer), pagine utente dietro `RichiedeLogin`,
+  `/admin` dietro `RichiedeAdmin` con `AdminLayout` (sidebar). Preferiti/avvisi condivisi via
+  `src/hooks/usePreferitiAvvisi.js`. Filtri, ordinamento e pagina stanno nell'URL.
+- **seed**: `be/src/main/resources/seed/auto.json` (50 annunci, foto Wikimedia Commons con crediti), caricato
+  da `AutoSeeder` solo se la tabella `auto` è vuota. Ogni carousel = foto della stessa vettura.
 - **db**: PostgreSQL locale `salone_auto` (utente `postgres` / `admin`), tabelle create da Hibernate (`ddl-auto: update`).
 
 ## Comandi
@@ -20,6 +26,10 @@ preferiti e avvisi di prezzo via email per utenti registrati, gestione annunci p
 - Test BE: `cd Deploy-Base-JSX/be && sh ./mvnw test` (H2 in memoria, profilo `test`).
   `mvnw` non ha il bit di esecuzione: usare `sh ./mvnw`.
 - Build FE: `cd Deploy-Base-JSX/fe && npm run build`.
+- Admin in locale: avviare il BE con `ADMIN_EMAIL=... ADMIN_PASSWORD=...` (valori scelti dall'utente, mai nei file);
+  con `APP_MAIL_LOG_LINK=true` i link delle mail (reset, disattivazione avviso) compaiono nel log.
+- Nel browser non si inseriscono password nei form: per provare le pagine protette si mette il JWT
+  (ottenuto con `curl` su `/api/auth/login`) in `localStorage['salone.token']`.
 - Il FE gira **sempre sulla 5173** (`strictPort: true`); se è occupata va liberata, non si cambia porta.
 - Porta 8080 (o 5173) occupata: prima capire da cosa (`lsof -ti tcp:<porta> -sTCP:LISTEN` + `ps -p <pid> -o command=`).
   Se non serve (vecchia istanza di questo progetto, app di un altro progetto del corso rimasta accesa)
