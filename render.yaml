@@ -1,70 +1,83 @@
-# Blueprint Render: database + backend + frontend.
-# Su Render: New > Blueprint > repository > Apply.
-# Rinominare app-db / app-be / app-fe con il nome del progetto.
+# Blueprint Render di Mole Motors: database + backend + frontend.
+# Su Render: New > Blueprint > questa repository > Apply.
+# I percorsi partono dalla radice della repo: il progetto sta in Deploy-Base-JSX/.
 
 databases:
-  - name: app-db
-    databaseName: app
-    user: app
+  - name: mole-motors-db
+    databaseName: mole_motors
+    user: mole_motors
     plan: free
     region: frankfurt
 
 services:
   # ---------- Backend: Spring Boot via Docker ----------
   - type: web
-    name: app-be
+    name: mole-motors-be
     runtime: docker
     plan: free
     region: frankfurt
-    rootDir: be
+    rootDir: Deploy-Base-JSX/be
     # dockerfilePath parte da rootDir; buildFilter dalla radice della repo.
     dockerfilePath: ./Dockerfile
     healthCheckPath: /actuator/health
     buildFilter:
       paths:
-        - be/**
+        - Deploy-Base-JSX/be/**
         - render.yaml
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: app-db
+          name: mole-motors-db
           property: connectionString
-      # Origine del FE per il CORS, es. https://app-fe.onrender.com
+      # Indirizzo ESATTO del frontend (CORS), es. https://mole-motors-fe.onrender.com
       - key: ALLOWED_ORIGIN
         sync: false
-      # Indirizzo del FE per i link nelle mail (stesso valore di ALLOWED_ORIGIN)
+      # Lo stesso indirizzo: serve ai link nelle mail
       - key: FE_URL
         sync: false
       # Chiave di firma dei JWT: la genera Render, non sta nella repo
       - key: JWT_SECRET
         generateValue: true
-      # Gmail: indirizzo e password per le app (mai nella repo)
+
+      # ---- Mail ----
+      # Il piano free di Render blocca le porte SMTP 25/465/587 (usate da Gmail):
+      # si usa Brevo sulla porta 2525, che resta aperta. Per usare Gmail serve un
+      # piano a pagamento: MAIL_HOST=smtp.gmail.com, MAIL_PORT=587.
+      - key: MAIL_HOST
+        value: smtp-relay.brevo.com
+      - key: MAIL_PORT
+        value: "2525"
+      # Login SMTP e chiave SMTP di Brevo (mai nella repo)
       - key: MAIL_USERNAME
         sync: false
       - key: MAIL_PASSWORD
         sync: false
+      # Mittente: un indirizzo verificato su Brevo (Senders & IP > Senders)
+      - key: MAIL_FROM
+        sync: false
+
       # Account amministratore creato al primo avvio
       - key: ADMIN_EMAIL
         sync: false
       - key: ADMIN_PASSWORD
         sync: false
-      # 50 annunci di esempio: spenti in produzione. Per una demo online: "true".
+      # 50 annunci di esempio al primo avvio (database vuoto). "false" per un catalogo vuoto.
       - key: APP_SEED_AUTO
-        value: "false"
+        value: "true"
 
   # ---------- Frontend: build Vite statica ----------
   - type: web
-    name: app-fe
+    name: mole-motors-fe
     runtime: static
-    rootDir: fe
+    rootDir: Deploy-Base-JSX/fe
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     buildFilter:
       paths:
-        - fe/**
+        - Deploy-Base-JSX/fe/**
         - render.yaml
     envVars:
-      # Indirizzo del BE, es. https://app-be.onrender.com (senza / finale)
+      # Indirizzo del BE, es. https://mole-motors-be.onrender.com (senza / finale)
       - key: VITE_API_URL
         sync: false
     routes:

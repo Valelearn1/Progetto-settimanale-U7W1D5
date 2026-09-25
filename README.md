@@ -199,24 +199,31 @@ Errori sempre nello stesso formato: `{ "stato": 400, "messaggio": "Dati non vali
 
 ## Deploy su Render
 
-Stesso percorso dei giorni scorsi: `render.yaml` (Blueprint), `be/Dockerfile`, `DatabaseUrl.java`.
+`render.yaml` (nella radice della repo) crea con un Blueprint il database PostgreSQL, il backend (Docker, `Deploy-Base-JSX/be/Dockerfile`) e il frontend statico. `DatabaseUrl.java` traduce la `DATABASE_URL` di Render nel formato JDBC.
 
-1. **New › Blueprint** e scegli la repo: nascono database, backend e frontend.
-2. Imposta le variabili (`sync: false`, senza `/` finale negli indirizzi):
+**Mail online: Brevo sulla porta 2525.** Dal 26 settembre 2025 il piano gratuito di Render blocca le connessioni in uscita verso le porte SMTP 25, 465 e 587 ([changelog Render](https://render.com/changelog/free-web-services-will-no-longer-allow-outbound-traffic-to-smtp-ports)), cioè quelle di Gmail. Per far arrivare le mail anche dal sito online senza piano a pagamento si usa il relay SMTP di [Brevo](https://developers.brevo.com/docs/smtp-integration) sulla porta **2525**, che resta aperta. Il codice è lo stesso: cambiano solo `MAIL_HOST` e `MAIL_PORT`. In locale si può usare Gmail (password per le app); con un backend a pagamento anche online basta `MAIL_HOST=smtp.gmail.com`, `MAIL_PORT=587`.
+
+**Passi**
+1. **Brevo** (gratis, 300 mail/giorno): crea l'account → *SMTP & API* → genera una **chiave SMTP** e annota il **login SMTP** → *Senders & IP › Senders* → aggiungi e verifica l'indirizzo mittente.
+2. **Render** → *New › Blueprint* → scegli questa repo → *Apply*. Nascono `mole-motors-db`, `mole-motors-be`, `mole-motors-fe`.
+3. Imposta le variabili richieste (senza `/` finale negli indirizzi):
 
 | Servizio | Variabile | Valore |
 |---|---|---|
-| backend | `ALLOWED_ORIGIN` | indirizzo **esatto** del frontend, es. `https://app-fe.onrender.com` |
-| backend | `FE_URL` | lo stesso indirizzo (serve ai link nelle mail) |
-| backend | `JWT_SECRET` | generata da Render (≥ 32 caratteri) |
-| backend | `ADMIN_EMAIL` · `ADMIN_PASSWORD` | credenziali dell'amministratore |
-| backend | `MAIL_USERNAME` · `MAIL_PASSWORD` | account Gmail e **password per le app** (mai in `application.yml`) |
-| backend | `APP_SEED_AUTO` | `false` (o `true` per una demo con i 50 annunci) |
-| frontend | `VITE_API_URL` | indirizzo del backend, es. `https://app-be.onrender.com` |
+| backend | `ALLOWED_ORIGIN` | indirizzo **esatto** del frontend, es. `https://mole-motors-fe.onrender.com` |
+| backend | `FE_URL` | lo stesso indirizzo (link nelle mail) |
+| backend | `ADMIN_EMAIL` · `ADMIN_PASSWORD` | credenziali dell'amministratore (scelte da te, **non** quelle di prova) |
+| backend | `MAIL_USERNAME` · `MAIL_PASSWORD` | login SMTP e **chiave SMTP** di Brevo (mai in `application.yml`) |
+| backend | `MAIL_FROM` | il mittente verificato su Brevo |
+| frontend | `VITE_API_URL` | indirizzo del backend, es. `https://mole-motors-be.onrender.com` |
 
-3. **Manual Deploy** di entrambi (`VITE_API_URL` si legge in fase di build).
+Già impostate da `render.yaml`: `DATABASE_URL` (dal database), `JWT_SECRET` (generata da Render), `MAIL_HOST=smtp-relay.brevo.com`, `MAIL_PORT=2525`, `APP_SEED_AUTO=true` (50 annunci demo al primo avvio; `false` per un catalogo vuoto).
 
-`/actuator/health` resta pubblico (health check di Render) e ogni chiamata del frontend passa da `fe/src/lib/api.js`.
+4. **Manual Deploy** del frontend dopo aver impostato `VITE_API_URL` (Vite la legge in fase di build).
+
+**Controlli**: `https://<backend>/actuator/health` → `UP` (resta pubblico: è l'health check di Render); in produzione il backend **non parte** se `JWT_SECRET` manca; il CORS accetta solo `ALLOWED_ORIGIN`; ogni chiamata del frontend passa da `fe/src/lib/api.js`.
+
+**Limiti del piano gratuito**: il backend si addormenta dopo 15 minuti senza richieste (la prima risposta dopo può richiedere ~1 minuto) e il database gratuito scade dopo 30 giorni.
 
 ---
 
@@ -234,9 +241,9 @@ I test passano da HTTP come il browser e coprono i requisiti di sicurezza: ruolo
 ## Struttura del progetto
 
 ```
+render.yaml                 database + backend + frontend su Render (Blueprint)
 Deploy-Base-JSX/            ← il progetto (BE/ e FEJSX/ nella radice sono scheletri iniziali non usati)
   avvia.sh · avvia.cmd      avvio locale con credenziali di prova
-  render.yaml               database + backend + frontend su Render
   be/                       Spring Boot
     src/main/java/it/epicode/base/
       model/  repository/  dto/  service/  web/  security/  mail/  errore/  config/

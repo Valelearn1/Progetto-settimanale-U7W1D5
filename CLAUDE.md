@@ -4,7 +4,7 @@ Mini salone di automobili: catalogo pubblico con ricerca/ordinamento/paginazione
 preferiti e avvisi di prezzo via email per utenti registrati, gestione annunci per l'admin.
 
 ## Struttura
-- **`Deploy-Base-JSX/`** è il progetto vero: `be/` (Spring Boot) + `fe/` (React) + `render.yaml`.
+- **`Deploy-Base-JSX/`** è il progetto vero: `be/` (Spring Boot) + `fe/` (React). `render.yaml` sta nella **radice** della repo (Render lo cerca lì); mail online via Brevo porta 2525 perché Render free blocca 25/465/587.
 - `BE/` e `FEJSX/` alla radice sono scheletri iniziali **non usati**: non modificarli.
 
 ## Stack
