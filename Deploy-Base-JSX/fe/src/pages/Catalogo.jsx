@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useAuth } from '@/auth/AuthContext'
 import { api } from '@/lib/api'
@@ -6,11 +6,23 @@ import { CARBURANTI, CONDIZIONI, ORDINAMENTI, euro, km } from '@/lib/formato'
 import AutoCard from '@/components/AutoCard'
 import Paginazione from '@/components/Paginazione'
 import ModaleAvviso from '@/components/ModaleAvviso'
+// Sfondo animato caricato a parte: motion pesa ~180 KB e non deve rallentare il catalogo.
+const BubbleBackground = lazy(() => import('@/components/animate-ui/BubbleBackground'))
 import { usePreferitiAvvisi } from '@/hooks/usePreferitiAvvisi'
 
 const PER_PAGINA = 10
 const KM_MAX_SLIDER = 150000
 const ORDINE_DEFAULT = 'recenti-desc'
+// Bolle dello sfondo animato (Animate UI) nei toni della palette Petrolio, in "r,g,b".
+// Toni profondi: le bolle chiare passerebbero sotto il testo bianco e lo renderebbero illeggibile.
+const BOLLE_PETROLIO = {
+  first: '14,111,122',
+  second: '32,140,152',
+  third: '19,128,140',
+  fourth: '6,54,60',
+  fifth: '45,160,172',
+  sixth: '90,190,200',
+}
 
 /** Legge dall'URL solo i valori ammessi: il resto viene ignorato. */
 function leggiFiltri(params) {
@@ -235,6 +247,22 @@ export default function Catalogo() {
   )
 }
 
+// ---------- sfondo dell'intestazione: statico subito, bolle animate appena caricate ----------
+
+const CLASSI_HERO = 'relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0b2a30] via-[#0f3d44] to-[#0b2a30] shadow-lg'
+
+function SfondoHero({ children }) {
+  return (
+    <Suspense fallback={<div className={CLASSI_HERO}>{children}</div>}>
+      <BubbleBackground interactive colors={BOLLE_PETROLIO} className={CLASSI_HERO}>
+        {/* Velo scuro tra bolle e testo: il contrasto resta buono ovunque passi la luce. */}
+        <div className="pointer-events-none absolute inset-0 bg-[#0b2a30]/35" aria-hidden="true" />
+        {children}
+      </BubbleBackground>
+    </Suspense>
+  )
+}
+
 // ---------- intestazione: titolo, ricerca, filtri rapidi, ordinamento ----------
 
 function Intestazione({ filtri, totale, aggiorna }) {
@@ -253,17 +281,18 @@ function Intestazione({ filtri, totale, aggiorna }) {
   const pillole = [{ valore: '', etichetta: 'Tutti' }, ...Object.entries(CONDIZIONI).map(([valore, etichetta]) => ({ valore, etichetta }))]
 
   return (
-    <header className="flex w-full flex-col gap-space-md rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+    <SfondoHero>
+    <header className="relative z-10 flex w-full flex-col gap-space-md p-space-lg">
       <div className="flex flex-col justify-between gap-space-md md:flex-row md:items-end">
         <div>
-          <span className="text-label-sm font-bold uppercase tracking-wider text-secondary">
+          <span className="text-label-sm font-bold uppercase tracking-wider text-[#9ae3eb]">
             Inventario Certificato Torino
           </span>
-          <h1 className="mt-1 font-display text-[26px] leading-[34px] font-bold tracking-tight text-on-surface md:text-headline-lg">
+          <h1 className="mt-1 font-display text-[26px] leading-[34px] font-bold tracking-tight text-white md:text-headline-lg">
             Parco Auto Disponibile
           </h1>
-          <p className="mt-0.5 flex flex-wrap items-center gap-2 text-body-md text-on-surface-variant">
-            <span className="inline-flex items-center justify-center rounded-full bg-surface-container px-2 py-0.5 text-label-sm font-semibold text-secondary">
+          <p className="mt-0.5 flex flex-wrap items-center gap-2 text-body-md text-white/80">
+            <span className="inline-flex items-center justify-center rounded-full bg-white/15 px-2 py-0.5 text-label-sm font-semibold text-white backdrop-blur-sm">
               {totale} veicoli
             </span>
             selezionati, periziati e pronti per il ritiro immediato.
@@ -273,7 +302,7 @@ function Intestazione({ filtri, totale, aggiorna }) {
           <label htmlFor="ricerca-catalogo" className="sr-only">
             Cerca per marca o modello
           </label>
-          <span className="icona pointer-events-none absolute top-2.5 left-3 text-outline">search</span>
+          <span className="icona pointer-events-none absolute top-2.5 left-3 text-[#5f7071]">search</span>
           <input
             id="ricerca-catalogo"
             type="search"
@@ -281,14 +310,14 @@ function Intestazione({ filtri, totale, aggiorna }) {
             maxLength={100}
             onChange={(e) => setTesto(e.target.value)}
             placeholder="Cerca per marca o modello (es. Golf, Tesla)..."
-            className="w-full rounded-lg bg-surface-container-low py-2.5 pr-10 pl-10 text-body-md text-on-surface transition-all placeholder:text-outline focus:bg-surface-container-lowest focus:shadow-md focus:outline-none"
+            className="w-full rounded-lg bg-white/95 py-2.5 pr-10 pl-10 text-body-md text-[#10201f] shadow-sm transition-all placeholder:text-[#5f7071] focus:bg-white focus:ring-2 focus:ring-[#6fd3de] focus:outline-none"
           />
           {testo && (
             <button
               type="button"
               onClick={() => setTesto('')}
               aria-label="Azzera testo di ricerca"
-              className="absolute top-2.5 right-3 text-outline transition-colors hover:text-on-surface"
+              className="absolute top-2.5 right-3 text-[#5f7071] transition-colors hover:text-[#10201f]"
             >
               <span className="icona text-sm">close</span>
             </button>
@@ -296,9 +325,9 @@ function Intestazione({ filtri, totale, aggiorna }) {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between gap-space-md rounded-lg bg-surface-container-low p-space-sm">
+      <div className="flex flex-wrap items-center justify-between gap-space-md rounded-lg bg-white/10 p-space-sm backdrop-blur-md">
         <div className="flex items-center gap-space-xs overflow-x-auto py-1">
-          <span className="mr-1 text-label-sm font-semibold uppercase text-outline">Filtro rapido:</span>
+          <span className="mr-1 text-label-sm font-semibold uppercase text-white/70">Filtro rapido:</span>
           {pillole.map((p) => (
             <button
               key={p.valore || 'tutti'}
@@ -307,8 +336,8 @@ function Intestazione({ filtri, totale, aggiorna }) {
               aria-pressed={filtri.condizione === p.valore}
               className={
                 filtri.condizione === p.valore
-                  ? 'rounded-full bg-primary px-space-md py-1 text-label-sm font-semibold whitespace-nowrap text-on-primary shadow-sm'
-                  : 'rounded-full bg-surface-container px-space-md py-1 text-label-sm whitespace-nowrap text-on-surface transition-colors hover:bg-surface-container-high'
+                  ? 'rounded-full bg-white px-space-md py-1 text-label-sm font-semibold whitespace-nowrap text-[#0f2e33] shadow-sm'
+                  : 'rounded-full bg-white/15 px-space-md py-1 text-label-sm whitespace-nowrap text-white transition-colors hover:bg-white/25'
               }
             >
               {p.etichetta}
@@ -316,7 +345,7 @@ function Intestazione({ filtri, totale, aggiorna }) {
           ))}
         </div>
         <div className="ml-auto flex items-center gap-2">
-          <label htmlFor="ordinamento" className="hidden text-label-md whitespace-nowrap text-on-surface-variant sm:inline">
+          <label htmlFor="ordinamento" className="hidden text-label-md whitespace-nowrap text-white/80 sm:inline">
             Ordina per:
           </label>
           <div className="relative">
@@ -324,7 +353,7 @@ function Intestazione({ filtri, totale, aggiorna }) {
               id="ordinamento"
               value={filtri.ordine}
               onChange={(e) => aggiorna({ sort: e.target.value === ORDINE_DEFAULT ? '' : e.target.value })}
-              className="cursor-pointer appearance-none rounded-lg bg-surface-container-lowest py-2 pr-8 pl-3 text-label-md text-on-surface shadow-sm focus:outline-none"
+              className="cursor-pointer appearance-none rounded-lg bg-white py-2 pr-8 pl-3 text-label-md text-[#10201f] shadow-sm focus:ring-2 focus:ring-[#6fd3de] focus:outline-none"
             >
               {ORDINAMENTI.map((o) => (
                 <option key={o.valore} value={o.valore}>
@@ -332,11 +361,12 @@ function Intestazione({ filtri, totale, aggiorna }) {
                 </option>
               ))}
             </select>
-            <span className="icona pointer-events-none absolute top-2 right-2 text-base text-outline">expand_more</span>
+            <span className="icona pointer-events-none absolute top-2 right-2 text-base text-[#5f7071]">expand_more</span>
           </div>
         </div>
       </div>
     </header>
+    </SfondoHero>
   )
 }
 

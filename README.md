@@ -245,5 +245,6 @@ docs/schermate/             immagini di questo README
 
 - Design di partenza generato con **Google Stitch** e adattato (palette «Petrolio», tema scuro).
 - Foto dei veicoli da **Wikimedia Commons** con licenze Creative Commons: autore e licenza di ogni foto sono nel campo `crediti` di `seed/auto.json`.
+- Sfondo animato dell'intestazione del catalogo: **Bubble Background** di [Animate UI](https://animate-ui.com) (© 2025 Elliot Sutton, licenza MIT + Commons Clause), adattato in JSX con i colori Petrolio; caricato a parte (`React.lazy`) e fermo con `prefers-reduced-motion`.
 - Font **Inter** e **Plus Jakarta Sans**, icone **Material Symbols** (Google Fonts).
 - Progetto didattico: showroom, indirizzo e contatti sono dimostrativi.
