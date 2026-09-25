@@ -9,15 +9,15 @@ export default function Privacy() {
   return (
     <Documento sopratitolo="Informativa ai sensi del GDPR (Reg. UE 2016/679)" titolo="Privacy Policy" aggiornato="25 settembre 2026">
       <p>
-        Questa pagina spiega quali dati personali raccoglie il sito <strong>Veloce Motors</strong>, perché, per quanto
-        tempo li conserva e come puoi esercitare i tuoi diritti. Veloce Motors è un progetto didattico: lo showroom e i
+        Questa pagina spiega quali dati personali raccoglie il sito <strong>Mole Motors</strong>, perché, per quanto
+        tempo li conserva e come puoi esercitare i tuoi diritti. Mole Motors è un progetto didattico: lo showroom e i
         veicoli sono dimostrativi.
       </p>
 
       <Sezione titolo="Chi tratta i dati">
         <p>
-          Titolare del trattamento è Veloce Motors, Corso Giulio Cesare 250, 10155 Torino. Per qualsiasi richiesta sui
-          tuoi dati scrivi a <strong>privacy@velocemotors.it</strong> (indirizzo dimostrativo del progetto).
+          Titolare del trattamento è Mole Motors, Corso Giulio Cesare 250, 10155 Torino. Per qualsiasi richiesta sui
+          tuoi dati scrivi a <strong>privacy@molemotors.it</strong> (indirizzo dimostrativo del progetto).
         </p>
       </Sezione>
 

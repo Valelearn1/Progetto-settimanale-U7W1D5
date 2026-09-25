@@ -1,4 +1,4 @@
-# Veloce Motors – codice del progetto
+# Mole Motors – codice del progetto
 
 Qui ci sono backend (`be/`), frontend (`fe/`), script di avvio e `render.yaml`.
 

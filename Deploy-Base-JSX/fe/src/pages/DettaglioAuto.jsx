@@ -7,6 +7,7 @@ import { usePreferitiAvvisi } from '@/hooks/usePreferitiAvvisi'
 import CarouselGrande from '@/components/CarouselGrande'
 import ModaleAvviso from '@/components/ModaleAvviso'
 import { Messaggio } from '@/components/Form'
+import SlidingNumber from '@/components/animate-ui/SlidingNumber'
 
 export default function DettaglioAuto() {
   const { id } = useParams()
@@ -29,12 +30,12 @@ export default function DettaglioAuto() {
         if (!attivo) return
         setAuto(dati)
         setStato('ok')
-        document.title = `${dati.titolo} · Veloce Motors`
+        document.title = `${dati.titolo} · Mole Motors`
       })
       .catch((e) => attivo && setStato(e.stato === 404 || e.stato === 400 ? 'assente' : 'errore'))
     return () => {
       attivo = false
-      document.title = 'Veloce Motors'
+      document.title = 'Mole Motors'
     }
   }, [id])
 
@@ -61,7 +62,7 @@ export default function DettaglioAuto() {
             ? "L'auto potrebbe essere stata venduta o ritirata dal catalogo."
             : 'Riprova tra qualche istante.'}
         </p>
-        <Link to="/" className="rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
+        <Link to="/catalogo" className="rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
           Torna al catalogo
         </Link>
       </div>
@@ -92,7 +93,7 @@ export default function DettaglioAuto() {
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-space-lg px-4 py-space-lg sm:px-margin">
       <nav aria-label="Percorso" className="flex items-center gap-space-xs text-label-md text-on-surface-variant">
-        <Link to="/" className="flex items-center gap-1 hover:text-secondary">
+        <Link to="/catalogo" className="flex items-center gap-1 hover:text-secondary">
           <span className="icona text-base">arrow_back</span> Catalogo
         </Link>
         <span className="text-outline">/</span>
@@ -129,12 +130,12 @@ export default function DettaglioAuto() {
               {CONDIZIONI[auto.condizione]}
             </span>
             <h1 className="mt-space-sm font-display text-headline-md text-on-surface">{auto.titolo}</h1>
-            <p className="text-body-sm text-outline">Showroom Torino · Veloce Certified</p>
+            <p className="text-body-sm text-outline">Showroom Torino · Mole Certified</p>
 
             <div className="my-space-md border-t border-surface-container pt-space-md">
               <span className="block text-label-sm text-outline">Prezzo Chiavi in Mano</span>
               <span className="font-display text-[34px] leading-10 font-extrabold tracking-tight text-on-surface">
-                {euro(auto.prezzo)}
+                <SlidingNumber number={auto.prezzo} prefisso="€" />
               </span>
             </div>
 

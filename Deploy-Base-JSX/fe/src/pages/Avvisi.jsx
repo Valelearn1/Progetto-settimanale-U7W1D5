@@ -126,7 +126,7 @@ export default function Avvisi() {
           <span className="icona text-5xl text-outline">notifications_off</span>
           <h2 className="font-display text-title-md text-on-surface">Nessun avviso impostato</h2>
           <p className="text-body-sm text-on-surface-variant">Apri un'auto e scegli "Avvisami se il prezzo scende".</p>
-          <Link to="/" className="mt-space-sm rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
+          <Link to="/catalogo" className="mt-space-sm rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
             Sfoglia il catalogo
           </Link>
         </div>

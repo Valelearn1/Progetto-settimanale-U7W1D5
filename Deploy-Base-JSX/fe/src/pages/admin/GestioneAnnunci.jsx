@@ -6,6 +6,9 @@ import Paginazione from '@/components/Paginazione'
 import PannelloAnnuncio from '@/components/admin/PannelloAnnuncio'
 import ModalePrezzo from '@/components/admin/ModalePrezzo'
 import { Messaggio } from '@/components/Form'
+import { motion } from 'motion/react'
+import CountingNumber from '@/components/animate-ui/CountingNumber'
+import SlidingNumber from '@/components/animate-ui/SlidingNumber'
 
 const PER_PAGINA = 10
 const STATI = [
@@ -198,22 +201,22 @@ export default function GestioneAnnunci() {
       </div>
 
       <div className="grid grid-cols-1 gap-space-md sm:grid-cols-2 xl:grid-cols-4">
-        <Riquadro etichetta="Totale Auto Showroom" valore={statistiche?.totale} icona="directions_car">
+        <Riquadro etichetta="Totale Auto Showroom" valore={statistiche && <CountingNumber number={statistiche.totale} />} icona="directions_car">
           <span className="flex flex-wrap items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-secondary" /> {statistiche?.pubblicati ?? '…'} Pubblicati
             <span className="text-outline">•</span>
             <span className="h-2 w-2 rounded-full bg-outline" /> {statistiche?.bozze ?? '…'} Bozze
           </span>
         </Riquadro>
-        <Riquadro etichetta="Valore Parco Pubblicato" valore={statistiche && euro(statistiche.valorePubblicati)} icona="account_balance_wallet">
+        <Riquadro etichetta="Valore Parco Pubblicato" valore={statistiche && <CountingNumber number={Number(statistiche.valorePubblicati)} prefisso="€" />} icona="account_balance_wallet">
           Somma dei prezzi degli annunci online
         </Riquadro>
-        <Riquadro etichetta="Avvisi Prezzo Attivi" valore={statistiche?.avvisiAttivi} icona="notifications_active">
+        <Riquadro etichetta="Avvisi Prezzo Attivi" valore={statistiche && <CountingNumber number={statistiche.avvisiAttivi} />} icona="notifications_active">
           <span className="flex items-center gap-1.5">
             <span className="icona text-sm text-secondary">bolt</span> Mail automatica sul ribasso
           </span>
         </Riquadro>
-        <Riquadro etichetta="Prezzo Medio" valore={statistiche && euro(statistiche.prezzoMedio)} icona="query_stats">
+        <Riquadro etichetta="Prezzo Medio" valore={statistiche && <CountingNumber number={Number(statistiche.prezzoMedio)} prefisso="€" />} icona="query_stats">
           Media degli annunci pubblicati
         </Riquadro>
       </div>
@@ -242,11 +245,20 @@ export default function GestioneAnnunci() {
                 type="button"
                 onClick={() => aggiorna({ stato: s.valore })}
                 aria-pressed={filtri.stato === s.valore}
-                className={`rounded-full px-space-md py-1.5 text-label-md whitespace-nowrap transition-all ${
-                  filtri.stato === s.valore ? 'bg-primary-container text-on-secondary' : 'bg-surface-container text-on-surface-variant hover:text-on-surface'
+                className={`relative rounded-full px-space-md py-1.5 text-label-md whitespace-nowrap transition-colors ${
+                  filtri.stato === s.valore ? 'text-on-secondary' : 'bg-surface-container text-on-surface-variant hover:text-on-surface'
                 }`}
               >
-                {s.etichetta} ({statistiche?.[s.chiave] ?? '…'})
+                {filtri.stato === s.valore && (
+                  <motion.span
+                    layoutId="pillola-stato-admin"
+                    className="absolute inset-0 rounded-full bg-primary-container"
+                    transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                  />
+                )}
+                <span className="relative">
+                  {s.etichetta} ({statistiche?.[s.chiave] ?? '…'})
+                </span>
               </button>
             ))}
           </div>
@@ -328,7 +340,7 @@ export default function GestioneAnnunci() {
                   </td>
                   <td className="px-space-md py-space-md whitespace-nowrap">
                     <div className="flex items-center gap-2">
-                      <span className="font-display text-title-md text-on-surface">{euro(a.prezzo)}</span>
+                      <SlidingNumber number={a.prezzo} prefisso="€" className="font-display text-title-md text-on-surface" />
                       <button type="button" onClick={() => setAutoPrezzo(a)} title="Modifica rapida prezzo" aria-label={`Modifica prezzo di ${a.titolo}`} className="rounded p-1 text-secondary transition-colors hover:bg-surface-container">
                         <span className="icona text-base">edit</span>
                       </button>

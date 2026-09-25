@@ -130,6 +130,20 @@
   }
 }
 
+/* Cambio tema animato (ToggleTema): solo il cerchio del nuovo tema, niente dissolvenza di default. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Scorrimento morbido verso le ancore della Home (#come-funziona...), tranne con animazioni ridotte. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Icone Material Symbols: <span class="icona">search</span> */
 .icona {
   font-family: "Material Symbols Outlined";

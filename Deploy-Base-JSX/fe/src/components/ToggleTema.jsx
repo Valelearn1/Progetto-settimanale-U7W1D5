@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { flushSync } from 'react-dom'
 
 const CHIAVE = 'salone.tema'
 
@@ -19,6 +20,11 @@ function salvato() {
 /**
  * Pulsante chiaro/scuro. La scelta resta salvata nel browser; finche' non si
  * sceglie, il sito segue l'impostazione del sistema operativo.
+ *
+ * Il cambio usa la View Transitions API come il Theme Toggler di Animate UI
+ * (primitives/effects/theme-toggler, (c) 2025 Elliot Sutton, MIT + Commons
+ * Clause): qui il nuovo tema si allarga a cerchio partendo dal pulsante.
+ * Senza supporto del browser o con prefers-reduced-motion il cambio e' istantaneo.
  */
 export default function ToggleTema({ className = '' }) {
   const [tema, setTema] = useState(temaIniziale)
@@ -35,14 +41,33 @@ export default function ToggleTema({ className = '' }) {
     return () => media.removeEventListener('change', segui)
   }, [])
 
-  function alterna() {
+  function alterna(e) {
     const nuovo = tema === 'dark' ? 'light' : 'dark'
     try {
       localStorage.setItem(CHIAVE, nuovo)
     } catch {
       // storage non disponibile: vale solo per questa pagina
     }
-    setTema(nuovo)
+    const applica = () => {
+      flushSync(() => setTema(nuovo))
+      document.documentElement.dataset.theme = nuovo
+    }
+    const ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!document.startViewTransition || ridotto) {
+      applica()
+      return
+    }
+    // Centro del pulsante e raggio fino all'angolo piu' lontano dello schermo.
+    const r = e.currentTarget.getBoundingClientRect()
+    const x = r.left + r.width / 2
+    const y = r.top + r.height / 2
+    const raggio = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y))
+    document.startViewTransition(applica).ready.then(() => {
+      document.documentElement.animate(
+        { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${raggio}px at ${x}px ${y}px)`] },
+        { duration: 650, easing: 'ease-in-out', pseudoElement: '::view-transition-new(root)' },
+      )
+    })
   }
 
   const scuro = tema === 'dark'

@@ -23,18 +23,18 @@ export default function Footer() {
             <h4 className="mb-space-sm font-display text-title-md text-on-surface">Navigazione Showroom</h4>
             <ul className="space-y-space-xs text-body-sm text-on-surface-variant">
               <li>
-                <Link to="/?condizione=NUOVO" className="transition-colors hover:text-secondary">
+                <Link to="/catalogo?condizione=NUOVO" className="transition-colors hover:text-secondary">
                   Vetture Nuove
                 </Link>
               </li>
               <li>
-                <Link to="/?condizione=KM_0" className="transition-colors hover:text-secondary">
+                <Link to="/catalogo?condizione=KM_0" className="transition-colors hover:text-secondary">
                   Km 0
                 </Link>
               </li>
               <li>
-                <Link to="/?condizione=USATO" className="transition-colors hover:text-secondary">
-                  Usato Certificato Veloce
+                <Link to="/catalogo?condizione=USATO" className="transition-colors hover:text-secondary">
+                  Usato Certificato Mole
                 </Link>
               </li>
               <li>
@@ -82,7 +82,7 @@ export default function Footer() {
           )}
         </div>
         <div className="flex flex-col items-center justify-between gap-space-sm rounded-xl bg-surface-container-low px-space-lg py-space-md text-label-sm text-outline md:flex-row">
-          <p>© {new Date().getFullYear()} Veloce Motors. Progetto didattico.</p>
+          <p>© {new Date().getFullYear()} Mole Motors. Progetto didattico.</p>
           <nav aria-label="Informazioni legali" className="flex flex-wrap items-center gap-space-md">
             <Link to="/privacy" className="transition-colors hover:text-on-surface">
               Privacy Policy

@@ -38,7 +38,7 @@ export default function Preferiti() {
           <span className="icona text-5xl text-outline">heart_plus</span>
           <h2 className="font-display text-title-md text-on-surface">Nessun preferito</h2>
           <p className="text-body-sm text-on-surface-variant">Tocca il cuore su un'auto del catalogo per salvarla qui.</p>
-          <Link to="/" className="mt-space-sm rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
+          <Link to="/catalogo" className="mt-space-sm rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
             Sfoglia il catalogo
           </Link>
         </div>

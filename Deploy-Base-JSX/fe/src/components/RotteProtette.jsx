@@ -26,7 +26,7 @@ export function RichiedeAdmin() {
         <span className="icona text-5xl text-error">block</span>
         <h1 className="font-display text-headline-md text-on-surface">Accesso negato</h1>
         <p className="text-body-md text-on-surface-variant">Questa area è riservata agli amministratori.</p>
-        <Link to="/" className="rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
+        <Link to="/catalogo" className="rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
           Torna al catalogo
         </Link>
       </div>

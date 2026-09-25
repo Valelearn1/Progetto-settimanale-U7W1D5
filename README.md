@@ -1,10 +1,10 @@
-# Veloce Motors · mini salone auto
+# Mole Motors · mini salone auto
 
 Web app di un salone di automobili a Torino: catalogo pubblico con ricerca e ordinamento, preferiti e **avvisi di prezzo via email** per gli utenti registrati, pannello per l'amministratore che gestisce gli annunci.
 
 **Stack:** React 19 + Vite + Tailwind 4 (frontend) · Spring Boot 4 + Java 25 + PostgreSQL (backend) · JWT · Gmail SMTP · deploy su Render.
 
-![Catalogo](docs/schermate/catalogo.jpg)
+![Home](docs/schermate/home.jpg)
 
 ---
 
@@ -52,7 +52,7 @@ Al primo avvio il backend crea le tabelle, carica **50 annunci di esempio** e i 
 |---|---|---|---|
 | **Visitatore** | nessun accesso | — | sfogliare il catalogo, cercare, filtrare, ordinare, aprire le schede |
 | **Utente** | [Accedi](http://localhost:5173/login) | `prova.catalogo@esempio.it` · `ProvaCatalogo1` | tutto il visitatore + preferiti, avvisi di prezzo, profilo, eliminare l'account |
-| **Amministratore** | [Accedi](http://localhost:5173/login), poi **Area Admin** | `admin@velocemotors.it` · `AdminVeloce2026` | tutto l'utente + creare, modificare, pubblicare annunci e cambiare i prezzi |
+| **Amministratore** | [Accedi](http://localhost:5173/login), poi **Area Admin** | `admin@molemotors.it` · `AdminMole2026` | tutto l'utente + creare, modificare, pubblicare annunci e cambiare i prezzi |
 
 Ci si può anche registrare da [/registrazione](http://localhost:5173/registrazione): un nuovo account è sempre **utente**, mai admin.
 
@@ -60,7 +60,8 @@ Ci si può anche registrare da [/registrazione](http://localhost:5173/registrazi
 
 | Pagina | Indirizzo | Chi la vede |
 |---|---|---|
-| Catalogo (home) | `/` | tutti |
+| Home (presentazione, si scorre) | `/` | tutti |
+| Catalogo | `/catalogo` | tutti |
 | Scheda auto | `/auto/:id` | tutti |
 | Accedi · Registrati | `/login` · `/registrazione` | tutti |
 | Password dimenticata · Nuova password | `/password-dimenticata` · `/reimposta-password?token=…` | tutti (il secondo arriva dalla mail) |
@@ -73,14 +74,26 @@ Ci si può anche registrare da [/registrazione](http://localhost:5173/registrazi
 
 | | |
 |---|---|
+| ![Catalogo](docs/schermate/catalogo.jpg) **Catalogo** – ricerca, filtri, ordinamento, 10 auto per pagina | ![Privacy](docs/schermate/privacy.jpg) **Privacy Policy** – raggiungibile dal footer di ogni pagina |
 | ![Scheda auto](docs/schermate/scheda-auto.jpg) **Scheda auto** – carousel, prezzo, preferiti e avviso | ![Pannello admin](docs/schermate/admin.jpg) **Pannello admin** – statistiche, tabella, prezzo rapido, pubblica/bozza |
 | ![Profilo](docs/schermate/profilo.jpg) **Profilo** – dati personali ed «Elimina il mio account» | ![Tema scuro](docs/schermate/tema-scuro.jpg) **Tema scuro** – pulsante ☀️/🌙 nell'header |
 
 Il sito è **responsive** (mobile, tablet, desktop) e ha il **tema chiaro/scuro**: la scelta resta salvata, altrimenti segue il sistema operativo.
 
+**Animazioni** (da [Animate UI](https://animate-ui.com), adattate):
+- sfondo a bolle nell'apertura della Home e nell'intestazione del catalogo, che segue il mouse;
+- cambio tema con un cerchio che si allarga dal pulsante ☀️/🌙;
+- numeri che contano (auto disponibili, riquadri dell'admin) e prezzi le cui cifre scorrono quando cambiano;
+- card e sezioni che entrano in dissolvenza; pillola che scivola nei filtri rapidi e nelle schede dell'admin.
+
+Tutte le animazioni si fermano se il sistema ha «riduci movimento» attivo (`prefers-reduced-motion`), e il codice che le contiene si carica a parte per non rallentare la prima pagina.
+
 ---
 
 ## Cosa fa l'applicazione
+
+**Home**
+- Pagina di presentazione che si scorre: apertura a tutto schermo, contatore delle auto disponibili, ultimi arrivi, come funzionano gli avvisi, garanzie e invito al catalogo.
 
 **Catalogo (anche senza account)**
 - Ricerca per marca/modello, filtri per condizione (nuovo, km 0, usato), carburante, prezzo e chilometri.
@@ -232,7 +245,8 @@ Deploy-Base-JSX/            ← il progetto (BE/ e FEJSX/ nella radice sono sche
       seed/auto.json        50 annunci di esempio (foto Wikimedia con crediti)
       templates/mail/       mail HTML (Thymeleaf)
   fe/                       React
-    src/pages/              catalogo, scheda, auth, preferiti, avvisi, profilo, admin, privacy, cookie
+    src/pages/              home, catalogo, scheda, auth, preferiti, avvisi, profilo, admin, privacy, cookie
+    src/components/animate-ui/  componenti Animate UI adattati (bolle, numeri, dissolvenze)
     src/components/         header, footer, card, carousel, modali, pannello admin
     src/lib/api.js          unico punto delle chiamate al backend
     src/index.css           token colore (palette Petrolio, tema chiaro/scuro)
@@ -245,6 +259,6 @@ docs/schermate/             immagini di questo README
 
 - Design di partenza generato con **Google Stitch** e adattato (palette «Petrolio», tema scuro).
 - Foto dei veicoli da **Wikimedia Commons** con licenze Creative Commons: autore e licenza di ogni foto sono nel campo `crediti` di `seed/auto.json`.
-- Sfondo animato dell'intestazione del catalogo: **Bubble Background** di [Animate UI](https://animate-ui.com) (© 2025 Elliot Sutton, licenza MIT + Commons Clause), adattato in JSX con i colori Petrolio; caricato a parte (`React.lazy`) e fermo con `prefers-reduced-motion`.
+- Animazioni da **[Animate UI](https://animate-ui.com)** (© 2025 Elliot Sutton, licenza MIT + Commons Clause): Bubble Background, Counting Number, Sliding Number, Fade e la tecnica di Theme Toggler e Tabs, adattati in JSX con i colori Petrolio.
 - Font **Inter** e **Plus Jakarta Sans**, icone **Material Symbols** (Google Fonts).
 - Progetto didattico: showroom, indirizzo e contatti sono dimostrativi.

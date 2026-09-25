@@ -1,4 +1,4 @@
-# Salone auto – guida per Claude
+# Mole Motors (salone auto) – guida per Claude
 
 Mini salone di automobili: catalogo pubblico con ricerca/ordinamento/paginazione,
 preferiti e avvisi di prezzo via email per utenti registrati, gestione annunci per l'admin.
@@ -71,3 +71,5 @@ stampa i link delle mail nel log quando SMTP non è configurato).
 - I commit li scrive e lancia l'utente: proporre solo un messaggio breve.
 - Procedere un pezzo per volta e spiegare a cosa serve ogni comando o file.
 - Il FE va costruito a partire dal design Stitch fornito dall'utente.
+- Nome del sito: **Mole Motors** (ex Veloce Motors). Home di presentazione su `/`, catalogo su `/catalogo`.
+- Animazioni: componenti Animate UI adattati in `fe/src/components/animate-ui/` (licenza MIT + Commons Clause, copyright in testa ai file); sempre fermi con `prefers-reduced-motion` e caricati a parte (pagine con `React.lazy`).

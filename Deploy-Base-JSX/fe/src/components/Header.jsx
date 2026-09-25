@@ -37,13 +37,13 @@ export default function Header() {
 
   // Il campo mostra la ricerca in corso nel catalogo; altrove resta vuoto.
   useEffect(() => {
-    setRicerca(pathname === '/' ? (new URLSearchParams(search).get('q') ?? '') : '')
+    setRicerca(pathname === '/catalogo' ? (new URLSearchParams(search).get('q') ?? '') : '')
   }, [pathname, search])
 
   function cerca(e) {
     e.preventDefault()
     const testo = ricerca.trim()
-    navigate(testo ? `/?q=${encodeURIComponent(testo)}` : '/')
+    navigate(testo ? `/catalogo?q=${encodeURIComponent(testo)}` : '/catalogo')
   }
 
   function logout() {
@@ -52,7 +52,7 @@ export default function Header() {
   }
 
   const voci = [
-    { to: '/', etichetta: 'Catalogo Auto', icona: 'directions_car', end: true },
+    { to: '/catalogo', etichetta: 'Catalogo Auto', icona: 'directions_car' },
     { to: '/preferiti', etichetta: 'I miei Preferiti', icona: 'favorite' },
     { to: '/avvisi', etichetta: 'Avvisi Prezzo', icona: 'notifications_active' },
   ]
@@ -156,6 +156,10 @@ export default function Header() {
         <div id="menu-mobile" className="border-t border-surface-container bg-surface-container-lowest px-4 pb-space-md shadow-lg sm:px-margin lg:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-space-xs pt-space-md">
             {campoRicerca('flex mb-space-sm')}
+            <NavLink to="/" end className={classeVoceMobile}>
+              <span className="icona text-xl">home</span>
+              Home
+            </NavLink>
             {voci.map((v) => (
               <NavLink key={v.to} to={v.to} end={v.end} className={classeVoceMobile}>
                 <span className="icona text-xl">{v.icona}</span>
@@ -200,7 +204,7 @@ export default function Header() {
           <div className="flex items-center gap-space-xs">
             <span className="text-outline">Showroom Torino</span>
             <span className="text-outline">/</span>
-            <span className="font-semibold text-on-surface">Inventario Ufficiale Veloce</span>
+            <span className="font-semibold text-on-surface">Inventario Ufficiale Mole Motors</span>
           </div>
           <span className="hidden sm:inline">Aggiornato oggi</span>
         </div>

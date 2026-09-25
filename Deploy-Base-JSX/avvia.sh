@@ -36,8 +36,8 @@ fi
 
 # ---------- Credenziali di prova (SOLO locale, vedi README) ----------
 # Si possono sovrascrivere dall'esterno; su Render queste variabili non esistono.
-export ADMIN_EMAIL="${ADMIN_EMAIL:-admin@velocemotors.it}"
-export ADMIN_PASSWORD="${ADMIN_PASSWORD:-AdminVeloce2026}"
+export ADMIN_EMAIL="${ADMIN_EMAIL:-admin@molemotors.it}"
+export ADMIN_PASSWORD="${ADMIN_PASSWORD:-AdminMole2026}"
 export DEMO_EMAIL="${DEMO_EMAIL:-prova.catalogo@esempio.it}"
 export DEMO_PASSWORD="${DEMO_PASSWORD:-ProvaCatalogo1}"
 # Senza Gmail configurato, i link delle mail (reset, disattiva avviso) finiscono nel log.

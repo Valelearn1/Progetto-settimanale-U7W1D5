@@ -1,5 +1,6 @@
 import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { motion } from 'motion/react'
 import { useAuth } from '@/auth/AuthContext'
 import { api } from '@/lib/api'
 import { CARBURANTI, CONDIZIONI, ORDINAMENTI, euro, km } from '@/lib/formato'
@@ -9,6 +10,8 @@ import ModaleAvviso from '@/components/ModaleAvviso'
 // Sfondo animato caricato a parte: motion pesa ~180 KB e non deve rallentare il catalogo.
 const BubbleBackground = lazy(() => import('@/components/animate-ui/BubbleBackground'))
 import { usePreferitiAvvisi } from '@/hooks/usePreferitiAvvisi'
+import CountingNumber from '@/components/animate-ui/CountingNumber'
+import { Fades } from '@/components/animate-ui/Fade'
 
 const PER_PAGINA = 10
 const KM_MAX_SLIDER = 150000
@@ -100,7 +103,7 @@ export default function Catalogo() {
   const [autoAvviso, setAutoAvviso] = useState(null)
   const chiudiAvviso = useCallback(() => setAutoAvviso(null), [])
 
-  const richiediLogin = () => navigate('/login', { state: { da: `/?${params.toString()}` } })
+  const richiediLogin = () => navigate('/login', { state: { da: `/catalogo?${params.toString()}` } })
 
   async function alternaPreferito(auto) {
     if (!collegato) return richiediLogin()
@@ -187,8 +190,11 @@ export default function Catalogo() {
             ) : (
               risultato && (
                 <div
+                  // Chiave = auto mostrate: a ogni nuova pagina o filtro le card rientrano a cascata.
+                  key={`${risultato.pagina}-${risultato.contenuto.map((a) => a.id).join(',')}`}
                   className={`grid grid-cols-1 gap-space-md transition-opacity md:grid-cols-2 xl:grid-cols-3 ${caricamento ? 'opacity-60' : ''}`}
                 >
+                  <Fades holdDelay={60} className="h-full">
                   {risultato.contenuto.map((auto) => (
                     <AutoCard
                       key={auto.id}
@@ -200,6 +206,7 @@ export default function Catalogo() {
                       onAvviso={() => apriAvviso(auto)}
                     />
                   ))}
+                  </Fades>
                 </div>
               )
             )}
@@ -222,7 +229,7 @@ export default function Catalogo() {
                   <span className="icona text-3xl">verified_user</span>
                 </div>
                 <div>
-                  <h4 className="font-display text-title-md text-on-surface">Standard di Qualità 'Veloce Certified'</h4>
+                  <h4 className="font-display text-title-md text-on-surface">Standard di Qualità 'Mole Certified'</h4>
                   <p className="max-w-xl text-body-sm text-on-surface-variant">
                     Ogni veicolo viene consegnato con perizia, storico completo dei chilometri, assenza di danni
                     strutturali e sanificazione completa dell'abitacolo.
@@ -292,8 +299,8 @@ function Intestazione({ filtri, totale, aggiorna }) {
             Parco Auto Disponibile
           </h1>
           <p className="mt-0.5 flex flex-wrap items-center gap-2 text-body-md text-white/80">
-            <span className="inline-flex items-center justify-center rounded-full bg-white/15 px-2 py-0.5 text-label-sm font-semibold text-white backdrop-blur-sm">
-              {totale} veicoli
+            <span className="inline-flex items-center justify-center gap-1 rounded-full bg-white/15 px-2 py-0.5 text-label-sm font-semibold text-white backdrop-blur-sm">
+              <CountingNumber number={totale} /> veicoli
             </span>
             selezionati, periziati e pronti per il ritiro immediato.
           </p>
@@ -334,13 +341,21 @@ function Intestazione({ filtri, totale, aggiorna }) {
               type="button"
               onClick={() => aggiorna({ condizione: p.valore })}
               aria-pressed={filtri.condizione === p.valore}
-              className={
+              className={`relative rounded-full px-space-md py-1 text-label-sm whitespace-nowrap transition-colors ${
                 filtri.condizione === p.valore
-                  ? 'rounded-full bg-white px-space-md py-1 text-label-sm font-semibold whitespace-nowrap text-[#0f2e33] shadow-sm'
-                  : 'rounded-full bg-white/15 px-space-md py-1 text-label-sm whitespace-nowrap text-white transition-colors hover:bg-white/25'
-              }
+                  ? 'font-semibold text-[#0f2e33]'
+                  : 'bg-white/15 text-white hover:bg-white/25'
+              }`}
             >
-              {p.etichetta}
+              {/* La pillola bianca scivola sulla voce scelta (tecnica dei Tabs di Animate UI: layoutId). */}
+              {filtri.condizione === p.valore && (
+                <motion.span
+                  layoutId="pillola-condizione"
+                  className="absolute inset-0 rounded-full bg-white shadow-sm"
+                  transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                />
+              )}
+              <span className="relative">{p.etichetta}</span>
             </button>
           ))}
         </div>

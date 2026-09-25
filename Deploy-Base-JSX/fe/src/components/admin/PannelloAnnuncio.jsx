@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { motion } from 'motion/react'
 import { api } from '@/lib/api'
 import { CARBURANTI, CONDIZIONI } from '@/lib/formato'
 import { Messaggio, Pulsante, erroriPerCampo } from '@/components/Form'
@@ -204,6 +205,14 @@ export default function PannelloAnnuncio({ autoId, onChiudi, onSalvato }) {
               }`}
             >
               {s.etichetta}
+              {/* Sottolineatura che scivola sotto la scheda attiva (tecnica dei Tabs di Animate UI). */}
+              {scheda === s.id && (
+                <motion.span
+                  layoutId="sottolineatura-scheda"
+                  className="absolute inset-x-2 -bottom-px h-0.5 rounded-full bg-secondary"
+                  transition={{ type: 'spring', stiffness: 400, damping: 32 }}
+                />
+              )}
               {erroriScheda(s.id) && <span className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-error" />}
             </button>
           ))}

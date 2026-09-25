@@ -8,7 +8,7 @@ export default function NonTrovata() {
       <h1 className="font-display text-headline-md text-on-surface">Pagina non trovata</h1>
       <p className="text-body-md text-on-surface-variant">L'indirizzo che hai aperto non esiste o è stato spostato.</p>
       <Link to="/" className="rounded-lg bg-primary px-space-md py-2 text-label-md font-semibold text-on-primary">
-        Torna al catalogo
+        Torna alla home
       </Link>
     </div>
   )

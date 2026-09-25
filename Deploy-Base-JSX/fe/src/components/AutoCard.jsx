@@ -18,7 +18,7 @@ export default function AutoCard({ auto, immagini, preferito, avviso, onPreferit
   const vai = (delta) => setIndice((i) => (i + delta + foto.length) % foto.length)
 
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:shadow-xl">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-300 hover:shadow-xl">
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
         {foto[indice] ? (
           <img
@@ -99,7 +99,7 @@ export default function AutoCard({ auto, immagini, preferito, avviso, onPreferit
         <div>
           <div className="mb-1 flex items-center justify-between text-label-sm text-outline">
             <span>Showroom Torino</span>
-            <span className="font-semibold text-secondary">Veloce Certified</span>
+            <span className="font-semibold text-secondary">Mole Certified</span>
           </div>
           <h3 className="font-display text-title-md text-on-surface transition-colors group-hover:text-secondary">
             {auto.titolo}
