@@ -70,7 +70,7 @@ public class MailService {
 				"soglia", euro(d.soglia()),
 				"linkAuto", feUrl + "/auto/" + d.autoId(),
 				"linkDisattiva", linkDisattiva));
-		invia(d.email(), "Il prezzo di un'auto che segui e' sceso", html, "avviso-prezzo", linkDisattiva);
+		invia(d.email(), "Il prezzo di un'auto che segui è sceso", html, "avviso-prezzo", linkDisattiva);
 	}
 
 	private void invia(String destinatario, String oggetto, String html, String tipo, String link) {
