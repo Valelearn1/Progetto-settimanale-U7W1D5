@@ -3,6 +3,8 @@ package it.epicode.base.repository;
 import it.epicode.base.model.Preferito;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,4 +21,8 @@ public interface PreferitoRepository extends JpaRepository<Preferito, Long> {
 	List<Preferito> findAllByUtenteIdOrderByCreatoIlDesc(Long utenteId);
 
 	boolean existsByUtenteIdAndAutoId(Long utenteId, Long autoId);
+
+	@Modifying
+	@Query("delete from Preferito p where p.utente.id = :utenteId")
+	int eliminaTuttiPerUtente(Long utenteId);
 }

@@ -2,17 +2,17 @@
 <!-- th:text e th:href fanno l'escape: nome e titolo arrivano come testo, mai come HTML. -->
 <html lang="it" xmlns:th="http://www.thymeleaf.org">
 <head><meta charset="UTF-8"><title>Prezzo sceso</title></head>
-<body style="font-family: Arial, sans-serif; color: #0f172a; background: #f8fafc; padding: 24px;">
-  <div style="max-width: 560px; margin: 0 auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px;">
+<body style="font-family: Arial, sans-serif; color: #10201f; background: #f4f7f7; padding: 24px;">
+  <div style="max-width: 560px; margin: 0 auto; background: #ffffff; border: 1px solid #c8d4d6; border-radius: 8px; padding: 24px;">
     <p>Ciao <span th:text="${nome}">Mario</span>,</p>
     <p>il prezzo di <strong th:text="${titolo}">Auto</strong> &egrave; sceso a
        <strong th:text="${prezzo}">10.000 &euro;</strong>, sotto la soglia di
        <span th:text="${soglia}">11.000 &euro;</span> che avevi impostato.</p>
-    <p><a th:href="${linkAuto}" href="#" style="color: #1d4ed8;">Vedi l'annuncio</a></p>
-    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;">
-    <p style="font-size: 12px; color: #64748b;">
+    <p><a th:href="${linkAuto}" href="#" style="color: #0e6f7a;">Vedi l'annuncio</a></p>
+    <hr style="border: none; border-top: 1px solid #c8d4d6; margin: 24px 0;">
+    <p style="font-size: 12px; color: #5f7071;">
       Non vuoi pi&ugrave; ricevere avvisi per questa auto?
-      <a th:href="${linkDisattiva}" href="#" style="color: #64748b;">Disattiva l'avviso</a>.
+      <a th:href="${linkDisattiva}" href="#" style="color: #5f7071;">Disattiva l'avviso</a>.
     </p>
   </div>
 </body>

@@ -43,7 +43,12 @@ public class AdminSeeder implements ApplicationRunner {
 			return;
 		}
 		String normalizzata = email.trim().toLowerCase(Locale.ROOT);
-		if (utenti.existsByEmail(normalizzata)) {
+		var esistente = utenti.findByEmail(normalizzata);
+		if (esistente.isPresent()) {
+			if (esistente.get().getRuolo() != Ruolo.ADMIN) {
+				// Non lo si promuove: la password l'ha scelta chi si e' registrato, non chi gestisce il server.
+				log.warn("[admin] ADMIN_EMAIL appartiene a un utente normale: nessun admin creato. Usa un'altra email.");
+			}
 			return;
 		}
 		utenti.save(new Utente("Admin", "Salone", normalizzata, passwordEncoder.encode(password), Ruolo.ADMIN));

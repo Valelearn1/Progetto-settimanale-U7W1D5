@@ -5,12 +5,15 @@ import it.epicode.base.dto.ProfiloDto.ProfiloUpdateRequest;
 import it.epicode.base.security.UtenteCorrente;
 import it.epicode.base.service.ProfiloService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 /** Profilo dell'utente collegato: chi sia lo dice il JWT, non l'indirizzo. */
@@ -32,5 +35,12 @@ public class ProfiloController {
 	@PutMapping
 	public ProfiloResponse aggiorna(@AuthenticationPrincipal Jwt jwt, @Valid @RequestBody ProfiloUpdateRequest req) {
 		return profiloService.aggiorna(UtenteCorrente.id(jwt), req);
+	}
+
+	/** Elimina il mio account: si cancella solo quello del token, mai uno scelto dal client. */
+	@DeleteMapping
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void elimina(@AuthenticationPrincipal Jwt jwt) {
+		profiloService.elimina(UtenteCorrente.id(jwt));
 	}
 }

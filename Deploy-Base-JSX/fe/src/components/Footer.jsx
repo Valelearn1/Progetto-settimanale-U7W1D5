@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useAuth } from '@/auth/AuthContext'
 import Logo from '@/components/Logo'
 
 export default function Footer() {
+  const { collegato, isAdmin } = useAuth()
   return (
     <footer className="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="mx-auto max-w-7xl px-4 py-space-xl sm:px-margin">
@@ -51,22 +53,45 @@ export default function Footer() {
               <li>Soddisfatti o Rimborsati 14 Giorni</li>
             </ul>
           </div>
-          <div className="space-y-space-sm">
-            <h4 className="font-display text-title-md text-on-surface">Area Riservata</h4>
-            <p className="text-body-sm text-on-surface-variant">
-              Accesso gestionale per consulenti alle vendite e direzione showroom.
-            </p>
-            <Link
-              to="/admin"
-              className="inline-flex items-center justify-center rounded-lg bg-primary px-space-md py-2 text-label-md text-on-primary transition-all hover:bg-surface-container-high hover:text-on-surface"
-            >
-              Pannello Operativo
-            </Link>
-          </div>
+          {isAdmin ? (
+            <div className="space-y-space-sm">
+              <h4 className="font-display text-title-md text-on-surface">Area Riservata</h4>
+              <p className="text-body-sm text-on-surface-variant">
+                Accesso gestionale per consulenti alle vendite e direzione showroom.
+              </p>
+              <Link
+                to="/admin"
+                className="inline-flex items-center justify-center rounded-lg bg-primary px-space-md py-2 text-label-md text-on-primary transition-all hover:bg-surface-container-high hover:text-on-surface"
+              >
+                Pannello Operativo
+              </Link>
+            </div>
+          ) : (
+            <div className="space-y-space-sm">
+              <h4 className="font-display text-title-md text-on-surface">Il tuo account</h4>
+              <p className="text-body-sm text-on-surface-variant">
+                Salva le auto che ti interessano e ricevi una mail quando il prezzo scende.
+              </p>
+              <Link
+                to={collegato ? '/preferiti' : '/registrazione'}
+                className="inline-flex items-center justify-center rounded-lg bg-primary px-space-md py-2 text-label-md text-on-primary transition-all hover:bg-primary-container"
+              >
+                {collegato ? 'I miei preferiti' : 'Crea un account'}
+              </Link>
+            </div>
+          )}
         </div>
         <div className="flex flex-col items-center justify-between gap-space-sm rounded-xl bg-surface-container-low px-space-lg py-space-md text-label-sm text-outline md:flex-row">
           <p>© {new Date().getFullYear()} Veloce Motors. Progetto didattico.</p>
-          <p>Foto dei veicoli: Wikimedia Commons, licenze CC.</p>
+          <nav aria-label="Informazioni legali" className="flex flex-wrap items-center gap-space-md">
+            <Link to="/privacy" className="transition-colors hover:text-on-surface">
+              Privacy Policy
+            </Link>
+            <Link to="/cookie" className="transition-colors hover:text-on-surface">
+              Cookie Policy
+            </Link>
+            <span>Foto: Wikimedia Commons, licenze CC</span>
+          </nav>
         </div>
       </div>
     </footer>

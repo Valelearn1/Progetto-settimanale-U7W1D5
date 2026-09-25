@@ -12,6 +12,14 @@ spring:
     username: test@salone.local
 
 app:
+  # La suite fa molti login e registrazioni dallo stesso IP: limiti alti qui,
+  # il 429 si verifica in LimitiIntegrationTest con valori bassi.
+  limiti:
+    login-errati-per-email: 1000
+    login-per-ip: 1000
+    reset-per-email: 1000
+    reset-per-ip: 1000
+    registrazioni-per-ip: 1000
   # I test creano i propri annunci: niente catalogo di esempio.
   seed:
     auto: false

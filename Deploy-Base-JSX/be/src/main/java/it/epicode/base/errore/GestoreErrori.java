@@ -63,6 +63,13 @@ public class GestoreErrori {
 		return risposta(HttpStatus.BAD_REQUEST, e.getMessage(), List.of());
 	}
 
+	@ExceptionHandler(TroppiTentativiException.class)
+	ResponseEntity<Errore> troppiTentativi(TroppiTentativiException e) {
+		return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
+				.header("Retry-After", String.valueOf(e.getSecondiAttesa()))
+				.body(new Errore(HttpStatus.TOO_MANY_REQUESTS.value(), e.getMessage(), List.of()));
+	}
+
 	@ExceptionHandler(CredenzialiNonValideException.class)
 	ResponseEntity<Errore> credenziali(CredenzialiNonValideException e) {
 		return risposta(HttpStatus.UNAUTHORIZED, e.getMessage(), List.of());

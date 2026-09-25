@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { euro } from '@/lib/formato'
+import { useTrappolaFocus } from '@/hooks/useTrappolaFocus'
 import { Messaggio, Pulsante } from '@/components/Form'
 
 /** Modifica rapida del prezzo dalla tabella (PATCH, solo admin). */
@@ -8,6 +9,7 @@ export default function ModalePrezzo({ auto, onChiudi, onSalva }) {
   const [errore, setErrore] = useState(null)
   const [invio, setInvio] = useState(false)
   const campo = useRef(null)
+  const finestra = useRef(null)
 
   useEffect(() => {
     campo.current?.select()
@@ -15,6 +17,7 @@ export default function ModalePrezzo({ auto, onChiudi, onSalva }) {
     window.addEventListener('keydown', esc)
     return () => window.removeEventListener('keydown', esc)
   }, [onChiudi])
+  useTrappolaFocus(finestra)
 
   async function salva(e) {
     e.preventDefault()
@@ -40,7 +43,7 @@ export default function ModalePrezzo({ auto, onChiudi, onSalva }) {
       className="fixed inset-0 z-[60] flex items-center justify-center bg-scrim/60 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onChiudi()}
     >
-      <form onSubmit={salva} className="w-full max-w-sm space-y-space-md rounded-xl bg-surface-container-lowest p-space-lg shadow-2xl">
+      <form ref={finestra} onSubmit={salva} className="w-full max-w-sm space-y-space-md rounded-xl bg-surface-container-lowest p-space-lg shadow-2xl">
         <div>
           <h3 id="titolo-prezzo" className="font-display text-title-md text-on-surface">
             Modifica prezzo

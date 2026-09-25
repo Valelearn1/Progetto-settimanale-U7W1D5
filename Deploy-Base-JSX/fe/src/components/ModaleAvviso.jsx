@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useAuth } from '@/auth/AuthContext'
 import { euro } from '@/lib/formato'
+import { useTrappolaFocus } from '@/hooks/useTrappolaFocus'
 
 /**
  * Modale "Imposta Avviso Soglia Prezzo". La mail la manda il server
@@ -14,6 +15,7 @@ export default function ModaleAvviso({ auto, avviso, preferito, onChiudi, onSalv
   const [invio, setInvio] = useState(false)
   const [salvato, setSalvato] = useState(false)
   const campo = useRef(null)
+  const finestra = useRef(null)
 
   useEffect(() => {
     campo.current?.focus()
@@ -21,6 +23,7 @@ export default function ModaleAvviso({ auto, avviso, preferito, onChiudi, onSalv
     window.addEventListener('keydown', esc)
     return () => window.removeEventListener('keydown', esc)
   }, [onChiudi])
+  useTrappolaFocus(finestra)
 
   async function salva(e) {
     e.preventDefault()
@@ -56,7 +59,7 @@ export default function ModaleAvviso({ auto, avviso, preferito, onChiudi, onSalv
       className="fixed inset-0 z-50 flex items-center justify-center bg-scrim/60 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onChiudi()}
     >
-      <div className="w-full max-w-lg overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl">
+      <div ref={finestra} className="w-full max-w-lg overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl">
         <div className="flex items-center justify-between bg-surface-container p-space-lg">
           <div className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-fixed text-secondary">

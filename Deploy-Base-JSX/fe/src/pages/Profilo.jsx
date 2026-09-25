@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '@/auth/AuthContext'
 import { api } from '@/lib/api'
 import { Campo, Messaggio, Pulsante } from '@/components/Form'
 import IntestazionePagina from '@/components/IntestazionePagina'
 
 export default function Profilo() {
-  const { utente, isAdmin, aggiornaUtente } = useAuth()
+  const { utente, isAdmin, aggiornaUtente, esci } = useAuth()
+  const navigate = useNavigate()
+  const [conferma, setConferma] = useState(false)
+  const [eliminazione, setEliminazione] = useState(false)
+  const [erroreElimina, setErroreElimina] = useState(null)
   const [nome, setNome] = useState('')
   const [cognome, setCognome] = useState('')
   const [esito, setEsito] = useState(null)
@@ -36,6 +41,19 @@ export default function Profilo() {
     }
   }
 
+  async function eliminaAccount() {
+    setEliminazione(true)
+    setErroreElimina(null)
+    try {
+      await api.eliminaAccount()
+      esci()
+      navigate('/', { replace: true })
+    } catch (err) {
+      setErroreElimina(err.message)
+      setEliminazione(false)
+    }
+  }
+
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-space-lg px-4 py-space-lg sm:px-margin">
       <IntestazionePagina sopratitolo="Account" titolo="Il mio profilo" />
@@ -61,6 +79,33 @@ export default function Profilo() {
           </Pulsante>
         </form>
       </div>
+      {!isAdmin && (
+        <section className="flex flex-col gap-space-sm rounded-xl border border-error/30 bg-surface-container-lowest p-space-lg shadow-sm">
+          <h2 className="font-display text-title-md text-error">Elimina il mio account</h2>
+          <p className="text-body-sm text-on-surface-variant">
+            Cancella per sempre account, preferiti e avvisi di prezzo: da quel momento non riceverai più nessuna mail.
+            Maggiori dettagli nella <Link to="/privacy" className="font-semibold text-secondary underline">Privacy Policy</Link>.
+          </p>
+          <Messaggio>{erroreElimina}</Messaggio>
+          {conferma ? (
+            <div className="flex flex-col gap-space-sm rounded-lg bg-error-container p-space-md text-on-error-container sm:flex-row sm:items-center sm:justify-between">
+              <span className="text-label-md font-semibold">Sei sicuro? L'operazione non si può annullare.</span>
+              <div className="flex gap-2">
+                <Pulsante type="button" variante="tenue" onClick={() => setConferma(false)} disabled={eliminazione}>
+                  Annulla
+                </Pulsante>
+                <Pulsante type="button" variante="pericolo" onClick={eliminaAccount} caricamento={eliminazione}>
+                  {eliminazione ? 'Eliminazione…' : 'Sì, elimina'}
+                </Pulsante>
+              </div>
+            </div>
+          ) : (
+            <Pulsante type="button" variante="pericolo" className="self-start" onClick={() => setConferma(true)}>
+              <span className="icona text-base">delete_forever</span> Elimina il mio account
+            </Pulsante>
+          )}
+        </section>
+      )}
     </div>
   )
 }

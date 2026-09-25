@@ -55,6 +55,14 @@ stampa i link delle mail nel log quando SMTP non è configurato).
 - FE: niente `dangerouslySetInnerHTML`; la descrizione dell'auto si mostra come testo.
 - Log: niente password, email, token. Si logga l'id utente.
 
+## Consegna (già coperta, non rompere)
+- Mail di avviso: dopo il commit (`@TransactionalEventListener(AFTER_COMMIT)` + `@Async`) e una sola volta
+  (`AvvisoRepository.segnaInviato`: UPDATE ... WHERE inviato = false). Se Gmail fallisce la mail è persa (scelta motivata nel README).
+- Privacy Policy e Cookie Policy (`/privacy`, `/cookie`) linkate dal footer e dalla sidebar admin: se si aggiunge un dato
+  salvato o una chiave in localStorage, aggiornarle.
+- «Elimina il mio account» = `DELETE /api/me` (cancella avvisi, preferiti, token, utente).
+- README nella radice con accessi, credenziali di prova (solo locale, da `avvia.sh`) e schermate in `docs/schermate/`.
+
 ## Convenzioni
 - Nomi di classi, metodi, campi e commenti in **italiano**, come il codice esistente.
 - Nuove regole di sicurezza → aggiungere un caso in `be/src/test/java/it/epicode/base/SicurezzaIntegrationTest.java`.

@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { api } from '@/lib/api'
 import { CARBURANTI, CONDIZIONI } from '@/lib/formato'
 import { Messaggio, Pulsante, erroriPerCampo } from '@/components/Form'
+import { useTrappolaFocus } from '@/hooks/useTrappolaFocus'
 
 const VUOTO = {
   titolo: '',
@@ -98,6 +99,8 @@ export default function PannelloAnnuncio({ autoId, onChiudi, onSalvato }) {
     window.addEventListener('keydown', esc)
     return () => window.removeEventListener('keydown', esc)
   }, [onChiudi])
+  const finestra = useRef(null)
+  useTrappolaFocus(finestra)
 
   const imposta = (campo) => (e) => setDati((d) => ({ ...d, [campo]: e.target.value }))
 
@@ -165,7 +168,7 @@ export default function PannelloAnnuncio({ autoId, onChiudi, onSalvato }) {
   return (
     <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-labelledby="titolo-pannello">
       <div className="absolute inset-0 bg-scrim/50 backdrop-blur-sm" onClick={onChiudi} />
-      <div className="absolute top-0 right-0 flex h-full w-full max-w-2xl flex-col bg-surface-container-lowest shadow-2xl">
+      <div ref={finestra} className="absolute top-0 right-0 flex h-full w-full max-w-2xl flex-col bg-surface-container-lowest shadow-2xl">
         <div className="flex items-center justify-between bg-surface-container p-space-lg">
           <div className="flex items-center gap-space-sm">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-fixed text-secondary">

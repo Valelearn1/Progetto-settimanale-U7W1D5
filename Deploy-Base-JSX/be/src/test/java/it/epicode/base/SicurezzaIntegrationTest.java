@@ -75,6 +75,15 @@ class SicurezzaIntegrationTest {
 	@MockitoBean
 	JavaMailSender mailSender;
 
+	@Autowired
+	it.epicode.base.service.AvvisoService avvisoService;
+
+	@Autowired
+	it.epicode.base.repository.AutoRepository autoRepository;
+
+	@Autowired
+	org.springframework.transaction.support.TransactionTemplate transazione;
+
 	String admin;
 
 	@BeforeEach
@@ -210,6 +219,23 @@ class SicurezzaIntegrationTest {
 	}
 
 	@Test
+	void pubblicareSenzaFotoNonAmmesso() throws Exception {
+		String senzaFoto = """
+				{"titolo":"Senza foto","descrizione":"D","km":0,"carburante":"BENZINA","prezzo":1000,
+				 "condizione":"NUOVO","immagini":[],"stato":"%s"}""";
+		mvc.perform(post("/api/admin/auto").header("Authorization", "Bearer " + admin).contentType(MediaType.APPLICATION_JSON)
+						.content(senzaFoto.formatted("PUBBLICATO")))
+				.andExpect(status().isBadRequest());
+		// In bozza si puo': le foto si aggiungono dopo. Ma pubblicarla resta vietato.
+		String json = mvc.perform(post("/api/admin/auto").header("Authorization", "Bearer " + admin).contentType(MediaType.APPLICATION_JSON)
+						.content(senzaFoto.formatted("BOZZA")))
+				.andExpect(status().isCreated()).andReturn().getResponse().getContentAsString();
+		long id = ((Number) JsonPath.read(json, "$.id")).longValue();
+		mvc.perform(post("/api/admin/auto/{id}/pubblica", id).header("Authorization", "Bearer " + admin))
+				.andExpect(status().isBadRequest());
+	}
+
+	@Test
 	void immaginiSoloHttps() throws Exception {
 		mvc.perform(post("/api/admin/auto").header("Authorization", "Bearer " + admin).contentType(MediaType.APPLICATION_JSON)
 						.content(corpoAuto("X", 1000, 0, "BOZZA", "javascript:alert(1)")))
@@ -297,12 +323,64 @@ class SicurezzaIntegrationTest {
 				.andExpect(status().isNotFound());
 	}
 
+	@Test
+	void dueControlliContemporaneiMandanoUnaSolaMail() throws Exception {
+		long autoId = creaAuto("Concorrenza", 15000, 1000, "PUBBLICATO");
+		String utente = registra(emailNuova());
+		aggiungiPreferito(utente, autoId);
+		creaAvviso(utente, autoId, 14000);
+		// Ribasso scritto direttamente, senza evento: i due controlli li lanciamo noi.
+		transazione.executeWithoutResult(t -> autoRepository.findById(autoId).orElseThrow().setPrezzo(new java.math.BigDecimal("13000")));
+
+		var pool = java.util.concurrent.Executors.newFixedThreadPool(2);
+		var partenza = new java.util.concurrent.CountDownLatch(1);
+		java.util.concurrent.Callable<Integer> controllo = () -> {
+			partenza.await();
+			return avvisoService.preparaNotifiche(autoId).size();
+		};
+		var a = pool.submit(controllo);
+		var b = pool.submit(controllo);
+		partenza.countDown();
+		assertThat(a.get() + b.get()).isEqualTo(1);
+		pool.shutdown();
+	}
+
+	// ---------- elimina account ----------
+
+	@Test
+	void eliminaAccountCancellaTuttoENonArrivanoPiuMail() throws Exception {
+		long autoId = creaAuto("Da seguire", 20000, 1000, "PUBBLICATO");
+		String email = emailNuova();
+		String utente = registra(email);
+		aggiungiPreferito(utente, autoId);
+		creaAvviso(utente, autoId, 19000);
+		Long utenteId = utenti.findByEmail(email).orElseThrow().getId();
+
+		mvc.perform(delete("/api/me").header("Authorization", "Bearer " + utente)).andExpect(status().isNoContent());
+
+		assertThat(utenti.findByEmail(email)).isEmpty();
+		assertThat(avvisi.findAllByUtenteIdOrderByCreatoIlDesc(utenteId)).isEmpty();
+		assertThat(preferiti.findAllByUtenteIdOrderByCreatoIlDesc(utenteId)).isEmpty();
+		mvc.perform(get("/api/me").header("Authorization", "Bearer " + utente)).andExpect(status().isUnauthorized());
+
+		clearInvocations(mailSender);
+		cambiaPrezzo(autoId, 15000);
+		verify(mailSender, timeout(800).times(0)).send(any(MimeMessage.class));
+	}
+
+	@Test
+	void adminNonSiEliminaDalProfilo() throws Exception {
+		mvc.perform(delete("/api/me").header("Authorization", "Bearer " + admin)).andExpect(status().isBadRequest());
+	}
+
 	// ---------- reset password ----------
 
 	@Test
 	void resetPasswordMonousoEConScadenza() throws Exception {
 		String email = emailNuova();
-		registra(email);
+		String vecchioToken = registra(email);
+		// Il reset invalida i token emessi prima: il cambio va almeno al secondo successivo.
+		Thread.sleep(1100);
 		clearInvocations(mailSender);
 
 		mvc.perform(post("/api/auth/password-dimenticata").contentType(MediaType.APPLICATION_JSON)
@@ -319,7 +397,11 @@ class SicurezzaIntegrationTest {
 				.andExpect(status().isNoContent());
 		mvc.perform(post("/api/auth/reimposta-password").contentType(MediaType.APPLICATION_JSON).content(corpo))
 				.andExpect(status().isBadRequest());
-		login(email, "NuovaPassword1");
+		mvc.perform(get("/api/me").header("Authorization", "Bearer " + vecchioToken))
+				.andExpect(status().isUnauthorized());
+		String nuovoToken = login(email, "NuovaPassword1");
+		mvc.perform(get("/api/me").header("Authorization", "Bearer " + nuovoToken))
+				.andExpect(status().isOk());
 
 		// Token scaduto: creato con scadenza nel passato.
 		String scaduto = TokenCasuale.genera();

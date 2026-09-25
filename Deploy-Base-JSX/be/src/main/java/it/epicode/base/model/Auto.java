@@ -15,6 +15,7 @@ import jakarta.persistence.OrderColumn;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import org.hibernate.annotations.BatchSize;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -54,6 +55,8 @@ public class Auto {
 	@Column(nullable = false, length = 12)
 	private StatoAnnuncio stato;
 
+	// BatchSize: le foto di una pagina di annunci arrivano in una query, non una per auto.
+	@BatchSize(size = 50)
 	@ElementCollection(fetch = FetchType.EAGER)
 	@CollectionTable(name = "auto_immagini", joinColumns = @JoinColumn(name = "auto_id"))
 	@OrderColumn(name = "posizione")

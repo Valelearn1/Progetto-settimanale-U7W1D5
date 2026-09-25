@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veloce Motors</title>
     <!-- Tema prima di React: niente lampo chiaro caricando la pagina in tema scuro. -->
-    <script>
-      try {
-        var t = localStorage.getItem('salone.tema')
-        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-        document.documentElement.dataset.theme = t
-      } catch (e) {
-        document.documentElement.dataset.theme = 'light'
-      }
-    </script>
+    <script src="/tema-iniziale.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Font del design Stitch: Inter (testo), Plus Jakarta Sans (titoli), Material Symbols (icone) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

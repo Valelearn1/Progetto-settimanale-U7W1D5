@@ -7,8 +7,8 @@ import manager from '@/assets/manager.jpg'
 
 const classeVoce = ({ isActive }) =>
   isActive
-    ? 'px-space-md py-2 rounded-lg bg-primary-container text-on-secondary text-label-md font-semibold'
-    : 'px-space-md py-2 rounded-lg text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors'
+    ? 'whitespace-nowrap px-space-md py-2 rounded-lg bg-primary-container text-on-secondary text-label-md font-semibold'
+    : 'whitespace-nowrap px-space-md py-2 rounded-lg text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors'
 
 const classeVoceMobile = ({ isActive }) =>
   isActive
@@ -34,6 +34,11 @@ export default function Header() {
 
   // Cambiando pagina il menu mobile si chiude.
   useEffect(() => setMenuAperto(false), [pathname, search])
+
+  // Il campo mostra la ricerca in corso nel catalogo; altrove resta vuoto.
+  useEffect(() => {
+    setRicerca(pathname === '/' ? (new URLSearchParams(search).get('q') ?? '') : '')
+  }, [pathname, search])
 
   function cerca(e) {
     e.preventDefault()
@@ -86,7 +91,7 @@ export default function Header() {
           {isAdmin && (
             <NavLink
               to="/admin"
-              className="ml-space-sm rounded-full bg-secondary-fixed px-space-md py-1.5 text-label-sm uppercase tracking-wide text-on-secondary-fixed transition-all hover:bg-secondary hover:text-on-secondary"
+              className="ml-space-sm whitespace-nowrap rounded-full bg-secondary-fixed px-space-md py-1.5 text-label-sm uppercase tracking-wide text-on-secondary-fixed transition-all hover:bg-secondary hover:text-on-secondary"
             >
               Area Admin
             </NavLink>
@@ -99,7 +104,7 @@ export default function Header() {
             <>
               <Link to="/profilo" className="flex items-center gap-space-sm rounded-lg p-1 hover:bg-surface-container">
                 <Avatar utente={utente} isAdmin={isAdmin} />
-                <span className="hidden flex-col text-left md:flex">
+                <span className="hidden flex-col text-left md:flex lg:hidden xl:flex">
                   <span className="text-label-md leading-tight text-on-surface">
                     {utente ? `${utente.nome} ${utente.cognome}` : ''}
                   </span>

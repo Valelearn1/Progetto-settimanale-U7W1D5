@@ -23,10 +23,11 @@ export class ErroreApi extends Error {
   }
 }
 
-async function chiama(percorso, { metodo = 'GET', corpo, segnale } = {}) {
+async function chiama(percorso, { metodo = 'GET', corpo, segnale, anonima = false } = {}) {
   const headers = {}
   if (corpo !== undefined) headers['Content-Type'] = 'application/json'
-  if (token) headers.Authorization = `Bearer ${token}`
+  const tokenInviato = anonima ? null : token
+  if (tokenInviato) headers.Authorization = `Bearer ${tokenInviato}`
 
   const risposta = await fetch(`${BASE}${percorso}`, {
     method: metodo,
@@ -42,8 +43,13 @@ async function chiama(percorso, { metodo = 'GET', corpo, segnale } = {}) {
     } catch {
       // corpo non JSON: resta il messaggio generico
     }
-    // Token scaduto o non valido: si esce, l'utente rifara' il login.
-    if (risposta.status === 401 && token) alNonAutenticato()
+    // Token scaduto o non piu' valido (es. password cambiata): si esce e, se era
+    // una lettura, la si ripete senza token. Le pagine pubbliche restano visibili.
+    if (risposta.status === 401 && tokenInviato) {
+      token = null
+      alNonAutenticato()
+      if (metodo === 'GET') return chiama(percorso, { metodo, segnale, anonima: true })
+    }
     throw new ErroreApi(risposta.status, dati.messaggio || `Errore ${risposta.status}`, dati.dettagli || [])
   }
   return risposta.status === 204 ? undefined : risposta.json()
@@ -72,6 +78,7 @@ export const api = {
   // profilo
   profilo: () => chiama('/api/me'),
   aggiornaProfilo: (nome, cognome) => chiama('/api/me', { metodo: 'PUT', corpo: { nome, cognome } }),
+  eliminaAccount: () => chiama('/api/me', { metodo: 'DELETE' }),
 
   // pannello admin
   statistiche: () => chiama('/api/admin/auto/statistiche'),

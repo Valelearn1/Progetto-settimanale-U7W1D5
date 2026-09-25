@@ -41,6 +41,9 @@ server:
   # Render assegna la porta in PORT.
   port: ${PORT:8080}
   shutdown: graceful
+  # Dietro il proxy di Render: l'IP del client arriva in X-Forwarded-For.
+  # "native" lo accetta solo da proxy interni, quindi non si puo' falsificare.
+  forward-headers-strategy: native
   error:
     include-message: never
     include-stacktrace: never
@@ -60,6 +63,15 @@ management:
       enabled: false
 
 app:
+  # Render imposta RENDER=true: in produzione la chiave JWT di sviluppo e' vietata.
+  produzione: ${RENDER:false}
+  # Tentativi ammessi prima del 429 (login in 15 minuti, il resto in un'ora).
+  limiti:
+    login-errati-per-email: 5
+    login-per-ip: 30
+    reset-per-email: 3
+    reset-per-ip: 10
+    registrazioni-per-ip: 10
   cors:
     # In produzione: ALLOWED_ORIGIN=https://<fe>.onrender.com (piu' valori separati da virgola).
     allowed-origins: ${ALLOWED_ORIGIN:http://localhost:5173,http://localhost:4173}
@@ -77,6 +89,10 @@ app:
   admin:
     email: ${ADMIN_EMAIL:}
     password: ${ADMIN_PASSWORD:}
+  # Utente normale di prova: solo in locale (avvia.sh), mai su Render.
+  demo:
+    email: ${DEMO_EMAIL:}
+    password: ${DEMO_PASSWORD:}
   mail:
     mittente: ${MAIL_FROM:${MAIL_USERNAME:no-reply@salone.local}}
     # Solo per provare in locale senza SMTP: stampa il link (mai l'indirizzo).

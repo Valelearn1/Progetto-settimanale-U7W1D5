@@ -111,6 +111,7 @@ public class AutoService {
 	public AutoResponse crea(AutoRequest req) {
 		Auto auto = new Auto();
 		copia(req, auto);
+		verificaPubblicabile(auto);
 		return AutoResponse.da(autoRepository.save(auto));
 	}
 
@@ -120,6 +121,7 @@ public class AutoService {
 		BigDecimal prezzoPrima = auto.getPrezzo();
 		StatoAnnuncio statoPrima = auto.getStato();
 		copia(req, auto);
+		verificaPubblicabile(auto);
 		notificaSeServe(auto, prezzoPrima, statoPrima);
 		return AutoResponse.da(auto);
 	}
@@ -138,6 +140,7 @@ public class AutoService {
 		Auto auto = trova(id);
 		StatoAnnuncio statoPrima = auto.getStato();
 		auto.setStato(stato);
+		verificaPubblicabile(auto);
 		notificaSeServe(auto, auto.getPrezzo(), statoPrima);
 		return AutoResponse.da(auto);
 	}
@@ -187,6 +190,13 @@ public class AutoService {
 		auto.setCondizione(req.condizione());
 		auto.setImmagini(req.immagini().stream().map(String::trim).toList());
 		auto.setStato(req.stato());
+	}
+
+	/** Un annuncio pubblicato deve avere almeno una foto (il carousel non puo' essere vuoto). */
+	private static void verificaPubblicabile(Auto auto) {
+		if (auto.isPubblicato() && auto.getImmagini().isEmpty()) {
+			throw new RichiestaNonValidaException("Per pubblicare un annuncio serve almeno una foto");
+		}
 	}
 
 	/** Gli avvisi si ricontrollano se e' cambiato il prezzo o se l'annuncio e' appena stato pubblicato. */

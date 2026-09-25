@@ -31,15 +31,13 @@ public class AvvisoService {
 	private final PreferitoRepository preferiti;
 	private final AutoRepository autoRepository;
 	private final UtenteRepository utenti;
-	private final MailService mail;
 
 	public AvvisoService(AvvisoRepository avvisi, PreferitoRepository preferiti, AutoRepository autoRepository,
-						 UtenteRepository utenti, MailService mail) {
+						 UtenteRepository utenti) {
 		this.avvisi = avvisi;
 		this.preferiti = preferiti;
 		this.autoRepository = autoRepository;
 		this.utenti = utenti;
-		this.mail = mail;
 	}
 
 	@Transactional(readOnly = true)
@@ -97,27 +95,34 @@ public class AvvisoService {
 	}
 
 	/**
-	 * Chiamato dopo il commit di un cambio di prezzo o di stato. Manda la mail
-	 * agli avvisi attivi con prezzo sotto la soglia, una volta sola: se il
-	 * prezzo risale sopra la soglia l'avviso si "ricarica".
+	 * Chiamato dopo il commit di un cambio di prezzo o di stato. Segna come
+	 * inviati gli avvisi attivi con prezzo sotto la soglia (una volta sola: se il
+	 * prezzo risale sopra la soglia l'avviso si "ricarica") e restituisce i dati
+	 * delle mail. Le mail le spedisce il chiamante DOPO il commit: se il
+	 * salvataggio fallisse, nessuno riceverebbe un link che non funziona.
 	 */
 	@Transactional
-	public void controllaPrezzo(Long autoId) {
+	public List<MailService.DatiAvvisoPrezzo> preparaNotifiche(Long autoId) {
 		Auto auto = autoRepository.findById(autoId).orElse(null);
 		if (auto == null) {
-			return;
+			return List.of();
 		}
+		List<MailService.DatiAvvisoPrezzo> daInviare = new java.util.ArrayList<>();
 		for (Avviso avviso : avvisi.findAllByAutoIdAndAttivoTrue(autoId)) {
 			boolean sotto = auto.getPrezzo().compareTo(avviso.getSoglia()) < 0;
-			if (sotto && !avviso.isInviato() && auto.isPubblicato()) {
+			if (sotto && auto.isPubblicato()) {
 				String token = TokenCasuale.genera();
-				avviso.setTokenHash(TokenCasuale.hash(token));
-				avviso.setInviato(true);
-				mail.inviaAvvisoPrezzo(avviso, token);
-			} else if (!sotto && avviso.isInviato()) {
-				avviso.setInviato(false);
+				// UPDATE ... WHERE inviato = false: la mail parte solo se questa
+				// transazione ha davvero cambiato la riga (nessun doppione).
+				if (avvisi.segnaInviato(avviso.getId(), TokenCasuale.hash(token)) == 1) {
+					daInviare.add(new MailService.DatiAvvisoPrezzo(avviso.getUtente().getEmail(), avviso.getUtente().getNome(),
+							auto.getId(), auto.getTitolo(), auto.getPrezzo(), avviso.getSoglia(), token));
+				}
+			} else if (!sotto) {
+				avvisi.ricarica(avviso.getId());
 			}
 		}
+		return daInviare;
 	}
 
 	private Avviso trova(Long utenteId, Long avvisoId) {

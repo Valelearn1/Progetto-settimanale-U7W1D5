@@ -352,8 +352,15 @@ function PannelloFiltri({ filtri, aggiorna }) {
 
   const kmSlider = bozza.kmMax === '' ? KM_MAX_SLIDER : Number(bozza.kmMax)
 
+  const [erroreFiltri, setErroreFiltri] = useState(null)
+
   function applica(e) {
     e.preventDefault()
+    if (bozza.prezzoMin !== '' && bozza.prezzoMax !== '' && Number(bozza.prezzoMin) > Number(bozza.prezzoMax)) {
+      setErroreFiltri('Il prezzo minimo è più alto del massimo.')
+      return
+    }
+    setErroreFiltri(null)
     aggiorna({
       prezzoMin: bozza.prezzoMin,
       prezzoMax: bozza.prezzoMax,
@@ -364,6 +371,7 @@ function PannelloFiltri({ filtri, aggiorna }) {
   }
 
   function reimposta() {
+    setErroreFiltri(null)
     aggiorna({ prezzoMin: '', prezzoMax: '', kmMax: '', carburante: '' })
   }
 
@@ -432,6 +440,11 @@ function PannelloFiltri({ filtri, aggiorna }) {
             <span className="mt-5 text-outline">-</span>
             {campoNumero('prezzoMax', 'Massimo')}
           </div>
+          {erroreFiltri && (
+            <p role="alert" className="text-body-sm text-error">
+              {erroreFiltri}
+            </p>
+          )}
         </div>
 
         <div className="space-y-2">

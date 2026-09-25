@@ -14,6 +14,8 @@ import Registrazione from '@/pages/auth/Registrazione'
 import PasswordDimenticata from '@/pages/auth/PasswordDimenticata'
 import ReimpostaPassword from '@/pages/auth/ReimpostaPassword'
 import GestioneAnnunci from '@/pages/admin/GestioneAnnunci'
+import Privacy from '@/pages/legale/Privacy'
+import Cookie from '@/pages/legale/Cookie'
 
 /** Ogni URL -> una pagina. Sito pubblico con header/footer, admin con la sua sidebar. */
 export default function App() {
@@ -28,6 +30,8 @@ export default function App() {
         <Route path="reimposta-password" element={<ReimpostaPassword />} />
         {/* link nelle mail: pubblico, il token casuale fa da prova */}
         <Route path="avvisi/disattiva" element={<DisattivaAvviso />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="cookie" element={<Cookie />} />
 
         <Route element={<RichiedeLogin />}>
           <Route path="preferiti" element={<Preferiti />} />

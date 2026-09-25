@@ -14,7 +14,10 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
+import it.epicode.base.repository.UtenteRepository;
+import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.jwt.JwtValidators;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
@@ -39,6 +42,9 @@ import java.nio.charset.StandardCharsets;
 @Configuration
 @EnableMethodSecurity
 public class SecurityConfig {
+
+	/** Inizio del valore di default di app.jwt.secret in application.yml (solo sviluppo). */
+	static final String CHIAVE_SVILUPPO = "solo-per-sviluppo";
 
 	@Bean
 	SecurityFilterChain filtri(HttpSecurity http, JwtAuthenticationConverter jwtConverter) throws Exception {
@@ -68,11 +74,15 @@ public class SecurityConfig {
 	}
 
 	@Bean
-	SecretKey chiaveJwt(@Value("${app.jwt.secret}") String segreto) {
+	SecretKey chiaveJwt(@Value("${app.jwt.secret}") String segreto, @Value("${app.produzione:false}") boolean produzione) {
 		byte[] byteChiave = segreto.getBytes(StandardCharsets.UTF_8);
 		if (byteChiave.length < 32) {
 			// HS256 richiede almeno 256 bit: meglio non partire che firmare male.
 			throw new IllegalStateException("JWT_SECRET deve essere lunga almeno 32 byte");
+		}
+		if (produzione && segreto.startsWith(CHIAVE_SVILUPPO)) {
+			// La chiave di sviluppo e' scritta nella repo: in produzione chiunque potrebbe firmare token.
+			throw new IllegalStateException("In produzione JWT_SECRET va impostata: la chiave di sviluppo non e' ammessa");
 		}
 		return new SecretKeySpec(byteChiave, "HmacSHA256");
 	}
@@ -82,9 +92,12 @@ public class SecurityConfig {
 		return new NimbusJwtEncoder(new ImmutableSecret<>(chiave));
 	}
 
+	/** Firma e scadenza (validatori standard) + utente esistente e password non cambiata dopo l'emissione. */
 	@Bean
-	JwtDecoder jwtDecoder(SecretKey chiave) {
-		return NimbusJwtDecoder.withSecretKey(chiave).macAlgorithm(MacAlgorithm.HS256).build();
+	JwtDecoder jwtDecoder(SecretKey chiave, UtenteRepository utenti) {
+		NimbusJwtDecoder decoder = NimbusJwtDecoder.withSecretKey(chiave).macAlgorithm(MacAlgorithm.HS256).build();
+		decoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(), new ValidatoreUtenteJwt(utenti)));
+		return decoder;
 	}
 
 	/** Claim "ruolo" -> ROLE_USER / ROLE_ADMIN. */

@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '@/auth/AuthContext'
 import Logo from '@/components/Logo'
 import ToggleTema from '@/components/ToggleTema'
 import manager from '@/assets/manager.jpg'
+import { useTrappolaFocus } from '@/hooks/useTrappolaFocus'
 
 const classeVoce = ({ isActive }) =>
   `flex items-center gap-space-sm rounded-lg px-space-md py-2.5 text-label-md transition-all ${
@@ -19,6 +20,14 @@ export default function AdminLayout() {
   const { pathname, search } = useLocation()
   const [menuAperto, setMenuAperto] = useState(false)
   useEffect(() => setMenuAperto(false), [pathname, search])
+  const menu = useRef(null)
+  useTrappolaFocus(menu, menuAperto)
+  useEffect(() => {
+    if (!menuAperto) return
+    const esc = (e) => e.key === 'Escape' && setMenuAperto(false)
+    window.addEventListener('keydown', esc)
+    return () => window.removeEventListener('keydown', esc)
+  }, [menuAperto])
 
   const sidebar = (
     <div className="flex h-full flex-col justify-between py-space-md">
@@ -39,7 +48,11 @@ export default function AdminLayout() {
           </NavLink>
         </nav>
       </div>
-      <div className="px-space-md">
+      <div className="flex flex-col gap-space-sm px-space-md">
+        <div className="flex gap-space-md px-space-xs text-label-sm text-outline">
+          <Link to="/privacy" className="hover:text-on-surface">Privacy Policy</Link>
+          <Link to="/cookie" className="hover:text-on-surface">Cookie Policy</Link>
+        </div>
         <div className="flex items-center gap-space-sm rounded-xl bg-surface-container p-space-sm">
           <img src={manager} alt="" className="h-8 w-8 rounded-full object-cover" />
           <div className="flex min-w-0 flex-1 flex-col">
@@ -91,7 +104,7 @@ export default function AdminLayout() {
       {menuAperto && (
         <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Menu amministrazione">
           <div className="absolute inset-0 bg-scrim/50" onClick={() => setMenuAperto(false)} />
-          <aside className="absolute top-0 left-0 h-full w-72 max-w-[85vw] bg-surface-container-low shadow-xl">
+          <aside ref={menu} className="absolute top-0 left-0 h-full w-72 max-w-[85vw] bg-surface-container-low shadow-xl">
             <button
               type="button"
               onClick={() => setMenuAperto(false)}

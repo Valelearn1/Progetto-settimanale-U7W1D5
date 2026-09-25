@@ -48,6 +48,9 @@ services:
         sync: false
       - key: ADMIN_PASSWORD
         sync: false
+      # 50 annunci di esempio: spenti in produzione. Per una demo online: "true".
+      - key: APP_SEED_AUTO
+        value: "false"
 
   # ---------- Frontend: build Vite statica ----------
   - type: web
@@ -68,3 +71,16 @@ services:
       - type: rewrite
         source: /*
         destination: /index.html
+    # Intestazioni di sicurezza del sito statico. La CSP ammette solo i nostri
+    # script: un eventuale codice iniettato non verrebbe eseguito (e non potrebbe
+    # leggere il token in localStorage). connect-src: il backend su onrender.com.
+    headers:
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.onrender.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin

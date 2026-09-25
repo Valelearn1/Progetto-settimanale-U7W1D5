@@ -29,7 +29,8 @@ public class NotificheListener {
 	@Async
 	@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
 	public void prezzoCambiato(Eventi.PrezzoCambiato evento) {
-		avvisoService.controllaPrezzo(evento.autoId());
+		// preparaNotifiche fa commit al ritorno; solo dopo partono le mail.
+		avvisoService.preparaNotifiche(evento.autoId()).forEach(mail::inviaAvvisoPrezzo);
 	}
 
 	@Async

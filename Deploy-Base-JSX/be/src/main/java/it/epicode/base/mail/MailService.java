@@ -1,6 +1,5 @@
 package it.epicode.base.mail;
 
-import it.epicode.base.model.Avviso;
 import it.epicode.base.model.Utente;
 import jakarta.mail.internet.MimeMessage;
 import org.slf4j.Logger;
@@ -57,16 +56,21 @@ public class MailService {
 		invia(utente.getEmail(), "Reimposta la password", html, "reset-password", link);
 	}
 
-	public void inviaAvvisoPrezzo(Avviso avviso, String token) {
-		String linkDisattiva = feUrl + "/avvisi/disattiva?token=" + codifica(token);
+	/** Dati gia' letti dal database: la mail si compone fuori dalla transazione. */
+	public record DatiAvvisoPrezzo(String email, String nome, Long autoId, String titolo,
+								   BigDecimal prezzo, BigDecimal soglia, String token) {
+	}
+
+	public void inviaAvvisoPrezzo(DatiAvvisoPrezzo d) {
+		String linkDisattiva = feUrl + "/avvisi/disattiva?token=" + codifica(d.token());
 		String html = template.genera("avviso-prezzo.html", Map.of(
-				"nome", avviso.getUtente().getNome(),
-				"titolo", avviso.getAuto().getTitolo(),
-				"prezzo", euro(avviso.getAuto().getPrezzo()),
-				"soglia", euro(avviso.getSoglia()),
-				"linkAuto", feUrl + "/auto/" + avviso.getAuto().getId(),
+				"nome", d.nome(),
+				"titolo", d.titolo(),
+				"prezzo", euro(d.prezzo()),
+				"soglia", euro(d.soglia()),
+				"linkAuto", feUrl + "/auto/" + d.autoId(),
 				"linkDisattiva", linkDisattiva));
-		invia(avviso.getUtente().getEmail(), "Il prezzo di un'auto che segui e' sceso", html, "avviso-prezzo", linkDisattiva);
+		invia(d.email(), "Il prezzo di un'auto che segui e' sceso", html, "avviso-prezzo", linkDisattiva);
 	}
 
 	private void invia(String destinatario, String oggetto, String html, String tipo, String link) {

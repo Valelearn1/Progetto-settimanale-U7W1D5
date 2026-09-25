@@ -34,6 +34,15 @@ if [ ! -d fe/node_modules ]; then
   (cd fe && npm install) || exit 1
 fi
 
+# ---------- Credenziali di prova (SOLO locale, vedi README) ----------
+# Si possono sovrascrivere dall'esterno; su Render queste variabili non esistono.
+export ADMIN_EMAIL="${ADMIN_EMAIL:-admin@velocemotors.it}"
+export ADMIN_PASSWORD="${ADMIN_PASSWORD:-AdminVeloce2026}"
+export DEMO_EMAIL="${DEMO_EMAIL:-prova.catalogo@esempio.it}"
+export DEMO_PASSWORD="${DEMO_PASSWORD:-ProvaCatalogo1}"
+# Senza Gmail configurato, i link delle mail (reset, disattiva avviso) finiscono nel log.
+export APP_MAIL_LOG_LINK="${APP_MAIL_LOG_LINK:-true}"
+
 # Backend in background; all'uscita si chiude tutto il gruppo di processi
 # (anche la JVM che spring-boot:run avvia come processo figlio)
 trap 'kill 0 2>/dev/null' EXIT

@@ -39,6 +39,12 @@ public class Utente {
 	@Column(nullable = false)
 	private Instant creatoIl;
 
+	/**
+	 * Ultimo cambio di password. I JWT emessi prima di questo istante non valgono
+	 * piu' (vedi ValidatoreUtenteJwt): cambiare password chiude le altre sessioni.
+	 */
+	private Instant credenzialiAggiornateIl;
+
 	protected Utente() {
 	}
 
@@ -79,8 +85,15 @@ public class Utente {
 		return passwordHash;
 	}
 
+	/** Nuova password: i token emessi finora smettono di valere. */
 	public void setPasswordHash(String passwordHash) {
 		this.passwordHash = passwordHash;
+		// Al secondo, come il claim iat del JWT: un login subito dopo resta valido.
+		this.credenzialiAggiornateIl = Instant.now().truncatedTo(java.time.temporal.ChronoUnit.SECONDS);
+	}
+
+	public Instant getCredenzialiAggiornateIl() {
+		return credenzialiAggiornateIl;
 	}
 
 	public Ruolo getRuolo() {

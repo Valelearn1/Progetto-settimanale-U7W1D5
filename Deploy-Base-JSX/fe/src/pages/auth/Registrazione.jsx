@@ -108,6 +108,11 @@ export default function Registrazione() {
           {...campo('conferma')}
         />
         <Messaggio>{errore}</Messaggio>
+        <p className="text-body-sm text-on-surface-variant">
+          Registrandoti usiamo nome, email e le auto che segui solo per il servizio: leggi la{' '}
+          <Link to="/privacy" className="font-semibold text-secondary underline">Privacy Policy</Link> e la{' '}
+          <Link to="/cookie" className="font-semibold text-secondary underline">Cookie Policy</Link>.
+        </p>
         <Pulsante type="submit" caricamento={invio}>
           {invio ? 'Registrazione…' : 'Registrati'}
         </Pulsante>

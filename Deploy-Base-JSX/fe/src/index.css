@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 /*
- * Token del design Stitch "Car Dealership Web App" tradotti per Tailwind 4:
+ * Token del design Stitch "Car Dealership Web App" tradotti per Tailwind 4,
+ * con la palette "Petrolio" (blu-verde) al posto del blu originale:
  * ogni --color-x diventa bg-x / text-x, ogni --text-x diventa text-x (con
  * interlinea e peso), ogni --spacing-x diventa p-x / gap-x / px-x.
  */
@@ -9,32 +10,32 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  --color-primary: #000000;
+  --color-primary: #0f2e33;
   --color-on-primary: #ffffff;
-  --color-primary-container: #131b2e;
-  --color-on-primary-container: #7c839b;
-  --color-on-primary-fixed-variant: #3f465c;
-  --color-secondary: #0051d5;
+  --color-primary-container: #163d44;
+  --color-on-primary-container: #7fa3a8;
+  --color-on-primary-fixed-variant: #1f4a52;
+  --color-secondary: #0e6f7a;
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #316bf3;
-  --color-secondary-fixed: #dbe1ff;
-  --color-on-secondary-fixed: #00174b;
-  --color-surface: #f8f9ff;
+  --color-secondary-container: #13808c;
+  --color-secondary-fixed: #cfeef1;
+  --color-on-secondary-fixed: #04363c;
+  --color-surface: #f4f7f7;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #eff4ff;
-  --color-surface-container: #e5eeff;
-  --color-surface-container-high: #dce9ff;
-  --color-surface-container-highest: #d3e4fe;
-  --color-on-surface: #0b1c30;
-  --color-on-surface-variant: #45464d;
-  --color-outline: #76777d;
-  --color-outline-variant: #c6c6cd;
+  --color-surface-container-low: #ebf1f2;
+  --color-surface-container: #dfe9eb;
+  --color-surface-container-high: #cfdee1;
+  --color-surface-container-highest: #c3d6d9;
+  --color-on-surface: #10201f;
+  --color-on-surface-variant: #3f4f50;
+  --color-outline: #5f7071;
+  --color-outline-variant: #c8d4d6;
   --color-error: #ba1a1a;
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
   --color-success-container: #dcfce7;
   --color-on-success-container: #166534;
-  --color-inverse-primary: #bec6e0;
+  --color-inverse-primary: #a9c7cb;
   --color-scrim: #000000;
 
   --text-headline-lg: 36px;
@@ -94,32 +95,32 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --color-primary: #e3e9f4;
-  --color-on-primary: #0b1220;
-  --color-primary-container: #dbe1ff;
-  --color-on-primary-container: #aab1c8;
-  --color-on-primary-fixed-variant: #c3cae0;
-  --color-secondary: #adc6ff;
-  --color-on-secondary: #0b1c30;
-  --color-secondary-container: #d8e2ff;
-  --color-secondary-fixed: #1d3566;
-  --color-on-secondary-fixed: #dbe1ff;
-  --color-surface: #0b1220;
-  --color-surface-container-lowest: #121b2d;
-  --color-surface-container-low: #162137;
-  --color-surface-container: #1c2842;
-  --color-surface-container-high: #24324f;
-  --color-surface-container-highest: #2c3b5b;
-  --color-on-surface: #e3e9f4;
-  --color-on-surface-variant: #b7bfcc;
-  --color-outline: #8d95a3;
-  --color-outline-variant: #3a4458;
+  --color-primary: #e2eeef;
+  --color-on-primary: #0b1516;
+  --color-primary-container: #cdeaed;
+  --color-on-primary-container: #8fb0b3;
+  --color-on-primary-fixed-variant: #b9d6d9;
+  --color-secondary: #6fd3de;
+  --color-on-secondary: #032a2f;
+  --color-secondary-container: #9ae3eb;
+  --color-secondary-fixed: #12474d;
+  --color-on-secondary-fixed: #cfeef1;
+  --color-surface: #0b1516;
+  --color-surface-container-lowest: #111e20;
+  --color-surface-container-low: #152426;
+  --color-surface-container: #1b2e31;
+  --color-surface-container-high: #23393c;
+  --color-surface-container-highest: #2c4447;
+  --color-on-surface: #e2eeef;
+  --color-on-surface-variant: #b3c4c6;
+  --color-outline: #93a6a8;
+  --color-outline-variant: #2f4447;
   --color-error: #ffb4ab;
   --color-error-container: #93000a;
   --color-on-error-container: #ffdad6;
   --color-success-container: #14532d;
   --color-on-success-container: #bbf7d0;
-  --color-inverse-primary: #3f465c;
+  --color-inverse-primary: #33545a;
 }
 
 @layer base {

@@ -28,6 +28,13 @@ if not exist "fe\node_modules" (
   popd
 )
 
+rem ---------- Credenziali di prova (SOLO locale, vedi README) ----------
+if not defined ADMIN_EMAIL set ADMIN_EMAIL=admin@velocemotors.it
+if not defined ADMIN_PASSWORD set ADMIN_PASSWORD=AdminVeloce2026
+if not defined DEMO_EMAIL set DEMO_EMAIL=prova.catalogo@esempio.it
+if not defined DEMO_PASSWORD set DEMO_PASSWORD=ProvaCatalogo1
+if not defined APP_MAIL_LOG_LINK set APP_MAIL_LOG_LINK=true
+
 start "BE (8080)" /D "%~dp0be" cmd /k .\mvnw.cmd spring-boot:run
 start "FE (5173)" /D "%~dp0fe" cmd /k npm run dev
 
