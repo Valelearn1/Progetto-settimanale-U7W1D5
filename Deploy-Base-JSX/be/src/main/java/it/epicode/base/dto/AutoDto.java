@@ -51,15 +51,18 @@ public final class AutoDto {
 		}
 	}
 
-	/** Versione ridotta per le liste: niente descrizione, solo la prima immagine. */
+	/**
+	 * Versione ridotta per le liste: niente descrizione. Le immagini servono al
+	 * mini-carousel della card (poche per annuncio, al massimo 10).
+	 */
 	public record AutoCardResponse(
 			Long id, String titolo, Integer km, Carburante carburante, BigDecimal prezzo,
-			Condizione condizione, StatoAnnuncio stato, String copertina) {
+			Condizione condizione, StatoAnnuncio stato, String copertina, List<String> immagini) {
 
 		public static AutoCardResponse da(Auto a) {
 			String copertina = a.getImmagini().isEmpty() ? null : a.getImmagini().getFirst();
 			return new AutoCardResponse(a.getId(), a.getTitolo(), a.getKm(), a.getCarburante(), a.getPrezzo(),
-					a.getCondizione(), a.getStato(), copertina);
+					a.getCondizione(), a.getStato(), copertina, List.copyOf(a.getImmagini()));
 		}
 	}
 }

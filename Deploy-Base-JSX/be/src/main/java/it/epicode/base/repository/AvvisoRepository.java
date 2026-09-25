@@ -3,7 +3,9 @@ package it.epicode.base.repository;
 import it.epicode.base.model.Avviso;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,4 +26,10 @@ public interface AvvisoRepository extends JpaRepository<Avviso, Long> {
 	List<Avviso> findAllByAutoIdAndAttivoTrue(Long autoId);
 
 	Optional<Avviso> findByTokenHash(String tokenHash);
+
+	long countByAttivoTrue();
+
+	/** Per ogni auto della pagina admin: quanti avvisi attivi la seguono (una query sola). */
+	@Query("select a.auto.id, count(a) from Avviso a where a.attivo = true and a.auto.id in :autoIds group by a.auto.id")
+	List<Object[]> contaAttiviPerAuto(Collection<Long> autoIds);
 }

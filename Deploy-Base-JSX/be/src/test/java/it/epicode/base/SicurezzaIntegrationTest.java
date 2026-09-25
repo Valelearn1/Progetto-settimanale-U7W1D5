@@ -140,6 +140,25 @@ class SicurezzaIntegrationTest {
 				.andExpect(jsonPath("$.prezzo").value(9000));
 	}
 
+	@Test
+	void statisticheEConteggioAvvisiSoloAdmin() throws Exception {
+		String titolo = "Stat-" + UUID.randomUUID();
+		long autoId = creaAuto(titolo, 20000, 1000, "PUBBLICATO");
+		String utente = registra(emailNuova());
+		aggiungiPreferito(utente, autoId);
+		creaAvviso(utente, autoId, 19000);
+
+		mvc.perform(get("/api/admin/auto/statistiche").header("Authorization", "Bearer " + utente))
+				.andExpect(status().isForbidden());
+		mvc.perform(get("/api/admin/auto/statistiche").header("Authorization", "Bearer " + admin))
+				.andExpect(status().isOk())
+				.andExpect(jsonPath("$.avvisiAttivi").isNumber())
+				.andExpect(jsonPath("$.pubblicati").isNumber());
+		mvc.perform(get("/api/admin/auto").param("q", titolo).header("Authorization", "Bearer " + admin))
+				.andExpect(jsonPath("$.contenuto[0].avvisiAttivi").value(1))
+				.andExpect(jsonPath("$.contenuto[0].numeroFoto").value(1));
+	}
+
 	// ---------- catalogo ----------
 
 	@Test

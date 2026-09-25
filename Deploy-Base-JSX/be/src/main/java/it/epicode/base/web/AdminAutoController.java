@@ -1,6 +1,7 @@
 package it.epicode.base.web;
 
-import it.epicode.base.dto.AutoDto.AutoCardResponse;
+import it.epicode.base.dto.AdminDto.AutoAdminResponse;
+import it.epicode.base.dto.AdminDto.StatisticheResponse;
 import it.epicode.base.dto.AutoDto.AutoRequest;
 import it.epicode.base.dto.AutoDto.AutoResponse;
 import it.epicode.base.dto.AutoDto.PrezzoRequest;
@@ -44,7 +45,7 @@ public class AdminAutoController {
 
 	/** Tutti gli annunci, bozze comprese; stato facoltativo per filtrare. */
 	@GetMapping
-	public PaginaResponse<AutoCardResponse> elenco(
+	public PaginaResponse<AutoAdminResponse> elenco(
 			@RequestParam(required = false) StatoAnnuncio stato,
 			@RequestParam(required = false) @Size(max = 100) String q,
 			@RequestParam(required = false) Carburante carburante,
@@ -55,6 +56,12 @@ public class AdminAutoController {
 			@RequestParam(defaultValue = "10") @Min(1) @Max(50) int size) {
 		Filtri filtri = new Filtri(q, carburante, condizione, null, null, null, null);
 		return autoService.cercaAdmin(stato, filtri, sort, dir, page, size);
+	}
+
+	/** Riquadri del pannello: totale, pubblicati, bozze, valore, prezzo medio, avvisi attivi. */
+	@GetMapping("/statistiche")
+	public StatisticheResponse statistiche() {
+		return autoService.statistiche();
 	}
 
 	@GetMapping("/{id}")

@@ -1,5 +1,7 @@
 package it.epicode.base.service;
 
+import it.epicode.base.dto.AdminDto.AutoAdminResponse;
+import it.epicode.base.dto.AdminDto.StatisticheResponse;
 import it.epicode.base.dto.AutoDto.AutoCardResponse;
 import it.epicode.base.dto.AutoDto.AutoRequest;
 import it.epicode.base.dto.AutoDto.AutoResponse;
@@ -12,7 +14,9 @@ import it.epicode.base.model.Condizione;
 import it.epicode.base.model.StatoAnnuncio;
 import it.epicode.base.repository.AutoRepository;
 import it.epicode.base.repository.AutoSpecifications;
+import it.epicode.base.repository.AvvisoRepository;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
@@ -20,6 +24,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Stream;
@@ -39,10 +46,12 @@ public class AutoService {
 			"titolo", "titolo");
 
 	private final AutoRepository autoRepository;
+	private final AvvisoRepository avvisoRepository;
 	private final ApplicationEventPublisher eventi;
 
-	public AutoService(AutoRepository autoRepository, ApplicationEventPublisher eventi) {
+	public AutoService(AutoRepository autoRepository, AvvisoRepository avvisoRepository, ApplicationEventPublisher eventi) {
 		this.autoRepository = autoRepository;
+		this.avvisoRepository = avvisoRepository;
 		this.eventi = eventi;
 	}
 
@@ -55,7 +64,7 @@ public class AutoService {
 
 	@Transactional(readOnly = true)
 	public PaginaResponse<AutoCardResponse> cercaPubblicate(Filtri f, String sort, String dir, int page, int size) {
-		return cerca(StatoAnnuncio.PUBBLICATO, f, sort, dir, page, size);
+		return PaginaResponse.da(cerca(StatoAnnuncio.PUBBLICATO, f, sort, dir, page, size), AutoCardResponse::da);
 	}
 
 	/** Una bozza per il pubblico non esiste: 404. */
@@ -69,8 +78,28 @@ public class AutoService {
 	// ---------- admin ----------
 
 	@Transactional(readOnly = true)
-	public PaginaResponse<AutoCardResponse> cercaAdmin(StatoAnnuncio stato, Filtri f, String sort, String dir, int page, int size) {
-		return cerca(stato, f, sort, dir, page, size);
+	public PaginaResponse<AutoAdminResponse> cercaAdmin(StatoAnnuncio stato, Filtri f, String sort, String dir, int page, int size) {
+		Page<Auto> pagina = cerca(stato, f, sort, dir, page, size);
+		// Avvisi attivi per le auto di questa pagina, contati con una sola query.
+		Map<Long, Long> avvisi = new HashMap<>();
+		List<Long> ids = pagina.getContent().stream().map(Auto::getId).toList();
+		if (!ids.isEmpty()) {
+			for (Object[] riga : avvisoRepository.contaAttiviPerAuto(ids)) {
+				avvisi.put((Long) riga[0], (Long) riga[1]);
+			}
+		}
+		return PaginaResponse.da(pagina, a -> AutoAdminResponse.da(a, avvisi.getOrDefault(a.getId(), 0L)));
+	}
+
+	@Transactional(readOnly = true)
+	public StatisticheResponse statistiche() {
+		long pubblicati = autoRepository.countByStato(StatoAnnuncio.PUBBLICATO);
+		long bozze = autoRepository.countByStato(StatoAnnuncio.BOZZA);
+		Object[] prezzi = autoRepository.sommaEMediaPrezzi(StatoAnnuncio.PUBBLICATO).getFirst();
+		BigDecimal somma = new BigDecimal(prezzi[0].toString());
+		BigDecimal media = new BigDecimal(prezzi[1].toString()).setScale(0, RoundingMode.HALF_UP);
+		return new StatisticheResponse(pubblicati + bozze, pubblicati, bozze, somma, media,
+				avvisoRepository.countByAttivoTrue());
 	}
 
 	@Transactional(readOnly = true)
@@ -115,7 +144,7 @@ public class AutoService {
 
 	// ---------- interni ----------
 
-	private PaginaResponse<AutoCardResponse> cerca(StatoAnnuncio stato, Filtri f, String sort, String dir, int page, int size) {
+	private Page<Auto> cerca(StatoAnnuncio stato, Filtri f, String sort, String dir, int page, int size) {
 		String campo = ORDINAMENTI.get(sort);
 		if (campo == null) {
 			throw new RichiestaNonValidaException("Ordinamento non ammesso");
@@ -141,7 +170,7 @@ public class AutoService {
 				.filter(Objects::nonNull)
 				.toList());
 
-		return PaginaResponse.da(autoRepository.findAll(spec, PageRequest.of(page, size, ordine)), AutoCardResponse::da);
+		return autoRepository.findAll(spec, PageRequest.of(page, size, ordine));
 	}
 
 	private Auto trova(Long id) {

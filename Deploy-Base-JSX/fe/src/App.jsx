@@ -1,44 +1,22 @@
-import { useEffect, useState } from 'react'
-import { api } from '@/lib/api'
+import { Route, Routes } from 'react-router-dom'
+import Layout from '@/components/Layout'
+import Catalogo from '@/pages/Catalogo'
+import InArrivo from '@/pages/InArrivo'
 
+/** Ogni URL -> una pagina. Header e footer li mette Layout. */
 export default function App() {
-  const [stato, setStato] = useState(null)
-  const [errore, setErrore] = useState(null)
-
-  useEffect(() => {
-    api
-      .stato()
-      .then(setStato)
-      .catch((e) => setErrore(e instanceof Error ? e.message : String(e)))
-  }, [])
-
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <div className="mx-auto max-w-2xl px-4 py-10">
-        <h1 className="text-3xl font-semibold tracking-tight">Progetto base</h1>
-        <p className="mt-1 text-sm text-slate-600">React + JavaScript, Spring Boot, PostgreSQL.</p>
-
-        <section className="mt-8 rounded-lg border border-slate-200 bg-white p-4 text-sm">
-          <div className="flex justify-between gap-4">
-            <span className="text-slate-500">API</span>
-            <code className="truncate font-mono text-xs">{api.indirizzo}</code>
-          </div>
-          <div className="mt-2 flex justify-between gap-4">
-            <span className="text-slate-500">Database</span>
-            <span className="font-mono text-xs">{stato ? stato.database : '...'}</span>
-          </div>
-          <div className="mt-2 flex justify-between gap-4">
-            <span className="text-slate-500">Ora del server</span>
-            <span className="font-mono text-xs">{stato ? stato.ora : '...'}</span>
-          </div>
-        </section>
-
-        {errore && (
-          <p className="mt-6 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
-            {errore}
-          </p>
-        )}
-      </div>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Catalogo />} />
+        <Route path="auto/:id" element={<InArrivo titolo="Scheda auto" />} />
+        <Route path="login" element={<InArrivo titolo="Accedi" />} />
+        <Route path="registrazione" element={<InArrivo titolo="Registrati" />} />
+        <Route path="preferiti" element={<InArrivo titolo="I miei Preferiti" />} />
+        <Route path="avvisi" element={<InArrivo titolo="Avvisi Prezzo" />} />
+        <Route path="admin/*" element={<InArrivo titolo="Pannello Admin" />} />
+        <Route path="*" element={<InArrivo titolo="Pagina non trovata" />} />
+      </Route>
+    </Routes>
   )
 }

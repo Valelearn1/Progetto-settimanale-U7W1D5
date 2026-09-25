@@ -607,23 +607,23 @@
     "prezzo": 26500,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2853%29.jpg/1280px-2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2853%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg/1280px-2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2819%29.jpg/1280px-2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2819%29.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/MERCEDES-BENZ_A-CLASS_%28W177%29_China.jpg/1280px-MERCEDES-BENZ_A-CLASS_%28W177%29_China.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg/1280px-MERCEDES-BENZ_A-CLASS_%28W177%29_China_%282%29.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg/1280px-2019_Mercedes_Benz_A-Class_Hatchback_A_200_%2810%29.jpg"
     ],
     "crediti": [
       {
-        "file": "File:2019 Mercedes Benz A-Class Hatchback A 200 (53).jpg",
+        "file": "File:MERCEDES-BENZ A-CLASS (W177) China.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "Bindydad123"
+        "autore": "Dinkun Chen"
+      },
+      {
+        "file": "File:MERCEDES-BENZ A-CLASS (W177) China (2).jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Dinkun Chen"
       },
       {
         "file": "File:2019 Mercedes Benz A-Class Hatchback A 200 (10).jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Bindydad123"
-      },
-      {
-        "file": "File:2019 Mercedes Benz A-Class Hatchback A 200 (19).jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Bindydad123"
       }
@@ -967,16 +967,11 @@
     "prezzo": 13900,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Citroen_C3_%282020_-_2023%29_F-20240807.jpg/1280px-Citroen_C3_%282020_-_2023%29_F-20240807.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7374.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg/1280px-2020_Citro%C3%ABn_C3_%283rd_generation%29_DSC_7377.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2021_Citroen_C3_Live_BlueHDi.jpg/1280px-2021_Citroen_C3_Live_BlueHDi.jpg"
     ],
     "crediti": [
-      {
-        "file": "File:Citroen C3 (2020 - 2023) F-20240807.jpg",
-        "licenza": "CC BY-SA 4.0",
-        "autore": "Ajm5"
-      },
       {
         "file": "File:2020 Citroën C3 (3rd generation) DSC 7374.jpg",
         "licenza": "CC BY-SA 4.0",
@@ -986,6 +981,11 @@
         "file": "File:2020 Citroën C3 (3rd generation) DSC 7377.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
+      },
+      {
+        "file": "File:2021 Citroen C3 Live BlueHDi.jpg",
+        "licenza": "CC BY-SA 2.0",
+        "autore": "RL GNZLZ"
       }
     ]
   },
@@ -1117,25 +1117,25 @@
     "prezzo": 14500,
     "condizione": "USATO",
     "immagini": [
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Hyundai_i20_N_Auto_Zuerich_2021_IMG_0598.jpg/1280px-Hyundai_i20_N_Auto_Zuerich_2021_IMG_0598.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png/1280px-2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2021_Hyundai_i20N_HCC22.jpg/1280px-2021_Hyundai_i20N_HCC22.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Hyundai_i20_%28BC3%29_IMG_3917.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3917.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hyundai_i20_%28BC3%29_IMG_3916.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3916.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Hyundai_i20_%28BC3%29_IMG_4165.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_4165.jpg"
     ],
     "crediti": [
       {
-        "file": "File:Hyundai i20 N Auto Zuerich 2021 IMG 0598.jpg",
+        "file": "File:Hyundai i20 (BC3) IMG 3917.jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Alexander Migl"
       },
       {
-        "file": "File:2021 Hyundai i20 N Line (BI3; India) front view.png",
-        "licenza": "CC BY 3.0",
-        "autore": "DriveSpark"
+        "file": "File:Hyundai i20 (BC3) IMG 3916.jpg",
+        "licenza": "CC BY-SA 4.0",
+        "autore": "Alexander Migl"
       },
       {
-        "file": "File:2021 Hyundai i20N HCC22.jpg",
+        "file": "File:Hyundai i20 (BC3) IMG 4165.jpg",
         "licenza": "CC BY-SA 4.0",
-        "autore": "MrWalkr"
+        "autore": "Alexander Migl"
       }
     ]
   },
@@ -1207,11 +1207,16 @@
     "prezzo": 20900,
     "condizione": "USATO",
     "immagini": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg/1280px-Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg",
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0485_%28edited%29.jpg/1280px-Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0485_%28edited%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg/1280px-Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg",
-      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg/1280px-Nissan_Qashqai%2C_2021%2C_in_Nissan_Global_HQ_Gallery%2C_front.jpg"
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg/1280px-Nissan_Qashqai_%28J12%29_Auto_Zuerich_2021_IMG_0487_%28edited%29.jpg"
     ],
     "crediti": [
+      {
+        "file": "File:Nissan Qashqai, 2021, in Nissan Global HQ Gallery, front.jpg",
+        "licenza": "CC0",
+        "autore": "Kazyakuruma"
+      },
       {
         "file": "File:Nissan Qashqai (J12) Auto Zuerich 2021 IMG 0485 (edited).jpg",
         "licenza": "CC BY-SA 4.0",
@@ -1221,11 +1226,6 @@
         "file": "File:Nissan Qashqai (J12) Auto Zuerich 2021 IMG 0487 (edited).jpg",
         "licenza": "CC BY-SA 4.0",
         "autore": "Oq10pass"
-      },
-      {
-        "file": "File:Nissan Qashqai, 2021, in Nissan Global HQ Gallery, front.jpg",
-        "licenza": "CC0",
-        "autore": "Kazyakuruma"
       }
     ]
   },
