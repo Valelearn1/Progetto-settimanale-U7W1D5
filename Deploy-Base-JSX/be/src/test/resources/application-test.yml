@@ -1,0 +1,19 @@
+# Profilo usato dai test: database H2 in memoria, niente Postgres.
+spring:
+  datasource:
+    url: jdbc:h2:mem:salone;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  # Valore finto: fa risultare l'SMTP "configurato". JavaMailSender e' un mock.
+  mail:
+    username: test@salone.local
+
+app:
+  jwt:
+    secret: segreto-solo-per-i-test-lungo-almeno-32-byte
+  admin:
+    email: admin@salone.local
+    password: PasswordAdmin1

@@ -1,6 +1,10 @@
 # Backend
 be/target/
 
+# Segreti locali (MAIL_PASSWORD, JWT_SECRET...): mai nella repo
+.env
+be/src/main/resources/application-local.yml
+
 # Frontend
 fe/node_modules/
 fe/dist/

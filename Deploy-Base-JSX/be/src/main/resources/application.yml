@@ -1,11 +1,11 @@
 spring:
   application:
-    name: progetto-base
+    name: salone-auto
 
   datasource:
     # In locale valgono i valori dopo i due punti. Su Render DatabaseUrl legge
     # DATABASE_URL e sovrascrive queste tre proprieta'.
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/progetto_base}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/salone_auto}
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:admin}
 
@@ -13,15 +13,37 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+    # Niente SQL nei log: i parametri legati conterrebbero email e hash.
+    show-sql: false
     properties:
       hibernate:
         jdbc:
           time_zone: UTC
 
+  # Gmail: MAIL_USERNAME e MAIL_PASSWORD (password per le app) solo da variabili
+  # d'ambiente. Vuote = nessun invio (vedi MailService).
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
 server:
   # Render assegna la porta in PORT.
   port: ${PORT:8080}
   shutdown: graceful
+  error:
+    include-message: never
+    include-stacktrace: never
 
 management:
   endpoints:
@@ -32,8 +54,27 @@ management:
     health:
       probes:
         enabled: true
+  health:
+    # Senza SMTP configurato l'health check non deve andare DOWN.
+    mail:
+      enabled: false
 
 app:
   cors:
     # In produzione: ALLOWED_ORIGIN=https://<fe>.onrender.com (piu' valori separati da virgola).
     allowed-origins: ${ALLOWED_ORIGIN:http://localhost:5173,http://localhost:4173}
+  # Indirizzo del FE: base dei link nelle mail.
+  fe-url: ${FE_URL:http://localhost:5173}
+  jwt:
+    # Il default vale solo in locale; su Render JWT_SECRET e' generata dal blueprint.
+    secret: ${JWT_SECRET:solo-per-sviluppo-locale-cambiami-0123456789abcdef}
+    durata: ${JWT_DURATA:2h}
+  reset-password:
+    durata: 120m
+  admin:
+    email: ${ADMIN_EMAIL:}
+    password: ${ADMIN_PASSWORD:}
+  mail:
+    mittente: ${MAIL_FROM:${MAIL_USERNAME:no-reply@salone.local}}
+    # Solo per provare in locale senza SMTP: stampa il link (mai l'indirizzo).
+    log-link: ${APP_MAIL_LOG_LINK:false}

@@ -1,13 +1,22 @@
 @echo off
 setlocal
-title Progetto base (locale)
+title Salone auto (locale)
 cd /d "%~dp0"
 
-rem ---------- PostgreSQL: serve il database progetto_base sulla 5432 ----------
+rem ---------- Porte: FE sempre sulla 5173, BE sulla 8080 ----------
+rem Se un processo le occupa, lo si chiude.
+for %%P in (5173 8080) do (
+  for /f "tokens=5" %%I in ('netstat -ano ^| findstr /R /C:":%%P .*LISTENING"') do (
+    echo [porta %%P] occupata da PID %%I: la libero.
+    taskkill /F /PID %%I >nul 2>&1
+  )
+)
+
+rem ---------- PostgreSQL: serve il database salone_auto sulla 5432 ----------
 powershell -NoProfile -Command "$c=New-Object Net.Sockets.TcpClient; try { $c.Connect('localhost',5432); exit 0 } catch { exit 1 }" >nul 2>&1
 if errorlevel 1 (
   echo [postgres] porta 5432 chiusa: il backend non partira'.
-  echo            createdb -U postgres progetto_base
+  echo            createdb -U postgres salone_auto
 ) else (
   echo [postgres] in ascolto sulla 5432.
 )

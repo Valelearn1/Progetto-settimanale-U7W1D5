@@ -32,6 +32,22 @@ services:
       # Origine del FE per il CORS, es. https://app-fe.onrender.com
       - key: ALLOWED_ORIGIN
         sync: false
+      # Indirizzo del FE per i link nelle mail (stesso valore di ALLOWED_ORIGIN)
+      - key: FE_URL
+        sync: false
+      # Chiave di firma dei JWT: la genera Render, non sta nella repo
+      - key: JWT_SECRET
+        generateValue: true
+      # Gmail: indirizzo e password per le app (mai nella repo)
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      # Account amministratore creato al primo avvio
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
 
   # ---------- Frontend: build Vite statica ----------
   - type: web
