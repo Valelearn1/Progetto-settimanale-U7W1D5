@@ -42,7 +42,7 @@ public class AutoController {
 			@RequestParam(defaultValue = "recenti") String sort,
 			@RequestParam(defaultValue = "desc") String dir,
 			@RequestParam(defaultValue = "0") @Min(0) int page,
-			@RequestParam(defaultValue = "12") @Min(1) @Max(50) int size) {
+			@RequestParam(defaultValue = "10") @Min(1) @Max(50) int size) {
 		Filtri filtri = new Filtri(q, carburante, condizione, prezzoMin, prezzoMax, kmMin, kmMax);
 		return autoService.cercaPubblicate(filtri, sort, dir, page, size);
 	}

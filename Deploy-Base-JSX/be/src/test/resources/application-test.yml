@@ -12,6 +12,9 @@ spring:
     username: test@salone.local
 
 app:
+  # I test creano i propri annunci: niente catalogo di esempio.
+  seed:
+    auto: false
   jwt:
     secret: segreto-solo-per-i-test-lungo-almeno-32-byte
   admin:

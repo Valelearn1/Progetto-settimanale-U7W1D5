@@ -21,8 +21,9 @@ preferiti e avvisi di prezzo via email per utenti registrati, gestione annunci p
   `mvnw` non ha il bit di esecuzione: usare `sh ./mvnw`.
 - Build FE: `cd Deploy-Base-JSX/fe && npm run build`.
 - Il FE gira **sempre sulla 5173** (`strictPort: true`); se è occupata va liberata, non si cambia porta.
-- Prima di liberare una porta, controllare con `lsof -ti tcp:<porta>` + `ps` che processo è: la 8080
-  può essere occupata da altri progetti del corso.
+- Porta 8080 (o 5173) occupata: prima capire da cosa (`lsof -ti tcp:<porta> -sTCP:LISTEN` + `ps -p <pid> -o command=`).
+  Se non serve (vecchia istanza di questo progetto, app di un altro progetto del corso rimasta accesa)
+  liberarla; se non è chiaro cosa sia, chiedere all'utente prima di chiuderla.
 
 ## Variabili d'ambiente (mai valori reali nella repo)
 `JWT_SECRET` (≥ 32 byte), `MAIL_USERNAME`, `MAIL_PASSWORD` (password per le app di Gmail),

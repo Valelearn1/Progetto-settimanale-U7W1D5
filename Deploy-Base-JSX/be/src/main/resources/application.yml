@@ -71,6 +71,9 @@ app:
     durata: ${JWT_DURATA:2h}
   reset-password:
     durata: 120m
+  seed:
+    # 50 annunci di esempio (seed/auto.json), caricati solo se la tabella auto e' vuota.
+    auto: ${APP_SEED_AUTO:true}
   admin:
     email: ${ADMIN_EMAIL:}
     password: ${ADMIN_PASSWORD:}
